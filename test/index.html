@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 페이지</title>
+    <!-- bootstrap CDN -->
+    <!-- CSS 불러오기 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- JS 불러오기 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Moirai+One&family=Nanum+Gothic+Coding&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+        integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="navi">
+            <a href="#">INTRODUCE</a>
+            <a href="#">QUEST</a>
+            <a href="#">SHOPPING</a>
+            <a href="#">BOARD</a>
+        </div>
+        <div id="main">
+            <div id="login">
+                <button type="button" id="loginbtn" onclick="checkLoggedIn()">로그인</button>
+                <button type="button" 
+                id="logoutbtn"
+                onclick="logout()">로그아웃</button>
+            </div>
+            
+            <div id="maincontent">
+                <div id="mainName">
+                    <p class="head">제로</p>
+                    <p class="head">베이스</p>
+                    <!-- <img src="./img/0퍼.png" width="100px" style="color: white;" alt=""> -->
+                </div>
+                <div id="imgMain">
+                    <img id="earth" src="./img/지구3.png" alt="">
+                    <img id="tree" src="./img/나무스티커.png" alt="">
+                    <img id="ecobag" src="./img/에코백.png" alt="">
+                    <img id="tumbler" src="./img/텀블러.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="func.js"></script>
+
+</html>
