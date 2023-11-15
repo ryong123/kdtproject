@@ -41,7 +41,8 @@
   /* font-family: "KIMM_Bold"; */
 
   /* 전주공예고딕체 */
-  /* font-family: "JeonjuCraftGoR"; */
+
+  font-family: "JeonjuCraftGoR";
 
   padding: 0;
   margin: 0;
@@ -172,7 +173,7 @@
     border: 1px solid gainsboro;
     height: 50px;
     max-width: 15%;
-    min-width: 15%;
+    min-width: 25%;
   }
   .main-contetnt {
     min-width: 100%;
@@ -324,18 +325,22 @@
 
   .submmit {
     text-align: center;
-    width: 150px;
+    width: 135px;
     height: 50px;
     border-radius: 35px;
-    border: 3px solid gainsboro;
+    border: 3px solid rgb(138, 212, 241);
     margin-bottom: 30px;
     cursor: pointer;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    background-color: white;
   }
   .submmit:focus {
     background-color: #87ceeb;
+    color: white;
   }
   .submmit:hover {
     background-color: #87ceeb;
+    color: white;
   }
 }
