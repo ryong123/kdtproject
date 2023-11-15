@@ -24,6 +24,8 @@
 
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
         integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/837ff3adc1.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./style.css">
     <script src="func.js"></script>
 
@@ -32,9 +34,15 @@
 <body>
     <div id="container">
         <div id="navi">
-            <a href="#">QUEST</a>
-            <a href="#">SHOPPING</a>
-            <a href="#">BOARD</a>
+            <a class="navilist" href="#">ABOUT US</a>
+            <a class="navilist" href="#">QUEST</a>
+            <a class="navilist" href="#">SHOPPING</a>
+            <a class="navilist" href="#">BOARD</a>
+            <a class="navicon" href="#"><i class="bi bi-briefcase"></i></a>
+            <a class="navicon" href="#"><i class="bi bi-card-checklist"></i></a>
+            <a class="navicon" href="#"><i class="bi bi-cart"></i></a>
+            <a class="navicon" href="#"><i class="bi bi-pencil"></i></a>
+
         </div>
         <div id="main">
             <div id="login">
@@ -44,33 +52,40 @@
 
             <div id="maincontent" class="textani">
                 <div id="mainName">
-                    <p id="head">제로 베이스<img id="zerowaste" src="./img/zerowaste.png" alt=""></p>
+                    <p id="head">제로 베이스<img id="zerowaste" src="./img/zerobase.png" alt=""></p>
                     <p id="comment">sustainable lifestyle for all</p>
-                    
+
                 </div>
             </div>
             <div id="loginModal" class="modal">
+                <div id="loginform">
                     <div id="loginicon">
                         <i class="bi bi-person"></i>
                     </div>
-                    <div id="loginform">
-                        <form>
-                            <span class="close" onclick="closeModal()">&times;</span>   
-                            <input type="text" placeholder="Username" name="loginid" id="loginid">
-                            <br>
-                            <input type="text" name="loginpw" placeholder="Password" id="loginpw">
-                            <br>
-                            <div id="snsbox">
-                                <a href="https://github.com/ryong123/kdtproject" target="_blank"><div class="sns sns1"></div></a>
-                                <a href="https://account.google.com/" target="_blank"><div class="sns sns2"></div></a>
-                                <a href="https://www.facebook.com/" target="_blank"><div class="sns sns3"></div></a>
-                            </div>
-                            <button id="loginbtnbottom" onclick="login()" type="button">Login</button>
-                        </form>
-                    </div>
+                    <form>
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <input type="text" placeholder="Username" name="loginid" id="loginid">
+                        <br>
+                        <input type="text" name="loginpw" placeholder="Password" id="loginpw">
+                        <br>
+                        <div id="snsbox">
+                            <a href="https://github.com/ryong123/kdtproject" target="_blank">
+                                <div class="sns sns1"></div>
+                            </a>
+                            <a href="https://account.google.com/" target="_blank">
+                                <div class="sns sns2"></div>
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <div class="sns sns3"></div>
+                            </a>
+                        </div>
+                        <button id="loginbtnbottom" onclick="login()" type="button">Login</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
 </body>
- <script src="func.js"></script>
+<script src="func.js"></script>
+
 </html>

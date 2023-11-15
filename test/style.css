@@ -6,6 +6,30 @@
             font-style: normal;
         }
 
+        /* 한국기계연구원원체 */
+        /* font-family: "KIMM_Bold"; */
+
+        /* 전주공예고딕체 */
+        /* font-family: "JeonjuCraftGoR"; */
+
+
+        /* 한국기계연구원체 */
+        @font-face {
+            font-family: "KIMM_Bold";
+            src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2") format("woff2");
+            font-weight: 300;
+            font-style: normal;
+        }
+
+
+        /* 전주공예 고딕체 */
+        @font-face {
+            font-family: "JeonjuCraftGoR";
+            src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/JeonjuCraftGoR.woff2") format("woff2");
+            font-weight: normal;
+            font-style: normal;
+        }
+
         body {
             margin: 0;
             padding: 0;
@@ -36,7 +60,7 @@
             z-index: 100;
             position: fixed;
             top: 0;
-            background-color:rgb(138, 212, 241, 0.4);
+            background-color: rgb(138, 212, 241, 0.6);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -44,7 +68,7 @@
         }
 
 
-        /* 메뉴 */
+        /* 헤더 메뉴 */
         #navi a {
             text-decoration: none;
             padding: 0 4%;
@@ -58,6 +82,11 @@
             color: midnightblue;
         }
 
+        .navicon{
+            display: none;
+        }
+
+        /* 헤더 제외 전체화면 */
         #main {
             color: white;
             height: 100vh;
@@ -66,7 +95,7 @@
         }
 
 
-        /* 로그인-아웃 */
+        /* 로그인-아웃 button */
         #login {
             width: 100%;
             height: 40px;
@@ -92,11 +121,13 @@
             background-color: rgb(138, 212, 241);
         }
 
+        /* 텍스트 전체 div */
         #maincontent {
             width: 100%;
             height: 100%;
         }
 
+        /* 텍스트 div */
         #mainName {
             width: 100%;
             position: absolute;
@@ -115,7 +146,9 @@
             width: 100%;
             text-align: center;
             /* left: 14vw; */
-            font-family: "Cafe24Moyamoya-Face-v1.0";
+            /* font-family: "Cafe24Moyamoya-Face-v1.0"; */
+            font-family: "KIMM_Bold";
+            /* font-family: "JeonjuCraftGoR"; */
         }
 
         /* 웹사이트명 아래 문구 */
@@ -129,15 +162,16 @@
             width: 100%;
             /* left: 18vw; */
             top: 11vh;
-            opacity: 0.7;   
+            opacity: 0.7;
             animation-name: comment;
             animation-duration: 2s;
             animation-iteration-count: 1;
         }
+
         /* zero waste 아이콘 */
-        #zerowaste{
+        #zerowaste {
             position: relative;
-            width: 120px;
+            width: 130px;
             margin-left: 20px;
         }
 
@@ -150,37 +184,51 @@
                 opacity: 0.6;
             }
         }
-        #loginicon {
-            width: 12vw;
-            height: 12vw;
-            border-radius: 50%;
-            background-color: rgb(138, 212, 241);
-            position: absolute;
-            bottom: 65vh;
-            left: 44vw;
-            z-index: 3;
-            display: flex;  
-            align-items: center;
-            justify-content: center;
-            font-size: 9vw;
+
+        /* 로그인 창 (모달)*/
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
         }
 
-        #loginicon>img {
-            width: 80px;
-            height: 80px;
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            align-self: flex-end;
+            justify-self: flex-start;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
         }
 
         #loginform {
             width: 40vw;
             height: 60vh;
+            max-width: 30vw;
+            min-width: 280px;
             background-color: rgba(240, 248, 255, 0.9);
             color: black;
             margin-top: 53px;
-            padding: 30px;
+            padding: 20px;
             border-radius: 40px;
             position: absolute;
             top: 20vh;
-            right:30vw
+            right: 34vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         form {
@@ -191,6 +239,31 @@
             align-items: center;
             /* padding-top: 50px; */
         }
+
+        /* 로그인 폼 */
+        #loginicon {
+            width: 8vw;
+            height: 8vw;
+            max-width: 150px;
+            max-height: 150px;
+            min-width: 100px;
+            min-height: 100px;
+            border-radius: 50%;
+            background-color: rgb(138, 212, 241);
+            position: absolute;
+            bottom: 52vh;
+            z-index: 3;
+            text-align: center;
+            line-height: 14vh;
+        }
+
+        #loginicon i {
+            color: white;
+            font-size: 6vw;
+
+        }
+
+
 
         #loginid,
         #loginpw {
@@ -262,9 +335,15 @@
             border-radius: 5px;
         }
 
-        
-        /* 미디어 쿼리 */
+
+        /* 미디어 쿼리 태블릿 */
         @media screen and (max-width:768px) {
+            #main {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
             #mainName {
                 width: 100%;
                 position: absolute;
@@ -274,6 +353,7 @@
                 top: 40vh;
                 z-index: 90;
             }
+
             #head {
                 display: inline-block;
                 font-family: 'Cafe24Moyamoya-Face-v1.0';
@@ -285,30 +365,75 @@
             }
 
             #comment {
-            display: inline-block;
-            font-size: 20px;
-            line-height: 80px;
-            position: absolute;
-            text-align: center;
-            font-size: 3vw;
-            width: 100%;
-            top: 11vh;
-            right: 0;
-            opacity: 0.7;   
-            animation-name: comment;
-            animation-duration: 2s;
-            animation-iteration-count: 1;
+                display: inline-block;
+                font-size: 20px;
+                line-height: 80px;
+                position: absolute;
+                text-align: center;
+                font-size: 3vw;
+                width: 100%;
+                top: 11vh;
+                right: 0;
+                opacity: 0.7;
+                animation-name: comment;
+                animation-duration: 2s;
+                animation-iteration-count: 1;
             }
-            #zerowaste{
+
+            #zerowaste {
                 position: relative;
                 width: 17vw;
                 margin-left: 20px;
             }
+
+            #navy {
+                justify-content: space-between;
+            }
+
             #navi a {
                 text-decoration: none;
                 font-size: 80%;
-                padding: 0 30px;
+                /* padding: 0 7vw; */
                 color: white;
+            }
+
+
+            /* 로그인 폼 */
+            #loginicon {
+                line-height: 14 vh;
+            }
+
+            #loginicon i {
+                color: white;
+                font-size: 8vh;
+
+            }
+
+            #loginform {
+                width: 40vw;
+                height: 60vh;
+                max-width: 30vw;
+                min-width: 280px;
+                background-color: rgba(240, 248, 255, 0.9);
+                color: black;
+                margin-top: 53px;
+                padding: 20px;
+                border-radius: 40px;
+                position: absolute;
+                top: 20vh;
+                right: calc(50vw - 140px);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            form {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
 
             #login {
@@ -330,9 +455,9 @@
                 margin-top: 0;
                 border-radius: 40px;
             }
-            
         }
 
+        /* 미디어쿼리 모바일 */
         @media screen and (max-width : 470px) {
             #mainName {
                 width: 100%;
@@ -343,6 +468,7 @@
                 top: 40vh;
                 z-index: 90;
             }
+
             #head {
                 display: inline-block;
                 font-family: 'Cafe24Moyamoya-Face-v1.0';
@@ -353,20 +479,50 @@
                 top: 13vh;
                 right: 0;
             }
+
             #comment {
                 display: none;
             }
-            #zerowaste{
+
+            #zerowaste {
                 position: absolute;
                 width: 40vw;
                 bottom: 10vh;
                 right: 30vw;
             }
+
+            #loginicon {
+                line-height: 14 vh;
+            }
+
+            #loginicon i {
+                color: white;
+                font-size: 8vh;
+
+            }
+
             #navi a {
                 text-decoration: none;
                 font-size: 3.3vw;
-                padding: 0 30px;
+                padding: 0 3vw;
                 color: white;
+            }
+
+            #loginform {
+                width: 40vw;
+                height: 60vh;
+                min-width: 300px;
+                min-width: 280px;
+                background-color: rgba(240, 248, 255, 0.9);
+                color: black;
+                margin-top: 53px;
+                padding: 20px;
+                border-radius: 40px;
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
 
             #login {
@@ -374,11 +530,11 @@
                 height: 40px;
                 position: fixed;
                 margin-top: 0px;
-                bottom: 100px;
+                bottom: 180px;
                 text-align: center;
             }
 
-                #login>button {
+            #login>button {
                 color: rgb(138, 212, 241);
                 background-color: white;
                 border: none;
@@ -388,30 +544,17 @@
                 margin-top: 0;
                 border-radius: 40px;
             }
-        }
-        /* 로그인 창 */
-        .modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-        
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            align-self: flex-end;
-            justify-self: flex-start;
-        }
-        
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
+
+            #navi a {
+                text-decoration: none;
+                padding: 0 10%;
+                color: white;
+                font-size: 25px;
+            }
+            .navilist{
+                display: none;
+            }
+            .navicon{
+                display: block;
+            }
         }
