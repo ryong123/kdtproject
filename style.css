@@ -213,16 +213,18 @@ body {
 
 #loginform {
   width: 40vw;
-  height: 60vh;
+  height: 400px;
   max-width: 30vw;
   min-width: 280px;
+  min-height: 400px;
+  max-height: 400px;
   background-color: rgba(240, 248, 255, 0.9);
   color: black;
   margin-top: 53px;
   padding: 20px;
   border-radius: 40px;
   position: absolute;
-  top: 20vh;
+  top: 131.84px;
   right: 34vw;
   display: flex;
   flex-direction: column;
@@ -241,8 +243,8 @@ form {
 
 /* 로그인 폼 */
 #loginicon {
-  width: 8vw;
-  height: 8vw;
+  width: 100px;
+  height: 100px;
   max-width: 150px;
   max-height: 150px;
   min-width: 100px;
@@ -250,15 +252,15 @@ form {
   border-radius: 50%;
   background-color: rgb(138, 212, 241);
   position: absolute;
-  bottom: 52vh;
+  top: -50px;
   z-index: 3;
   text-align: center;
-  line-height: 14vh;
+  line-height: 100px;
 }
 
 #loginicon i {
   color: white;
-  font-size: 6vw;
+  font-size: 50px;
 }
 
 #loginid,
@@ -350,12 +352,12 @@ form {
 
   #head {
     display: inline-block;
-    font-family: "Cafe24Moyamoya-Face-v1.0";
     text-shadow: black 1px 0 10px;
     width: 100%;
     text-align: center;
     font-size: 10vw;
     right: 0;
+    font-family: "KIMM_Bold";
   }
 
   #comment {
@@ -393,12 +395,24 @@ form {
 
   /* 로그인 폼 */
   #loginicon {
-    line-height: 14 vh;
+    width: 100px;
+    height: 100px;
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    background-color: rgb(138, 212, 241);
+    position: absolute;
+    top: -50px;
+    z-index: 3;
+    text-align: center;
+    line-height: 100px;
   }
 
   #loginicon i {
     color: white;
-    font-size: 8vh;
+    font-size: 50px;
   }
 
   #loginform {
@@ -412,7 +426,7 @@ form {
     padding: 20px;
     border-radius: 40px;
     position: absolute;
-    top: 20vh;
+    top: 131.84px;
     right: calc(50vw - 140px);
     display: flex;
     flex-direction: column;
@@ -433,7 +447,7 @@ form {
     height: 40px;
     position: fixed;
     margin-top: 0px;
-    bottom: 100px;
+    top: 500px;
     text-align: center;
   }
 
@@ -444,6 +458,7 @@ form {
     font-size: 16px;
     font-weight: 500;
     padding: 0 60px;
+    margin-right: 0;
     margin-top: 0;
     border-radius: 40px;
   }
@@ -463,13 +478,13 @@ form {
 
   #head {
     display: inline-block;
-    font-family: "Cafe24Moyamoya-Face-v1.0";
     text-shadow: black 1px 0 10px;
     width: 100%;
     text-align: center;
     font-size: 10vw;
     top: 13vh;
     right: 0;
+    font-family: "KIMM_Bold";
   }
 
   #comment {
@@ -489,7 +504,7 @@ form {
 
   #loginicon i {
     color: white;
-    font-size: 8vh;
+    font-size: 50px;
   }
 
   #navi a {
@@ -521,7 +536,7 @@ form {
     height: 40px;
     position: fixed;
     margin-top: 0px;
-    bottom: 180px;
+    top: 500px;
     text-align: center;
   }
 
@@ -532,13 +547,14 @@ form {
     font-size: 16px;
     font-weight: 500;
     padding: 0 60px;
+    margin-right: 0;
     margin-top: 0;
     border-radius: 40px;
   }
 
   #navi a {
     text-decoration: none;
-    padding: 0 10%;
+    padding: 0 8%;
     color: white;
     font-size: 25px;
   }
