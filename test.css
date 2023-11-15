@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #222;
+  opacity: 0;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.text-particle {
+  font-size: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.particle {
+  display: inline-block;
+  position: absolute;
+  animation: move 4s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(
+      calc(100px * (2 * random() - 1)),
+      calc(-100px * random())
+    );
+  }
+}

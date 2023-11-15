@@ -1,0 +1,341 @@
+@font-face {
+  font-family: "EASTARJET-Medium";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/EASTARJET-Medium.woff2")
+    format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Orbit-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Orbit-Regular.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "KIMM_Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "JeonjuCraftGoR";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/JeonjuCraftGoR.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  /* 이스타 항공체 300 500 900*/
+  /* font-family: "EASTARJET-Medium"; */
+
+  /* 오르빗체  */
+  /* font-family: "Orbit-Regular"; */
+
+  /* 한국기계연구원원체 */
+  /* font-family: "KIMM_Bold"; */
+
+  /* 전주공예고딕체 */
+  /* font-family: "JeonjuCraftGoR"; */
+
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 767px) {
+  #navi {
+    width: 100%;
+    height: 50px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.28);
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    background-color: rgba(173, 216, 230, 0.47);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+
+  /* 메뉴 */
+  #navi a {
+    text-decoration: none;
+    padding: 0 4%;
+    color: white;
+    font-size: 17px;
+  }
+
+  /* 메뉴 호버 */
+  #navi a:hover {
+    text-shadow: midnightblue 1px 0 15px;
+    color: midnightblue;
+  }
+
+  /* 각각 타이틀 제목 */
+
+  h3 {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
+  h4 {
+    color: gray;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    line-height: 1;
+  }
+  /* 타이틀 밑에 있는 내용 */
+
+  .blank {
+    color: red;
+    opacity: 0.5;
+  }
+  .subbox1 {
+    margin-top: 75px;
+    margin-bottom: 10px;
+  }
+  .subbox1 p {
+    font-size: 1.1rem;
+    color: gray;
+  }
+  .subbox1 span {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .accept- {
+    width: 100%;
+    line-height: 50px;
+    height: 50px;
+    background-color: gainsboro;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #accept {
+    overflow: scroll;
+    text-align: left;
+    width: 100%;
+    height: 300px;
+    border: none;
+    padding: 1.5rem 1.5rem;
+    line-height: 1.3;
+    overflow-x: hidden;
+  }
+  .sub-text {
+    font-size: 0.6rem;
+    color: gray;
+    line-height: 40px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    padding: 15px 0px;
+  }
+
+  .header-line {
+    width: 80%;
+    padding: 65px 0 0 0px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  /* 각input값 */
+
+  /* 이름 */
+  .name-box {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .name-value {
+    text-overflow: ellipsis;
+    padding-left: 15px;
+    background-color: #f8f8f8;
+    border: 1px solid gainsboro;
+    height: 50px;
+    min-width: 150px; /* 최소 넓이는 50px */
+    max-width: 100px; /* 최대 넓이는 200px */
+  }
+  .value {
+    text-overflow: ellipsis;
+    text-align: center;
+    background-color: #f8f8f8;
+    border: 1px solid gainsboro;
+    height: 50px;
+    max-width: 15%;
+    min-width: 15%;
+  }
+  .main-contetnt {
+    min-width: 100%;
+    margin: 0 auto;
+  }
+
+  .call {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .call p {
+  }
+  .call- {
+    line-height: 50px;
+    padding: 0 10px;
+  }
+  .call-box {
+    display: flex;
+    width: 100%;
+  }
+
+  .email {
+    width: 80%;
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .emaillabel {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .email-box {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    text-align: end;
+  }
+
+  .email-value {
+    border: 1px solid gainsboro;
+    background-color: #f8f8f8;
+    height: 50px;
+    padding-left: 15px;
+    max-width: 30%;
+  }
+  .email-value2 {
+    padding-left: 15px;
+    margin-top: 30px;
+    min-width: 55%;
+    background-color: #f8f8f8;
+    border: 1px solid gainsboro;
+    height: 50px;
+  }
+
+  .subbox {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    padding: 35px 0px 15px 0px;
+  }
+
+  .underline {
+    width: 80%;
+    border-bottom: 2.3px solid gainsboro;
+    padding-bottom: 10px;
+    margin: 0 auto;
+  }
+  .boldunderline {
+    width: 80%;
+    border-bottom: 3px solid black;
+
+    margin: 0 auto;
+  }
+
+  .제목 {
+    width: 100%;
+    background-color: #f8f8f8;
+    border: none;
+    height: 50px;
+  }
+
+  .titlebox {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #title {
+    padding-left: 15px;
+    border: 1px solid gainsboro;
+  }
+
+  .content {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .content-box {
+    width: 100%;
+  }
+  .content-value {
+    padding-top: 15px;
+    padding-left: 15px;
+    width: 100%;
+    background-color: #f8f8f8;
+    border: 1px solid gainsboro;
+    height: 250px;
+    resize: none;
+  }
+  #accept-text {
+    font-size: 0.6rem;
+    line-height: 1;
+  }
+
+  .checkbox {
+    width: 100%;
+  }
+
+  .checkbox button {
+    display: block;
+    margin: 0 auto;
+  }
+  .tableContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .checkboxcontainer {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .checkbox input[type="checkbox"]:checked {
+    background-color: #87ceeb;
+  }
+  .checkbox span {
+    line-height: 90px;
+    min-width: 100%;
+  }
+
+  .submmitbox {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 15px auto 0 auto;
+  }
+
+  .submmit {
+    text-align: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 35px;
+    border: 3px solid gainsboro;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 1.3rem;
+  }
+  .submmit:focus {
+    background-color: #87ceeb;
+  }
+  .submmit:hover {
+    background-color: #87ceeb;
+  }
+}
