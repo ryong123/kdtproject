@@ -3,14 +3,6 @@
 **/
 
 
-
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Inter',
     sans-serif;
@@ -50,11 +42,6 @@ h3 {
   color: white;
   padding: 20px 60px;
   margin-bottom: 30px;
-}
-
-a:hover {
-  text-shadow: midnightblue 1px 0 15px;
-  color: midnightblue;
 }
 
 /**
@@ -111,7 +98,7 @@ a:hover {
 
 .item {
   border-radius: 4px;
-  border: 3px solid #cfd6ea;
+  border: 2px solid #cfd6ea;
 
 }
 
@@ -139,7 +126,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .buttons {
@@ -147,7 +134,6 @@ a:hover {
   flex-direction: row;
   gap: 8px;
   font-size: 16px;
-  bottom: 0;
 }
 
 .bi-dash-lg {
@@ -211,7 +197,6 @@ a:hover {
   border: 2px solid #212529;
   border-radius: 5px;
   display: flex;
-  justify-content: center;
 }
 
 /**
@@ -241,6 +226,7 @@ a:hover {
   color: white;
   border-radius: 4px;
   padding: 3px 6px;
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
 }

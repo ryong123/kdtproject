@@ -98,6 +98,7 @@ let removeItem = (id) => {
   generateCartItems();
   totalAmount();
   calculation();
+  // not exist
   localStorage.setItem("data", JSON.stringify(basket));
   // console.log(selectedItem.id);
 };
@@ -105,6 +106,7 @@ let clearCart = () => {
   basket = [];
   generateCartItems();
   calculation();
+  // not exist
   localStorage.setItem("data", JSON.stringify(basket));
 };
 
