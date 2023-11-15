@@ -1,9 +1,12 @@
+/* 모바일 화면 임포트 */
 @import url(./board.moblie.css);
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
+
+/* 미디어쿼리 시작 PC화면 */
 
 @media screen and (min-width: 767px) {
   #navi {
