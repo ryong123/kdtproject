@@ -99,7 +99,7 @@
 
 
         /* 로그인-아웃 button */
-        #navi button {
+        .topbtn{
           border-radius: 40px;
           color: white;
           background-color: transparent;
@@ -110,12 +110,21 @@
           position: absolute;
           right: 5vw;
         }
-
-        #loginbtn:hover,
-        #logoutbtn:hover {
+        #btnbottom{
+          width: 100%;
+          height: 50px;
+          position: absolute;
+          top: 500px;
+          text-align: center;
+        }
+        .bottombtn{
+          display: none;
+        }
+        .topbtn:hover{
           text-shadow: midnightblue 1px 0 15px;
           color: midnightblue;
         }
+
 
         /* 텍스트 전체 div */
         #maincontent {
@@ -285,7 +294,6 @@
           height: 40px;
           display: flex;
           justify-content: space-evenly;
-
         }
 
         .sns {
@@ -310,7 +318,7 @@
           background-size: cover;
         }
 
-        #loginbtnbottom {
+        #loginformbtn {
           background-color: midnightblue;
           color: white;
           border: none;
@@ -319,7 +327,7 @@
           border-radius: 5px;
         }
 
-        #loginbtnbottom:hover {
+        #loginformbtn:hover {
           color: midnightblue;
           /* box-shadow: black 1px 0 6px; */
           background-color: white;
@@ -407,12 +415,10 @@
             text-align: center;
             line-height: 100px;
           }
-
           #loginicon i {
             color: white;
             font-size: 50px;
           }
-
           #loginform {
             width: 40vw;
             height: 60vh;
@@ -431,7 +437,6 @@
             justify-content: center;
             align-items: center;
           }
-
           form {
             width: 100%;
             height: 100%;
@@ -440,28 +445,38 @@
             align-items: center;
           }
 
-          #login {
+          /* 로그인 버튼 */
+          #navi button{
+            display: none;
+          }
+
+          #btnbottom {
             width: 100%;
             height: 40px;
             position: fixed;
             margin-top: 0px;
             top: 500px;
             text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
 
-          #login>button {
+          .bottombtn {
             color: rgb(138, 212, 241);
+            display: block;
             background-color: white;
             border: none;
             font-size: 16px;
             font-weight: 500;
-            padding: 0 60px;
+            padding: 6px 40px;
             margin-right: 0;
             margin-top: 0;
             border-radius: 40px;
+            font-weight: 700;
           }
         }
-
+        
         /* 미디어쿼리 모바일 */
         @media screen and (max-width : 470px) {
           #mainName {
@@ -530,7 +545,7 @@
             align-items: center;
           }
 
-          #login {
+          #btnbottom {
             width: 100%;
             height: 40px;
             position: fixed;
@@ -539,13 +554,13 @@
             text-align: center;
           }
 
-          #login>button {
+          .bottombtn {
             color: rgb(138, 212, 241);
             background-color: white;
             border: none;
             font-size: 16px;
             font-weight: 500;
-            padding: 0 60px;
+            padding: 6px 40px;
             margin-right: 0;
             margin-top: 0;
             border-radius: 40px;
@@ -564,5 +579,30 @@
 
           .navicon {
             display: block;
+          }
+          #btnbottom {
+            width: 100%;
+            height: 40px;
+            position: fixed;
+            margin-top: 0px;
+            top: 500px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+            
+
+          .bottombtn {
+            color: rgb(138, 212, 241);
+            display: block;
+            background-color: white;
+            border: none;
+            font-size: 16px;
+            font-weight: 700;
+            padding: 6px 40px;
+            margin-right: 0;
+            margin-top: 0;
+            border-radius: 40px;
           }
         }
