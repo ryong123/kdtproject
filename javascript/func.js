@@ -38,7 +38,7 @@ function login() {
             inputId.value = '';
             inputPw.value = '';
             alert('로그인을 성공했습니다.');
-            location.href = "http://127.0.0.1:5500/index.html";
+            location.href = "http://127.0.0.1:5501/index.html";
         } else {
             inputId.value = '';
             inputPw.value = '';
