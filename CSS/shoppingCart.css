@@ -2,14 +2,10 @@
 * !changing default styleof the browser
 **/
 
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter',
+    sans-serif;
 }
 
 i {
@@ -21,15 +17,20 @@ a {
   color: white;
   font-size: 17px;
   padding: 0 4%;
+
 }
 
 h3 {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: 'Noto Sans KR',
+    sans-serif;
+
 }
+
 
 /**
 * !changing default styleof the browser
 **/
+
 
 .navbar {
   display: flex;
@@ -41,11 +42,6 @@ h3 {
   color: white;
   padding: 20px 60px;
   margin-bottom: 30px;
-}
-
-a:hover {
-  text-shadow: midnightblue 1px 0 15px;
-  color: midnightblue;
 }
 
 /**
@@ -85,15 +81,16 @@ a:hover {
   /*columm 4개를 만들었다. 각각은 233px 사이즈를 가진다.*/
 
   /** *!이거 4개에서 8개로 만들어 div도 8개로 늘릴 것.**/
+
 }
 
-@media (max-width: 1000px) {
+@media(max-width: 1000px) {
   .shop {
     grid-template-columns: repeat(2, 223px);
   }
 }
 
-@media (max-width: 500px) {
+@media(max-width: 500px) {
   .shop {
     grid-template-columns: repeat(1, 223px);
   }
@@ -101,7 +98,8 @@ a:hover {
 
 .item {
   border-radius: 4px;
-  border: 3px solid #cfd6ea;
+  border: 2px solid #cfd6ea;
+
 }
 
 .item:hover,
@@ -128,7 +126,7 @@ a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .buttons {
@@ -136,16 +134,17 @@ a:hover {
   flex-direction: row;
   gap: 8px;
   font-size: 16px;
-  bottom: 0;
 }
 
 .bi-dash-lg {
   color: red;
+
 }
 
 .bi-plus-lg {
   color: green;
 }
+
 
 /**
 *!start rules for label and some buttons
@@ -198,7 +197,6 @@ a:hover {
   border: 2px solid #212529;
   border-radius: 5px;
   display: flex;
-  justify-content: center;
 }
 
 /**
@@ -228,6 +226,7 @@ a:hover {
   color: white;
   border-radius: 4px;
   padding: 3px 6px;
+  position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
 }
