@@ -14,7 +14,7 @@ document.getElementById("loginbtn").addEventListener("click", function () {
 function logout() {
   localStorage.removeItem("loggedIn");
   alert("로그아웃 되었습니다.");
-  location.href = "index.html";
+  location.href = "http://127.0.0.1:5501/HTML/board.html";
 }
 
 var id = ["aaaa", "bbbb", "cccc"];
@@ -37,7 +37,7 @@ function login() {
       inputId.value = "";
       inputPw.value = "";
       alert("로그인을 성공했습니다.");
-      location.href = "http://127.0.0.1:5501/index.html";
+      location.href = "http://127.0.0.1:5501/HTML/board.html";
     } else {
       inputId.value = "";
       inputPw.value = "";

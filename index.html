@@ -51,23 +51,25 @@
   <body>
     <div id="container">
       <div id="navi">
-        <a class="navilist" href="#">ABOUT US</a>
-        <a class="navilist" href="#">QUEST</a>
-        <a class="navilist" href="#">SHOPPING</a>
-        <a class="navilist" href="#">BOARD</a>
-        <a class="navicon" href="#"><i class="bi bi-briefcase"></i></a>
-        <a class="navicon" href="#"><i class="bi bi-card-checklist"></i></a>
-        <a class="navicon" href="#"><i class="bi bi-cart"></i></a>
-        <a class="navicon" href="#"><i class="bi bi-pencil"></i></a>
+        <a class="navilist" href="index.html">HOME</a>
+        <!-- <a class="navilist" href="#"></a> -->
+        <a class="navilist" href="./HTML/list2_htm.html">QUEST</a>
+        <a class="navilist" href="./HTML/shoppingCart.html">SHOPPING</a>
+        <a class="navilist" href="./HTML/board.html">BOARD</a>
+        <a class="navicon" href="index.html"><i class="bi bi-briefcase"></i></a>
+        <a class="navicon" href="./HTML/list2_htm.html"
+          ><i class="bi bi-card-checklist"></i
+        ></a>
+        <a class="navicon" href="HTML/shoppingCart.html"
+          ><i class="bi bi-cart"></i
+        ></a>
+        <a class="navicon" href="./HTML/board.html"
+          ><i class="bi bi-pencil"></i
+        ></a>
+        <button type="button" id="loginbtn">LOGIN</button>
+        <button type="button" id="logoutbtn" onclick="logout()">LOGOUT</button>
       </div>
       <div id="main">
-        <div id="login">
-          <button type="button" id="loginbtn">Login</button>
-          <button type="button" id="logoutbtn" onclick="logout()">
-            Logout
-          </button>
-        </div>
-
         <div id="maincontent" class="textani">
           <div id="mainName">
             <p id="head">
@@ -124,5 +126,6 @@
       </div>
     </div>
   </body>
+  <script src="./javascript/login.js"></script>
   <script src="./javascript/func.js"></script>
 </html>
