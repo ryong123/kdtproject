@@ -50,42 +50,58 @@
 
   <body>
     <div id="container">
-      <div id="navi">
-        <a class="navilist" href="index.html">HOME</a>
-        <!-- <a class="navilist" href="#"></a> -->
-        <a class="navilist" href="./HTML/list2_htm.html">QUEST</a>
-        <a class="navilist" href="./HTML/shoppingCart.html">SHOPPING</a>
-        <a class="navilist" href="./HTML/board.html">BOARD</a>
-        <a class="navicon" href="index.html"><i class="bi bi-briefcase"></i></a>
-        <a class="navicon" href="./HTML/list2_htm.html"
-          ><i class="bi bi-card-checklist"></i
-        ></a>
-        <a class="navicon" href="HTML/shoppingCart.html"
-          ><i class="bi bi-cart"></i
-        ></a>
-        <a class="navicon" href="./HTML/board.html"
-          ><i class="bi bi-pencil"></i
-        ></a>
-        <button type="button" id="loginbtn">LOGIN</button>
-        <button type="button" id="logoutbtn" onclick="logout()">LOGOUT</button>
-      </div>
-      <div id="main">
-        <div id="maincontent" class="textani">
-          <div id="mainName">
-            <p id="head">
-              제로 베이스<img
-                id="zerowaste"
-                src="./img/index-img/zerobase.png"
-                alt=""
-              />
-            </p>
-            <p id="comment">sustainable lifestyle for all</p>
-          </div>
+
+
+        <div id="navi">
+            <a class="navilist" href="index.html">HOME</a>
+            <!-- <a class="navilist" href="#"></a> -->
+            <a class="navilist" href="./HTML/list2_htm.html">QUEST</a>
+            <a class="navilist" href="./HTML/shoppingCart.html">SHOPPING</a>
+            <a class="navilist" href="./HTML/board.html">BOARD</a>
+            <a class="navicon" href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a class="navicon" href="./HTML/list2_htm.html"><i class="bi bi-card-checklist"></i></a>
+            <a class="navicon" href="HTML/shoppingCart.html"><i class="bi bi-cart"></i></a>
+            <a class="navicon" href="./HTML/board.html"><i class="bi bi-pencil"></i></a>
+            <button type="button" class="topbtn" id="loginbtn">LOGIN</button>
+            <button type="button" class="topbtn" id="logoutbtn" onclick="logout()">LOGOUT</button>
         </div>
-        <div id="loginModal" class="modal">
-          <div id="loginform">
-            <div id="loginicon">
-              <i class="bi bi-person"></i>
+        <div id="main">
+            <div id="maincontent" class="textani">
+                <div id="mainName">
+                    <p id="head">제로 베이스<img id="zerowaste" src="./img/index-img/zerobase.png" alt=""></p>
+                    <p id="comment">sustainable lifestyle for all</p>
+                </div>
+                <div id="btnbottom">
+                    <button type="button" id="bottomlogin" class="bottombtn">LOGIN</button>
+                    <button type="button" id="bottomlogout" class="bottombtn" onclick="logout()">LOGOUT</button>
+                </div>
+            </div>
+            <div id="loginModal" class="modal">
+                <div id="loginform">
+                    <div id="loginicon">
+                        <i class="bi bi-person"></i>
+                    </div>
+                    <form>
+                        <span class="close" onclick="closeModal()">&times;</span>
+                        <input type="text" placeholder="Username" name="loginid" id="loginid">
+                        <br>
+                        <input type="text" name="loginpw" placeholder="Password" id="loginpw">
+                        <br>
+                        <div id="snsbox">
+                            <a href="https://github.com/ryong123/kdtproject" target="_blank">
+                                <div class="sns sns1"></div>
+                            </a>
+                            <a href="https://account.google.com/" target="_blank">
+                                <div class="sns sns2"></div>
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <div class="sns sns3"></div>
+                            </a>
+                        </div>
+                        <button id="loginformbtn" onclick="login()" type="button">Login</button>
+                    </form>
+                </div>
+
             </div>
             <form>
               <span class="close" onclick="closeModal()">&times;</span>
