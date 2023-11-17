@@ -1,0 +1,532 @@
+* {
+    font-family: "JeonjuCraftGoR";
+}
+
+/* 한국기계연구원원체 */
+/* font-family: "KIMM_Bold"; */
+
+/* 전주공예고딕체 */
+/* font-family: "JeonjuCraftGoR"; */
+
+
+/* 한국기계연구원체 */
+@font-face {
+    font-family: "KIMM_Bold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+/* 전주공예 고딕체 */
+@font-face {
+    font-family: "JeonjuCraftGoR";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/JeonjuCraftGoR.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* 전체 배경 설정 */
+#container {
+    width: 100%;
+    height: 100vh;
+    /* 배경 설정 */
+    background: linear-gradient(rgb(138, 212, 241, 0.3), rgba(81, 81, 81, 0.2)),
+        url(/img/index-img/backgroundcity.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backface-visibility: hidden;
+    overflow: hidden;
+    /* 폰트 */
+}
+
+/* 고정 헤더 */
+#navi {
+    width: 100%;
+    height: 50px;
+    z-index: 100;
+    position: fixed;
+    top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+
+/* 헤더 메뉴 */
+#navi a {
+    text-decoration: none;
+    padding: 0 4%;
+    color: white;
+    font-size: 17px;
+}
+
+/* 메뉴 호버 */
+#navi a:hover {
+    text-shadow: midnightblue 1px 0 15px;
+    color: midnightblue;
+}
+
+.navicon {
+    display: none;
+}
+
+/* 헤더 제외 전체화면 */
+#main {
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+/* 로그인 창 (모달)*/
+.modal {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* 회원가입 폼 정렬 */
+
+.signupform {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    align-self: flex-end;
+    justify-self: flex-start;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#loginform {
+    width: 500px;
+    height: 600px;
+    background-color: rgba(240, 248, 255, 0.9);
+    color: black;
+    margin-top: 53px;
+    padding: 20px;
+    border-radius: 40px;
+    position: absolute;
+    top: calc(50vh - 330px);
+    right: calc(50vw - 250px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    /* padding-top: 50px; */
+}
+
+/* 로그인 폼 */
+#loginicon {
+    width: 100px;
+    height: 100px;
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    background-color: rgb(138, 212, 241);
+    position: absolute;
+    top: -50px;
+    z-index: 3;
+    text-align: center;
+    line-height: 110px;
+}
+
+#loginicon i {
+    color: white;
+    font-size: 50px;
+}
+
+input {
+    background-color: white;
+    border: none;
+    padding: 12px 30px;
+    width: 70%;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#inputlist1 {
+    /* border: 1px solid black; */
+    width: 350px;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 20px; */
+    /* overflow: hidden; */
+}
+
+#divInputName {
+    /* border: 1px solid blue; */
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0;
+    text-decoration-style: solid;
+    margin-bottom: 10px;
+}
+
+#divInputName img {
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    width: 25px;
+}
+
+#name {
+    padding-left: 70px;
+    width: 100%;
+}
+
+#nametext {
+    align-self: flex-start;
+}
+
+#divInputNum {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0;
+    text-decoration-style: solid;
+    margin-bottom: 10px;
+}
+
+#divInputNum img {
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    width: 22px;
+}
+
+#number {
+    padding-left: 70px;
+    width: 100%;
+}
+
+#teltext {
+    align-self: flex-start;
+}
+
+#divInputEmail {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration-style: solid;
+    margin-bottom: 30px;
+}
+
+#divInputEmail img {
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    width: 25px;
+}
+
+#email {
+    padding-left: 70px;
+    padding-right: 30px;
+    width: 100%;
+}
+
+#emailtext {
+    align-self: flex-start;
+}
+
+#divInputId {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0;
+    text-decoration-style: solid;
+    margin-bottom: 10px;
+}
+
+#divInputId img {
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    width: 25px;
+}
+
+#id {
+    padding-left: 70px;
+    width: 100%;
+}
+
+#idtext {
+    align-self: flex-start;
+}
+
+#divInputPw {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0;
+    text-decoration-style: solid;
+    margin-bottom: 10px;
+}
+
+#divInputPw img {
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    width: 25px;
+}
+
+#pw {
+    padding-left: 70px;
+    width: 100%;
+}
+
+#pwtext {
+    align-self: flex-start;
+}
+
+/* signup 버튼 */
+#signupbtn {
+    background-color: midnightblue;
+    color: white;
+    border: none;
+    margin-top: 30px;
+    padding: 8px 3vw;
+    border-radius: 5px;
+}
+
+#signupbtn:hover {
+    color: midnightblue;
+    background-color: white;
+    border: none;
+    padding: 8px 3vw;
+    border-radius: 5px;
+}
+
+
+/* 미디어 쿼리 태블릿 */
+@media screen and (max-width:768px) {
+    #main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    /* 로그인 폼 */
+    #loginicon {
+        width: 100px;
+        height: 100px;
+        max-width: 150px;
+        max-height: 150px;
+        min-width: 100px;
+        min-height: 100px;
+        border-radius: 50%;
+        background-color: rgb(138, 212, 241);
+        position: absolute;
+        top: -50px;
+        z-index: 3;
+        text-align: center;
+        line-height: 110px;
+    }
+
+    #loginicon i {
+        color: white;
+        font-size: 50px;
+    }
+
+    #loginform {
+        width: 400px;
+        height: 600px;
+        background-color: rgba(240, 248, 255, 0.9);
+        color: black;
+        margin-top: 53px;
+        padding: 20px;
+        border-radius: 40px;
+        position: absolute;
+        top: calc(50vh - 330px);
+        right: calc(50vw - 200px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #signupbtn {
+        background-color: midnightblue;
+        color: white;
+        border: none;
+        margin-top: 30px;
+        padding: 8px 3.5vw;
+        border-radius: 5px;
+    }
+
+    #signupbtn:hover {
+        color: midnightblue;
+        background-color: white;
+        border: none;
+        padding: 8px 3.5vw;
+        border-radius: 5px;
+    }
+
+    #inputlist1 {
+        width: 300px;
+        max-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+    /* 로그인 버튼 */
+    #navi button {
+        display: none;
+    }
+
+    #navi a {
+        text-decoration: none;
+        padding: 0 8%;
+        color: white;
+        font-size: 25px;
+    }
+
+    .navilist {
+        display: none;
+    }
+
+    .navicon {
+        display: block;
+    }
+
+
+}
+
+/* 미디어쿼리 모바일 */
+@media screen and (max-width : 470px) {
+    #loginicon i {
+        color: white;
+        font-size: 50px;
+    }
+
+    #loginform {
+        width: 300px;
+        height: 580px;
+        background-color: rgba(240, 248, 255, 0.9);
+        color: black;
+        padding: 20px;
+        border-radius: 40px;
+        top: calc(50vh - 270px);
+        left: calc(50vw - 150px);
+        margin-top: 0;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form {
+        width: 100%;
+        height: 100%;
+    }
+
+    #inputlist1 {
+        margin-top: 10px;
+        /* border: 1px solid black; */
+        width: 220px;
+        max-height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* border-radius: 20px; */
+        /* overflow: hidden; */
+    }
+
+    #navi a {
+        text-decoration: none;
+        padding: 0 8%;
+        color: white;
+        font-size: 25px;
+    }
+
+    .navilist {
+        display: none;
+    }
+
+    .navicon {
+        display: block;
+    }
+
+    #signupbtn {
+        background-color: midnightblue;
+        color: white;
+        border: none;
+        margin-top: 20px;
+        padding: 8px 3vw;
+        border-radius: 5px;
+    }
+
+}
