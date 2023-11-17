@@ -1,15 +1,9 @@
 $(window).on("load", function () {
-
-
-    if (localStorage.getItem('loggedIn')) {
-        $('#loginbtn').css("display", "none");
-        $('#bottomlogin').css("display", "none");
-
-    } else {
-        $('#logoutbtn').css("display", "none");
-        $('#bottomlogout').css("display", "none");
-    }
-
+  if (localStorage.getItem("loggedIn")) {
+    $("#loginbtn").css("display", "none");
+  } else {
+    $("#logoutbtn").css("display", "none");
+  }
 });
 
 // Open modal function (move it outside the window load block)
@@ -18,7 +12,7 @@ document.getElementById("loginbtn").addEventListener("click", function () {
 });
 
 document.getElementById("bottomlogin").addEventListener("click", function () {
-    document.getElementById("loginModal").style.display = "block";
+  document.getElementById("loginModal").style.display = "block";
 });
 
 function logout() {
