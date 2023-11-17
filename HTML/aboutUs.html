@@ -35,6 +35,18 @@
       rel="stylesheet"
       href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
 
     <style>
       * {
@@ -61,6 +73,7 @@
       .p-125 {
       }
 
+      /* 섹션 1 시작*/
       .btn-area {
         padding: 10px 20px;
         margin-top: 15px;
@@ -81,14 +94,13 @@
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center center;
-        color: #fff;
         position: relative;
         z-index: 1;
       }
 
       .section-one h1 {
-        font-size: 50px;
         text-transform: uppercase;
+        font-size: 50px;
         margin: 0;
       }
 
@@ -96,6 +108,11 @@
         width: 100%;
         font-size: 20px;
       }
+      .s-1-fontcolor {
+        color: #fcfcfc;
+      }
+
+      /* 맨 위 애니메이션 배경 */
       #animatedDiv {
         overflow-x: hidden;
         width: 800px; /* 초기 너비 */
@@ -105,7 +122,6 @@
         left: 50%; /* 부모 요소 기준 왼쪽에서 50% 위치 */
         transform: translateX(-50%); /* 자신의 너비의 절반만큼 왼쪽으로 이동 */
         transition: all 0.8s ease; /* 애니메이션 효과 */
-        background-color: cadetblue;
       }
 
       #animatedDiv.expanded {
@@ -114,24 +130,77 @@
         left: 0; /* 왼쪽 정렬 */
         transform: translateX(0); /* 변환 없음 */
       }
+      /* 맨위 배경 애니메이션 끝 */
 
       .section-two {
       }
-      .content {
-        width: 50%;
+
+      /* 회사소개 시작 */
+
+      .circle {
+        position: absolute;
+        width: 300px; /* 원의 크기 */
+        height: 300px; /* 원의 크기 */
+        background-image: url(../img/about-img/제로베이스_로고.png);
+        border-radius: 50%; /* 원 모양 만들기 */
+        z-index: 0; /* office-content 뒤에 위치하도록 */
+        top: 50%; /* p태그의 중앙 */
+        left: 50%; /* p태그의 중앙 */
+        transform: translate(-50%, -50%); /* 중앙 정렬 */
+        opacity: 0.3;
+      }
+      /* .offic-parent {
+
+        display: flex;
+        align-items: center;
+        justify-self: center;
+      } */
+
+      .office-content {
+        position: relative;
+        width: 100%;
         height: 100%;
-        background-color: #f7f7f7;
-        padding: 30px;
+        background-color: #fcfcfc;
+        padding: 100px;
         border-radius: 15px;
         margin: 0 auto;
+        z-index: 1;
       }
+      .office-content p {
+        font-size: 1.3rem;
+      }
+      .office-content h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+      }
+
+      /* 회사소개 끝 */
 
       .section-two h1 {
         text-transform: uppercase;
-        margin-bottom: 45px;
+        margin-bottom: 80px;
       }
 
       .section-two p {
+      }
+
+      /* 3번째  */
+      .s-2-fontcolor {
+        color: #333;
+      }
+
+      /* 프로세스 시작 */
+
+      #zeroBaseProcess {
+      }
+
+      .fade-in {
+        opacity: 0;
+        transition: opacity 1s ease;
+      }
+
+      .fade-in.visible {
+        opacity: 1;
       }
 
       #processFlow {
@@ -143,8 +212,8 @@
 
       .process {
         border-radius: 50%; /* 원형 모양 */
-        width: 250px;
-        height: 250px;
+        width: 300px;
+        height: 300px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -153,10 +222,14 @@
       }
       .process h2 {
         color: whitesmoke;
+        padding: 10px;
+      }
+      .process p {
+        font-weight: bold;
       }
 
       .process:hover {
-        transform: scale(1.1); /* 호버 시 확대 효과 */
+        transform: scale(1.2); /* 호버 시 확대 효과 */
         cursor: pointer;
       }
 
@@ -197,6 +270,7 @@
         border: 10px solid transparent;
         border-left: 10px solid #4c74a4; /* 화살표 머리 */
       }
+      /* 섹션 1 끝*/
 
       .section-one:before {
         content: "";
@@ -205,7 +279,6 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
         z-index: -1;
         overflow-x: hidden;
       }
@@ -254,7 +327,7 @@
         font-size: 17px;
       }
 
-      /* 메뉴 호버 */
+      /* 메뉴버 */
       #navi a:hover {
         text-shadow: 2px 2px 4px white; /* X축 오프셋, Y축 오프셋, 흐림 반경, 색상 */
       }
@@ -271,7 +344,6 @@
       }
 
       .p-125 {
-        padding: 135px 0;
       }
 
       .btn-area {
@@ -294,7 +366,6 @@
         -webkit-background-size: cover;
         background-size: cover;
         background-position: center center;
-        color: #fff;
         position: relative;
         z-index: 1;
         display: flex;
@@ -315,6 +386,19 @@
       }
       /* 상단 메인 제목 애니메이션 */
       .text-focus-in {
+        -webkit-animation: text-focus-in 3s
+          cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+        animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+      }
+      .text-focus-in {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+        -webkit-animation: none;
+        animation: none;
+      }
+
+      .animate-text-focus-in {
         -webkit-animation: text-focus-in 3s
           cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
         animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
@@ -361,9 +445,16 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(247, 247, 247, 0.4);
         z-index: -1;
       }
+
+      /* 캐러셀 이미지 */
+      #carouselExampleIndicators {
+        width: 50%;
+        margin: 0 auto;
+      }
+      /*  */
 
       /* team announcement start */
       .roww {
@@ -436,7 +527,7 @@
 
       .card:hover {
         background: linear- linear-gradient(#6045ea, #8567f7);
-        color: #ffffff;
+        color: #6045ea;
       }
 
       .card:hover .img-container {
@@ -549,7 +640,7 @@
       <a href="#">BOARD</a>
     </div>
     <div
-      class="section-one p-225"
+      class="section-one p-225 s-1-fontcolor"
       id="animatedDiv"
       style="background-image: url(../img/about-img/빌딩.png)"
     >
@@ -560,33 +651,41 @@
     </div>
 
     <div class="section-two p-125">
-      <div class="content">
-        <h1>회사소개</h1>
-        <p>
-          제로베이스는 지속 가능한 환경을 향한 첫걸음을 떼는 혁신적인
-          기업입니다.
-          <br />
-          회사의 이름은 '제로웨이스트'(Zero Waste)에서 영감을 받았으며, 이는
-          회사의 핵심 가치인 환경 보호와 지속 가능성에 대한 깊은 헌신을
-          반영합니다. <br />
-          <br />
-          회사의 목표는 환경 친화적인 제품과 서비스를 통해 세계에 긍정적인
-          변화를 가져오는 것입니다. <br />우리는 재활용 가능한 자원을 사용하고,
-          폐기물을 최소화하며, 지속 가능한 방식으로 운영함으로써 환경 보호에
-          기여하고자 합니다. <br />
-          <br />
-          제로베이스는 혁신적인 생각과 지속 가능한 실천을 통해 세상에 긍정적인
-          영향을 미치고자 하는 모든 이들과 함께하고자 합니다. 우리는 단순히
-          제품을 만드는 것이 아니라, 더 나은 내일을 위한 솔루션을 제공합니다.
-          환경에 대한 우리의 약속은 단순한 목표가 아닌, 우리의 열정이자
-          사명입니다. 제로베이스와 함께 지속 가능한 미래를 향해 나아갑시다.
-        </p>
+      <div class="content-wrapper">
+        <div class="office-content">
+          <div class="circle"></div>
+          <h1>회사소개</h1>
+          <p>
+            제로베이스는 지속 가능한 환경을 향한 첫걸음을 떼는 혁신적인
+            기업입니다.
+            <br />
+            회사의 이름은 '제로웨이스트'(Zero Waste)에서 영감을 받았으며, 이는
+            회사의 핵심 가치인 환경 보호와 지속 가능성에 대한 깊은 헌신을
+            반영합니다. <br />
+            <br />
+            회사의 목표는 환경 친화적인 제품과 서비스를 통해 세계에 긍정적인
+            변화를 가져오는 것입니다. <br />우리는 재활용 가능한 자원을
+            사용하고, 폐기물을 최소화하며, 지속 가능한 방식으로 운영함으로써
+            환경 보호에 기여하고자 합니다. <br />
+            <br />
+            제로베이스는 혁신적인 생각과 지속 가능한 실천을 통해 세상에 긍정적인
+            영향을 미치고자 하는 모든 이들과 함께하고자 합니다.
+            <br /><br />
+            우리는 단순히 제품을 만드는 것이 아니라, 더 나은 내일을 위한
+            솔루션을 제공합니다. 환경에 대한 우리의 약속은 단순한 목표가 아닌,
+            우리의 열정이자 사명입니다. <br /><br />
+          </p>
+        </div>
       </div>
     </div>
 
     <div class="section-one p-225">
-      <h1 class="text-focus-in">Parallax Effect</h1>
-      <p class="text-focus-in">A creative and pleasing Lifestyle.</p>
+      <h1 class="text-focus-in s-2-fontcolor fade-in" id="zeroBaseProcess">
+        ZeroBase Process
+      </h1>
+      <p class="text-focus-in s-2-fontcolor">
+        심각성을 인식하여 이벤트를 참여하여 포인트를 획득해보자
+      </p>
 
       <div id="processFlow">
         <div class="process" id="awareness">
@@ -608,9 +707,84 @@
       </div>
     </div>
 
-    <div class="section-two p-125">
-      <h1>ZERO-WASTE-TEAM</h1>
-      <p>Team-Zerobase</p>
+    <!-- team section end -->
+
+    <div class="section-tew p-225" style="background-image: url(bg2.jpeg)">
+      <h1>Event ing~~</h1>
+      <p>
+        We have forgotted how to be good guests, how to walk lightly on the
+        earth as its other creatures do.
+      </p>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="../img/marketImages/bathbomb.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../img/marketImages/bathbomb.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="../img/marketImages/plate.avif"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="section-one p-125">
+      <h1 class="text-focus-in">ZERO-WASTE-TEAM</h1>
+      <p class="text-focus-in">Team-Zerobase</p>
       <!-- team section start -->
       <section>
         <div class="roww">
@@ -621,7 +795,7 @@
           <div class="column">
             <div class="card">
               <div class="img-container">
-                <img src="jackie-PhotoRoom.jpg" />
+                <img src="../img/about-img/jackie-PhotoRoom.jpg" />
                 <!--profile img 1 -->
               </div>
               <h3>Jackie Chan</h3>
@@ -646,7 +820,7 @@
           <div class="column">
             <div class="card">
               <div class="img-container">
-                <img src="kim.jpg" />
+                <img src="../img/about-img/kim.jpg" />
                 <!--profile img2-->
               </div>
               <h3>Jun</h3>
@@ -671,7 +845,7 @@
           <div class="column">
             <div class="card">
               <div class="img-container">
-                <img src="yeji.jpg" />
+                <img src="../img/about-img/han.jpg" />
                 <!--profile img3-->
               </div>
               <h3>Yeji</h3>
@@ -696,7 +870,7 @@
           <div class="column">
             <div class="card">
               <div class="img-container">
-                <img src="sung.jpg" />
+                <img src="" />
                 <!--profile img4-->
               </div>
               <h3>hosung</h3>
@@ -719,15 +893,6 @@
           </div>
         </div>
       </section>
-    </div>
-    <!-- team section end -->
-
-    <div class="section-one p-225" style="background-image: url(bg2.jpeg)">
-      <h1>We are for ZERO-WASTE</h1>
-      <p>
-        We have forgotted how to be good guests, how to walk lightly on the
-        earth as its other creatures do.
-      </p>
     </div>
 
     <div class="section-two p-125">
@@ -806,11 +971,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="parallaxie.js"></script>
-    <script>
-      $(".section-one").parallaxie({
-        speed: 0.4,
-      });
-    </script>
+    <script></script>
 
     <div class="section-two p-125">
       <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
@@ -823,50 +984,50 @@
       ></script>
 
       <script>
-        $(document).ready(function () {
-          $(".section-one").parallaxie({
-            speed: 0.4,
-          });
-        });
-        $(".brand-carousel").owlCarousel({
-          loop: true,
-          margin: 10,
-          autoplay: true,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 3,
-            },
-            1000: {
-              items: 5,
-            },
-          },
-        });
+        // $(document).ready(function () {
+        //   $(".section-tew").parallaxie({
+        //     speed: 0.4,
+        //   });
+        // });
+        // $(".brand-carousel").owlCarousel({
+        //   loop: true,
+        //   margin: 10,
+        //   autoplay: true,
+        //   responsive: {
+        //     0: {
+        //       items: 1,
+        //     },
+        //     600: {
+        //       items: 3,
+        //     },
+        //     1000: {
+        //       items: 5,
+        //     },
+        //   },
+        // });
       </script>
       <!-- video slide javaScript -->
       <script>
-        const carouselItems = document.querySelectorAll(".carousel-item");
-        document
-          .querySelector(".carousel-item:first-child .carousel-caption")
-          .classList.add("animate-in");
+        // const carouselItems = document.querySelectorAll(".carousel-item");
+        // document
+        //   .querySelector(".carousel-item:first-child .carousel-caption")
+        //   .classList.add("animate-in");
 
-        carouselItems.forEach((item) => {
-          item.addEventListener("transitionend", (e) => {
-            if (e.target.classList.contains("active")) {
-              const caption = e.target.querySelector(".carousel-caption");
-              if (caption) {
-                caption.classList.add("animate-in");
-              }
-            } else {
-              const caption = e.target.querySelector(".carousel-caption");
-              if (caption) {
-                caption.classList.remove("animate-in");
-              }
-            }
-          });
-        });
+        // carouselItems.forEach((item) => {
+        //   item.addEventListener("transitionend", (e) => {
+        //     if (e.target.classList.contains("active")) {
+        //       const caption = e.target.querySelector(".carousel-caption");
+        //       if (caption) {
+        //         caption.classList.add("animate-in");
+        //       }
+        //     } else {
+        //       const caption = e.target.querySelector(".carousel-caption");
+        //       if (caption) {
+        //         caption.classList.remove("animate-in");
+        //       }
+        //     }
+        //   });
+        // });
 
         //
       </script>
@@ -874,21 +1035,7 @@
     <!-- video slide javaScript end -->
 
     <script>
-      // document.addEventListener("scroll", function () {
-      //   const div = document.getElementById("animatedDiv");
-      //   const windowHeight = window.innerHeight;
-      //   const divTop = div.getBoundingClientRect().top;
-      //   const triggerPoint = windowHeight / 1; // 화면의 중간 지점을 기준으로 설정
-
-      //   if (divTop < triggerPoint) {
-      //     // 스크롤이 중간 지점 이상 올라갔을 때
-      //     div.classList.add("expanded");
-      //   } else {
-      //     // 스크롤이 중간 지점 이하로 내려갔을 때
-      //     div.classList.remove("expanded");
-      //   }
-      // });
-
+      // 메인화면
       document.addEventListener("scroll", function () {
         const div = document.getElementById("animatedDiv");
         const scrollPosition =
@@ -910,6 +1057,40 @@
         }
 
         div.style.width = Math.min(maxWidth, newWidth) + "px"; // 계산된 너비를 적용
+      });
+
+      // 스크롤 애니메이션
+      // document.addEventListener("scroll", function () {
+      //   var zeroBaseProcess = document.getElementById("zeroBaseProcess");
+      //   var elementPosition = zeroBaseProcess.getBoundingClientRect().top;
+      //   var viewportHeight = window.innerHeight;
+
+      //   if (elementPosition < viewportHeight - 100) {
+      //     // 100 픽셀 전에 애니메이션 시작
+      //     zeroBaseProcess.querySelector(".fade-in").classList.add("visible");
+      //   } else {
+      //     zeroBaseProcess.querySelector(".fade-in").classList.remove("visible");
+      //   }
+      // });
+
+      function handleIntersect(entries, observer) {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-text-focus-in");
+          }
+        });
+      }
+
+      let options = {
+        root: null,
+        threshold: 0.1,
+      };
+
+      let observer = new IntersectionObserver(handleIntersect, options);
+
+      // 관찰할 모든 요소에 대해 observer.observe()를 호출
+      document.querySelectorAll(".text-focus-in").forEach((element) => {
+        observer.observe(element);
       });
     </script>
   </body>
