@@ -45,9 +45,8 @@
     ></script>
 
     <link rel="stylesheet" href="./index.css" />
-    <script src="./javascript/func.js"></script>
+    <script src="/javascript/func.js"></script>
   </head>
-
   <body>
     <div id="container">
       <div id="navi">
@@ -68,7 +67,14 @@
         <a class="navicon" href="./HTML/board.html"
           ><i class="bi bi-pencil"></i
         ></a>
-        <button type="button" class="topbtn" id="loginbtn">LOGIN</button>
+        <button
+          type="button"
+          class="topbtn"
+          id="loginbtn"
+          onclick="loginCLick()"
+        >
+          LOGIN
+        </button>
         <button type="button" class="topbtn" id="logoutbtn" onclick="logout()">
           LOGOUT
         </button>
@@ -78,7 +84,7 @@
           <div id="mainName">
             <p id="head">
               제로 베이스<img
-                id="zerowaste"
+                id="zerobase"
                 src="./img/index-img/zerobase.png"
                 alt=""
               />
@@ -86,7 +92,12 @@
             <p id="comment">sustainable lifestyle for all</p>
           </div>
           <div id="btnbottom">
-            <button type="button" id="bottomlogin" class="bottombtn">
+            <button
+              type="button"
+              id="bottomlogin"
+              class="bottombtn"
+              onclick="loginCLick()"
+            >
               LOGIN
             </button>
             <button
@@ -114,7 +125,7 @@
               />
               <br />
               <input
-                type="text"
+                type="password"
                 name="loginpw"
                 placeholder="Password"
                 id="loginpw"
@@ -134,46 +145,19 @@
                   <div class="sns sns3"></div>
                 </a>
               </div>
-              <button id="loginformbtn" onclick="login()" type="button">
-                Login
-              </button>
+              <div>
+                <button id="loginformbtn" onclick="login()" type="button">
+                  Login
+                </button>
+                <button id="signupbtn" onclick="gosignup()" type="button">
+                  Sign up
+                </button>
+              </div>
             </form>
           </div>
         </div>
-        <form>
-          <span class="close" onclick="closeModal()">&times;</span>
-          <input
-            type="text"
-            placeholder="Username"
-            name="loginid"
-            id="loginid"
-          />
-          <br />
-          <input
-            type="text"
-            name="loginpw"
-            placeholder="Password"
-            id="loginpw"
-          />
-          <br />
-          <div id="snsbox">
-            <a href="https://github.com/ryong123/kdtproject" target="_blank">
-              <div class="sns sns1"></div>
-            </a>
-            <a href="https://account.google.com/" target="_blank">
-              <div class="sns sns2"></div>
-            </a>
-            <a href="https://www.facebook.com/" target="_blank">
-              <div class="sns sns3"></div>
-            </a>
-          </div>
-          <button id="loginbtnbottom" onclick="login()" type="button">
-            Login
-          </button>
-        </form>
       </div>
     </div>
   </body>
-  <script src="./javascript/login.js"></script>
-  <script src="./javascript/func.js"></script>
+  <script defer src="/javascript/func.js"></script>
 </html>
