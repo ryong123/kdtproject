@@ -1,678 +1,916 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZeroWaste</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZeroWaste</title>
+    <!--font awersome-->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- carousel for brands section03 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    />
+    <!-- carousel for brands section03 -->
 
-  <!--font awersome-->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
-  <!-- carousel for brands section03 -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-  <!-- carousel for brands section03 -->
+    <!-- /shoppingCart/ -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
 
-  <!-- /shoppingCart/ -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdn.usebootstrap.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
 
-  <style>
-    * {
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-    }
+      body {
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        font-family: poppins;
+        text-align: center;
+        overflow-x: hidden;
+      }
 
-    body {
-      margin: 0;
-      padding: 0;
-      line-height: 1.5;
-      font-family: poppins;
-      text-align: center;
-    }
+      /**
+        *! background section
+        **/
+      .p-225 {
+      }
 
-    /**
-  *! background section
-  **/
-    .p-225 {
-      padding: 225px 0;
-    }
+      .p-125 {
+      }
 
-    .p-125 {
-      padding: 100px 0;
-    }
+      .btn-area {
+        padding: 10px 20px;
+        margin-top: 15px;
+        border: 2px solid #fff;
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+      }
 
-    .btn-area {
-      padding: 10px 20px;
-      margin-top: 15px;
-      border: 2px solid #fff;
-      display: inline-block;
-      text-decoration: none;
-      color: #fff;
-    }
+      .btn-area:hover {
+        background: #fff;
+        color: #262626;
+        transition: 0.9s;
+      }
 
-    .btn-area:hover {
-      background: #fff;
-      color: #262626;
-      transition: .9s;
-    }
+      .section-one {
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+      }
 
-    .section-one {
-      background-attachment: fixed;
-      -webkit-background-size: cover;
-      background-size: cover;
-      background-position: center center;
-      color: #fff;
-      position: relative;
-      z-index: 1;
-    }
+      .section-one h1 {
+        font-size: 50px;
+        text-transform: uppercase;
+        margin: 0;
+      }
 
-    .section-one h1 {
-      font-size: 50px;
-      text-transform: uppercase;
-      margin: 0;
-    }
+      .section-one p {
+        width: 100%;
+        font-size: 20px;
+      }
+      #animatedDiv {
+        overflow-x: hidden;
+        width: 800px; /* 초기 너비 */
+        height: 500px; /* 높이 설정 */
+        overflow: hidden; /* 이미지가 div 밖으로 나가지 않도록 함 */
+        position: relative; /* 중앙 정렬을 위한 상대 위치 */
+        left: 50%; /* 부모 요소 기준 왼쪽에서 50% 위치 */
+        transform: translateX(-50%); /* 자신의 너비의 절반만큼 왼쪽으로 이동 */
+        transition: all 0.8s ease; /* 애니메이션 효과 */
+        background-color: cadetblue;
+      }
 
-    .section-one p {
-      font-size: 20px;
-    }
+      #animatedDiv.expanded {
+        width: 100%; /* 확장된 너비 */
+        height: 500px;
+        left: 0; /* 왼쪽 정렬 */
+        transform: translateX(0); /* 변환 없음 */
+      }
 
-    .section-two h1 {
-      text-transform: uppercase;
-    }
+      .section-two {
+      }
+      .content {
+        width: 50%;
+        height: 100%;
+        background-color: #f7f7f7;
+        padding: 30px;
+        border-radius: 15px;
+        margin: 0 auto;
+      }
 
-    .section-two p {
-      max-width: 700px;
-      margin: 0 auto;
-    }
+      .section-two h1 {
+        text-transform: uppercase;
+        margin-bottom: 45px;
+      }
 
-    .section-one:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      z-index: -1;
-    }
+      .section-two p {
+      }
 
-    /* carousel videos section.1 */
+      #processFlow {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+        padding: 20px;
+      }
 
+      .process {
+        border-radius: 50%; /* 원형 모양 */
+        width: 250px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: transform 0.5s ease;
+      }
+      .process h2 {
+        color: whitesmoke;
+      }
 
+      .process:hover {
+        transform: scale(1.1); /* 호버 시 확대 효과 */
+        cursor: pointer;
+      }
 
+      /* 각 단계별 배경색 */
+      #awareness {
+        background-color: #4c74a4;
+      }
 
-    /**
-  *! merchendising section .2
-  **/
+      #participation {
+        background-color: #b8c5ca;
+      }
 
+      #shopping {
+        background-color: #4c74a4;
+      }
 
+      #processFlow {
+        display: flex;
+        justify-content: space-around;
+        align-items: center; /* 세로 중앙 정렬 */
+        margin: 20px;
+        padding: 20px;
+      }
 
-    /* brandCarousel section.3 */
-    .section-padding {
-      padding: 10px 0;
-    }
+      .arrow {
+        border-top: 2px solid #4c74a4; /* 화살표의 선 */
+        width: 50px; /* 화살표의 너비 */
+        height: 30px; /* 화살표의 높이 */
+        background-color: transparent;
+        position: relative;
+      }
 
-    body {
-      margin: 0;
-      padding: 0;
-      line-height: 1.5;
-      font-family: poppins;
-      text-align: center;
-    }
+      .arrow::after {
+        content: "";
+        position: absolute;
+        top: -10px; /* 화살표의 선과 정렬 */
+        left: 100%; /* 화살표 끝부분 */
+        border: 10px solid transparent;
+        border-left: 10px solid #4c74a4; /* 화살표 머리 */
+      }
 
-    /**
-*! header from yeah ji
-**/
-    #navi {
-      width: 100%;
-      height: 50px;
-      border-bottom: 3px solid rgba(255, 255, 255, 0.28);
-      z-index: 100;
-      position: fixed;
-      top: 0;
-      background-color: rgba(173, 216, 230, 0.47);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 20px;
-    }
+      .section-one:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: -1;
+        overflow-x: hidden;
+      }
 
-    /* 메뉴 */
-    #navi a {
-      text-decoration: none;
-      padding: 0 4%;
-      color: white;
-      font-size: 17px;
-    }
+      /* carousel videos section.1 */
 
-    /* 메뉴 호버 */
-    #navi a:hover {
-      text-shadow: midnightblue 1px 0 15px;
-      color: midnightblue;
-    }
+      /**
+        *! merchendising section .2
+        **/
 
-    /**
+      /* brandCarousel section.3 */
+      .section-padding {
+        padding: 10px 0;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        font-family: poppins;
+        text-align: center;
+      }
+
+      /**
       *! header from yeah ji
       **/
-
-    .p-225 {
-      padding: 225px 0;
-    }
-
-    .p-125 {
-      padding: 125px 0;
-    }
-
-    .btn-area {
-      padding: 10px 20px;
-      margin-top: 15px;
-      border: 2px solid #fff;
-      display: inline-block;
-      text-decoration: none;
-      color: #fff;
-    }
-
-    .btn-area:hover {
-      background: #fff;
-      color: #262626;
-      transition: .9s;
-    }
-
-    .section-one {
-      background-attachment: fixed;
-      -webkit-background-size: cover;
-      background-size: cover;
-      background-position: center center;
-      color: #fff;
-      position: relative;
-      z-index: 1;
-    }
-
-    .section-one h1 {
-      font-size: 50px;
-      text-transform: uppercase;
-      margin: 0;
-    }
-
-    .section-one p {
-      font-size: 20px;
-    }
-
-    .section-two h1 {
-      text-transform: uppercase;
-    }
-
-    .section-two p {
-      max-width: 700px;
-      margin: 0 auto;
-    }
-
-    .section-one:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.7);
-      z-index: -1;
-    }
-
-    /* team announcement start */
-    .roww {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 2em 1em;
-      text-align: center;
-    }
-
-    .column {
-      width: 100%;
-      padding: 0.5em 0;
-    }
-
-    h2 {
-      width: 100%;
-      text-align: center;
-      font-size: 3.5em;
-      color: #1f003b;
-    }
-
-    .card {
-      box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
-      padding: 3.5em 1em;
-      border-radius: 0.6em;
-      color: #1f003b;
-      cursor: pointer;
-      transition: 0.3s;
-      background-color: #ffffff;
-    }
-
-    .card .img-container {
-      width: 8em;
-      height: 8em;
-      background-color: #a993ff;
-      padding: 0.5em;
-      border-radius: 50%;
-      margin: 0 auto 2em auto;
-    }
-
-    .card img {
-      width: 100%;
-      border-radius: 50%;
-    }
-
-    .card h3 {
-      font-weight: 500;
-    }
-
-    .card p {
-      font-weight: 300;
-      text-transform: uppercase;
-      margin: 0.5em 0 2em 0;
-      letter-spacing: 2px;
-    }
-
-    .icons {
-      width: 50%;
-      min-width: 180px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .card a {
-      text-decoration: none;
-      color: inherit;
-      font-size: 1.4em;
-    }
-
-    .card:hover {
-      background: linear- linear-gradient(#6045ea, #8567f7);
-      color: #ffffff;
-    }
-
-    .card:hover .img-container {
-      transform: scale(1.15);
-    }
-
-    @media screen and (min-width: 768px) {
-      section {
-        padding: 1em 7em;
-      }
-    }
-
-    @media screen and (min-width: 992px) {
-      section {
-        padding: 1em;
+      #navi {
+        width: 100%;
+        height: 50px;
+        border-bottom: 3px solid rgba(255, 255, 255, 0.28);
+        z-index: 100;
+        position: fixed;
+        top: 0;
+        background-color: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
       }
 
-      .card {
-        padding: 5em 1em;
+      /* 메뉴 */
+      #navi a {
+        text-decoration: none;
+        padding: 0 4%;
+        color: white;
+        font-size: 17px;
+      }
+
+      /* 메뉴 호버 */
+      #navi a:hover {
+        text-shadow: 2px 2px 4px white; /* X축 오프셋, Y축 오프셋, 흐림 반경, 색상 */
+      }
+
+      /**
+            *! header from yeah ji
+            **/
+
+      .p-225 {
+        padding: 135px 0;
+      }
+      .p-225 h1 {
+        padding: 30px 0;
+      }
+
+      .p-125 {
+        padding: 135px 0;
+      }
+
+      .btn-area {
+        padding: 10px 20px;
+        margin-top: 15px;
+        border: 2px solid #fff;
+        display: inline-block;
+        text-decoration: none;
+        color: #fff;
+      }
+
+      .btn-area:hover {
+        background: #fff;
+        color: #262626;
+        transition: 0.9s;
+      }
+
+      .section-one {
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .section-one h1 {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 0;
+      }
+
+      .section-one p {
+        font-size: 20px;
+      }
+      /* 상단 메인 제목 애니메이션 */
+      .text-focus-in {
+        -webkit-animation: text-focus-in 3s
+          cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+        animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+      }
+      @-webkit-keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+          filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-filter: blur(0px);
+          filter: blur(0px);
+          opacity: 1;
+        }
+      }
+      @keyframes text-focus-in {
+        0% {
+          -webkit-filter: blur(12px);
+          filter: blur(12px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-filter: blur(0px);
+          filter: blur(0px);
+          opacity: 1;
+        }
+      }
+      /* 상단 메인 제목 애니메이션  끝*/
+
+      .section-two h1 {
+        text-transform: uppercase;
+      }
+
+      .section-two p {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+
+      .section-one:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: -1;
+      }
+
+      /* team announcement start */
+      .roww {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2em 1em;
+        text-align: center;
       }
 
       .column {
-        flex: 0 0 33.33%;
-        max-width: 25%;
-        padding: 0 1em;
+        width: 100%;
+        padding: 0.5em 0;
       }
-    }
 
-    /* team announcement end */
+      h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 3.5em;
+        color: #1f003b;
+      }
 
+      .card {
+        box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+        padding: 3.5em 1em;
+        border-radius: 0.6em;
+        color: #1f003b;
+        cursor: pointer;
+        transition: 0.3s;
+        background-color: #ffffff;
+      }
 
+      .card .img-container {
+        width: 8em;
+        height: 8em;
+        background-color: #a993ff;
+        padding: 0.5em;
+        border-radius: 50%;
+        margin: 0 auto 2em auto;
+      }
 
+      .card img {
+        width: 100%;
+        border-radius: 50%;
+      }
 
-    /* testimonals css start */
-    .testimonials {
-      margin: 200px auto 100px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      grid-gap: 20px;
-    }
+      .card h3 {
+        font-weight: 500;
+      }
 
-    .testimonials .card {
-      position: relative;
-      width: 350px;
-      margin: 0 auto;
-      background: #333;
-      padding: 20px;
-      box-sizing: border-box;
-      text-align: center;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, .5);
-      overflow: hidden;
-    }
+      .card p {
+        font-weight: 300;
+        text-transform: uppercase;
+        margin: 0.5em 0 2em 0;
+        letter-spacing: 2px;
+      }
 
-    .testimonials .card .layer {
-      position: absolute;
-      top: calc(100% - 2px);
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(#03a9f4, #e91ee3);
-      z-index: 1000;
-      transition: 0.5s;
-    }
+      .icons {
+        width: 50%;
+        min-width: 180px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+      }
 
-    .testimonials .card:hover .layer {
-      top: 0;
-    }
+      .card a {
+        text-decoration: none;
+        color: inherit;
+        font-size: 1.4em;
+      }
 
-    .testimonials .card .content {
-      position: relative;
-      z-index: 2;
-    }
+      .card:hover {
+        background: linear- linear-gradient(#6045ea, #8567f7);
+        color: #ffffff;
+      }
 
-    .testimonials .card .content p {
-      font-size: 18px;
-      line-height: 24px;
-      color: #fff;
-    }
+      .card:hover .img-container {
+        transform: scale(1.15);
+      }
 
-    .testimonials .card .content .image {
-      width: 100px;
-      height: 100px;
-      margin: 0 auto;
-      overflow: hidden;
-      border: 4px solid #fff;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
+      @media screen and (min-width: 768px) {
+        section {
+          padding: 1em 7em;
+        }
+      }
 
-    .testimonials .card .content .details h2 {
-      font-size: 18px;
-      color: #fff;
-    }
+      @media screen and (min-width: 992px) {
+        section {
+          padding: 1em;
+        }
 
-    .testimonials .card .content .details h2 span {
-      color: #0ea9f4;
-      font-size: 14px;
-      transition: 0.5s;
-    }
+        .card {
+          padding: 5em 1em;
+        }
 
-    .testimonials .card:hover .content .details h2 span {
-      color: #fff;
-    }
+        .column {
+          flex: 0 0 33.33%;
+          max-width: 25%;
+          padding: 0 1em;
+        }
+      }
 
-    /* testimonals css end */
-  </style>
-</head>
+      /* team announcement end */
 
-<body>
+      /* testimonals css start */
+      .testimonials {
+        margin: 200px auto 100px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: 20px;
+      }
 
-  <div id="navi">
-    <a href="#">ABOUT US</a>
-    <a href="#">QUEST</a>
-    <a href="shoppingCart.html">SHOPPING</a>
-    <a href="#">BOARD</a>
-  </div>
-  <div class="section-one p-225" style="background-image: url(earth.avif)">
-    <h1>ZERO-WASTE</h1>
-    <p>There is no such things as "away". When we thorw anything away, it must go somewhere.</p>
-  </div>
+      .testimonials .card {
+        position: relative;
+        width: 350px;
+        margin: 0 auto;
+        background: #333;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        overflow: hidden;
+      }
 
-  <div class="section-two p-125">
-    <h1>WHY? We focus on zero-waste</h1>
-    <p>cause she the youngest woman Yeji made an opinion about this.</p>
-  </div>
+      .testimonials .card .layer {
+        position: absolute;
+        top: calc(100% - 2px);
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(#03a9f4, #e91ee3);
+        z-index: 1000;
+        transition: 0.5s;
+      }
 
-  <div class="section-one p-225" style="background-image: url(earth2.avif)">
-    <h1>Parallax Effect</h1>
-    <p>A creative and pleasing Lifestyle.</p>
-  </div>
+      .testimonials .card:hover .layer {
+        top: 0;
+      }
 
-  <div class="section-two p-125">
-    <h1>ZERO-WASTE-TEAM</h1>
-    <p>Team-Zerobase</p>
-    <!-- team section start -->
-    <section>
-      <div class="roww">
-        <h2 class="team"></h2>
-      </div>
-      <div class="roww">
-        <!-- column 1-->
-        <div class="column">
-          <div class="card">
-            <div class="img-container">
-              <img src="jackie-PhotoRoom.jpg">
-              <!--profile img 1 -->
-            </div>
-            <h3>Jackie Chan</h3>
-            <p>Founder</p>
-            <div class="icons">
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="#">
-                <i class="fas fa-envelope"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- column 2-->
-        <div class="column">
-          <div class="card">
-            <div class="img-container">
-              <img src="kim.jpg" />
-              <!--profile img2-->
-            </div>
-            <h3>Jun</h3>
-            <p>developer</p>
-            <div class="icons">
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="#">
-                <i class="fas fa-envelope"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!--column 3-->
-        <div class="column">
-          <div class="card">
-            <div class="img-container">
-              <img src="yeji.jpg">
-              <!--profile img3-->
-            </div>
-            <h3>Yeji</h3>
-            <p>CFO</p>
-            <div class="icons">
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="#">
-                <i class="fas fa-envelope"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!--column 4-->
-        <div class="column">
-          <div class="card">
-            <div class="img-container">
-              <img src="sung.jpg">
-              <!--profile img4-->
-            </div>
-            <h3>hosung</h3>
-            <p>HeadManager</p>
-            <div class="icons">
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="#">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="#">
-                <i class="fas fa-envelope"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div> <!-- team section end -->
+      .testimonials .card .content {
+        position: relative;
+        z-index: 2;
+      }
 
-  <div class="section-one p-225" style="background-image: url(bg2.jpeg)">
-    <h1>We are for ZERO-WASTE</h1>
-    <p>We have forgotted how to be good guests, how to walk lightly on the earth as its other creatures do.</p>
-  </div>
+      .testimonials .card .content p {
+        font-size: 18px;
+        line-height: 24px;
+        color: #fff;
+      }
 
-  <div class="section-two p-125">
-    <h1>Testimony</h1>
-    <p>here's what our customer's experiences</p>
-  </div>
+      .testimonials .card .content .image {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        overflow: hidden;
+        border: 4px solid #fff;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
 
+      .testimonials .card .content .details h2 {
+        font-size: 18px;
+        color: #fff;
+      }
 
-  <!-- <testimony section> ---->
-  <div class="testimonials">
-    <div class="card">
-      <div class="layer"></div>
+      .testimonials .card .content .details h2 span {
+        color: #0ea9f4;
+        font-size: 14px;
+        transition: 0.5s;
+      }
+
+      .testimonials .card:hover .content .details h2 span {
+        color: #fff;
+      }
+
+      /* testimonals css end */
+    </style>
+  </head>
+
+  <body>
+    <div id="navi">
+      <a href="#">ABOUT US</a>
+      <a href="#">QUEST</a>
+      <a href="shoppingCart.html">SHOPPING</a>
+      <a href="#">BOARD</a>
+    </div>
+    <div
+      class="section-one p-225"
+      id="animatedDiv"
+      style="background-image: url(../img/about-img/빌딩.png)"
+    >
+      <h1 class="text-focus-in">ZERO-BASE</h1>
+      <p class="text-focus-in">
+        "지속 가능한 미래를 위한 첫걸음, 제로베이스와 함께하세요."
+      </p>
+    </div>
+
+    <div class="section-two p-125">
       <div class="content">
+        <h1>회사소개</h1>
         <p>
-          My life has changed after doing zero-waste life.
-          Now I know how to love the earth for the next generations</p>
-        <div class="image">
-          <img src="jung.jpg" style="background-image: center; ">
+          제로베이스는 지속 가능한 환경을 향한 첫걸음을 떼는 혁신적인
+          기업입니다.
+          <br />
+          회사의 이름은 '제로웨이스트'(Zero Waste)에서 영감을 받았으며, 이는
+          회사의 핵심 가치인 환경 보호와 지속 가능성에 대한 깊은 헌신을
+          반영합니다. <br />
+          <br />
+          회사의 목표는 환경 친화적인 제품과 서비스를 통해 세계에 긍정적인
+          변화를 가져오는 것입니다. <br />우리는 재활용 가능한 자원을 사용하고,
+          폐기물을 최소화하며, 지속 가능한 방식으로 운영함으로써 환경 보호에
+          기여하고자 합니다. <br />
+          <br />
+          제로베이스는 혁신적인 생각과 지속 가능한 실천을 통해 세상에 긍정적인
+          영향을 미치고자 하는 모든 이들과 함께하고자 합니다. 우리는 단순히
+          제품을 만드는 것이 아니라, 더 나은 내일을 위한 솔루션을 제공합니다.
+          환경에 대한 우리의 약속은 단순한 목표가 아닌, 우리의 열정이자
+          사명입니다. 제로베이스와 함께 지속 가능한 미래를 향해 나아갑시다.
+        </p>
+      </div>
+    </div>
+
+    <div class="section-one p-225">
+      <h1 class="text-focus-in">Parallax Effect</h1>
+      <p class="text-focus-in">A creative and pleasing Lifestyle.</p>
+
+      <div id="processFlow">
+        <div class="process" id="awareness">
+          <h2>customer</h2>
+          <p>환경의 심각성 인식</p>
         </div>
-        <div class="details">
-          <h2>Someone Famous<br><span>Website Designer</span></h2>
+        <div class="arrow" id="arrow1"></div>
+        <!-- 화살표 추가 -->
+        <div class="process" id="participation">
+          <h2>Cello Square</h2>
+          <p>다양한 이벤트 참여</p>
+        </div>
+        <div class="arrow" id="arrow2"></div>
+        <!-- 또 다른 화살표 추가 -->
+        <div class="process" id="shopping">
+          <h2>Store</h2>
+          <p>포인트로 상품 구매</p>
         </div>
       </div>
     </div>
-    <div class="card">
-      <div class="layer"></div>
-      <div class="content">
-        <p>Happy life!? that's all where zero-waste is. To do good, you actually have to do something.</p><br>
-        <div class="image">
-          <img src="ggo.jpg">
+
+    <div class="section-two p-125">
+      <h1>ZERO-WASTE-TEAM</h1>
+      <p>Team-Zerobase</p>
+      <!-- team section start -->
+      <section>
+        <div class="roww">
+          <h2 class="team"></h2>
         </div>
-        <div class="details">
-          <h2>someone Famous<br><span>backend Developer</span></h2>
+        <div class="roww">
+          <!-- column 1-->
+          <div class="column">
+            <div class="card">
+              <div class="img-container">
+                <img src="jackie-PhotoRoom.jpg" />
+                <!--profile img 1 -->
+              </div>
+              <h3>Jackie Chan</h3>
+              <p>Founder</p>
+              <div class="icons">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- column 2-->
+          <div class="column">
+            <div class="card">
+              <div class="img-container">
+                <img src="kim.jpg" />
+                <!--profile img2-->
+              </div>
+              <h3>Jun</h3>
+              <p>developer</p>
+              <div class="icons">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--column 3-->
+          <div class="column">
+            <div class="card">
+              <div class="img-container">
+                <img src="yeji.jpg" />
+                <!--profile img3-->
+              </div>
+              <h3>Yeji</h3>
+              <p>CFO</p>
+              <div class="icons">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!--column 4-->
+          <div class="column">
+            <div class="card">
+              <div class="img-container">
+                <img src="sung.jpg" />
+                <!--profile img4-->
+              </div>
+              <h3>hosung</h3>
+              <p>HeadManager</p>
+              <div class="icons">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="#">
+                  <i class="fas fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- team section end -->
+
+    <div class="section-one p-225" style="background-image: url(bg2.jpeg)">
+      <h1>We are for ZERO-WASTE</h1>
+      <p>
+        We have forgotted how to be good guests, how to walk lightly on the
+        earth as its other creatures do.
+      </p>
+    </div>
+
+    <div class="section-two p-125">
+      <h1>Testimony</h1>
+      <p>here's what our customer's experiences</p>
+    </div>
+
+    <!-- <testimony section> ---->
+    <div class="testimonials">
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          <p>
+            My life has changed after doing zero-waste life. Now I know how to
+            love the earth for the next generations
+          </p>
+          <div class="image">
+            <img src="jung.jpg" style="background-image: center" />
+          </div>
+          <div class="details">
+            <h2>Someone Famous<br /><span>Website Designer</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          <p>
+            Happy life!? that's all where zero-waste is. To do good, you
+            actually have to do something.
+          </p>
+          <br />
+          <div class="image">
+            <img src="ggo.jpg" />
+          </div>
+          <div class="details">
+            <h2>someone Famous<br /><span>backend Developer</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          <p>
+            It's only one straw, said 8 billion people. The earth is a fine
+            place and worth fighting for.
+          </p>
+          <br />
+          <div class="image">
+            <img src="han.jpg" />
+          </div>
+          <div class="details">
+            <h2>Someone Famous<br /><span>Web Designer</span></h2>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="layer"></div>
+        <div class="content">
+          <p>
+            We may never reach the zero in zero waste but that's no reason to
+            take zero action.
+          </p>
+          <br />
+          <div class="image">
+            <img src="ahn.jpg" />
+          </div>
+          <div class="details">
+            <h2>Someone Famous<br /><span>Web Designer</span></h2>
+          </div>
         </div>
       </div>
     </div>
-    <div class="card">
-      <div class="layer"></div>
-      <div class="content">
-        <p>
-          It's only one straw, said 8 billion people. The earth is a fine place and worth fighting for.</p><br>
-        <div class="image">
-          <img src="han.jpg">
-        </div>
-        <div class="details">
-          <h2>Someone Famous<br><span>Web Designer</span></h2>
-        </div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="layer"></div>
-      <div class="content">
-        <p>
-          We may never reach the zero in zero waste but that's no reason to take zero action.</p><br>
-        <div class="image">
-          <img src="ahn.jpg">
-        </div>
-        <div class="details">
-          <h2>Someone Famous<br><span>Web Designer</span></h2>
-        </div>
-      </div>
-    </div>
-  </div>
 
+    <!---</testimony section> -->
 
-
-  <!---</testimony section> -->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="parallaxie.js"></script>
-  <script>
-    $('.section-one').parallaxie({
-      speed: 0.4
-    });
-  </script>
-
-
-
-
-  <div class="section-two p-125">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-    </script>
-    <script src="https://cdn.usebootstrap.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="parallaxie.js"></script>
     <script>
-      $(document).ready(function () {
-        $(".section-one").parallaxie({
-          speed: 0.4,
-        });
-      });
-      $(".brand-carousel").owlCarousel({
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 3,
-          },
-          1000: {
-            items: 5,
-          },
-        },
+      $(".section-one").parallaxie({
+        speed: 0.4,
       });
     </script>
-    <!-- video slide javaScript -->
-    <script>
-      const carouselItems = document.querySelectorAll(".carousel-item");
-      document
-        .querySelector(".carousel-item:first-child .carousel-caption").classList.add("animate-in");
 
-      carouselItems.forEach((item) => {
-        item.addEventListener("transitionend", (e) => {
-          if (e.target.classList.contains("active")) {
-            const caption = e.target.querySelector(".carousel-caption");
-            if (caption) {
-              caption.classList.add("animate-in");
-            }
-          } else {
-            const caption = e.target.querySelector(".carousel-caption");
-            if (caption) {
-              caption.classList.remove("animate-in");
-            }
-          }
+    <div class="section-two p-125">
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <script src="https://cdn.usebootstrap.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+
+      <script>
+        $(document).ready(function () {
+          $(".section-one").parallaxie({
+            speed: 0.4,
+          });
         });
-      });
-    </script>
+        $(".brand-carousel").owlCarousel({
+          loop: true,
+          margin: 10,
+          autoplay: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 3,
+            },
+            1000: {
+              items: 5,
+            },
+          },
+        });
+      </script>
+      <!-- video slide javaScript -->
+      <script>
+        const carouselItems = document.querySelectorAll(".carousel-item");
+        document
+          .querySelector(".carousel-item:first-child .carousel-caption")
+          .classList.add("animate-in");
+
+        carouselItems.forEach((item) => {
+          item.addEventListener("transitionend", (e) => {
+            if (e.target.classList.contains("active")) {
+              const caption = e.target.querySelector(".carousel-caption");
+              if (caption) {
+                caption.classList.add("animate-in");
+              }
+            } else {
+              const caption = e.target.querySelector(".carousel-caption");
+              if (caption) {
+                caption.classList.remove("animate-in");
+              }
+            }
+          });
+        });
+
+        //
+      </script>
+    </div>
     <!-- video slide javaScript end -->
-</body>
 
+    <script>
+      // document.addEventListener("scroll", function () {
+      //   const div = document.getElementById("animatedDiv");
+      //   const windowHeight = window.innerHeight;
+      //   const divTop = div.getBoundingClientRect().top;
+      //   const triggerPoint = windowHeight / 1; // 화면의 중간 지점을 기준으로 설정
+
+      //   if (divTop < triggerPoint) {
+      //     // 스크롤이 중간 지점 이상 올라갔을 때
+      //     div.classList.add("expanded");
+      //   } else {
+      //     // 스크롤이 중간 지점 이하로 내려갔을 때
+      //     div.classList.remove("expanded");
+      //   }
+      // });
+
+      document.addEventListener("scroll", function () {
+        const div = document.getElementById("animatedDiv");
+        const scrollPosition =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        const startWidth = 800; // 시작 너비
+        const maxWidth = window.innerWidth; // 화면의 전체 너비
+        const triggerPoint = 200; // 너비가 100%에 도달할 스크롤 위치
+
+        let newWidth;
+        if (scrollPosition < triggerPoint) {
+          // 스크롤 위치에 따라 너비가 점차 증가하도록 계산
+          newWidth =
+            startWidth +
+            (maxWidth - startWidth) * (scrollPosition / triggerPoint);
+        } else {
+          // 스크롤 위치가 triggerPoint를 초과하면 너비를 100%로 설정
+          newWidth = maxWidth;
+        }
+
+        div.style.width = Math.min(maxWidth, newWidth) + "px"; // 계산된 너비를 적용
+      });
+    </script>
+  </body>
 </html>

@@ -65,11 +65,11 @@
     right: 5vw;
   }
 
-  #loginbtn:hover,
+  /* #loginbtn:hover,
   #logoutbtn:hover {
     text-shadow: midnightblue 1px 0 15px;
     color: midnightblue;
-  }
+  } */
 
   .modal {
     display: none;
