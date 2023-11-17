@@ -1,6 +1,6 @@
-
 $(window).on("load", function () {
     if (localStorage.getItem('logIn')) {
+
         $('#loginbtn').css("display", "none");
         $('#bottomlogin').css("display", "none");
 
@@ -8,6 +8,8 @@ $(window).on("load", function () {
         $('#logoutbtn').css("display", "none");
         $('#bottomlogout').css("display", "none");
     }
+
+
 
 
 });
@@ -58,3 +60,4 @@ function login() {
         alert('아이디와 비밀번호를 확인해주세요.')
     }
 }
+

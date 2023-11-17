@@ -55,24 +55,24 @@
     left: 0;
     right: 0;
     bottom: 0;
-    width: 100%;
     z-index: 100;
-    position: fixed;
+    width: 100%;
   }
 
   .menu {
     display: flex;
     flex-grow: 1;
     height: 72px;
-    max-width: 100%;
-
+    width: 100%;
     overflow: hidden;
     background-color: #fff;
     box-shadow: 0 0 1px 0 rgba(#87ceeb, 0.25), 0 15px 30px 0 rgba(#87ceeb, 0.1);
+    position: fixed;
   }
 
   .menu-item {
-    background-color: rgb(138, 212, 241);
+    border: none;
+    background: linear-gradient(to bottom, #2983c2, #b2e5e5);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,28 +84,27 @@
       outline: none;
       .material-icons {
         font-family: "Material Icons";
-        color: whitesmoke;
+        color: rgb(9, 55, 73);
       }
 
       .menu-item-label {
-        color: white;
+        color: rgb(9, 55, 73);
       }
     }
   }
 
   .material-icons {
-    font-family: "Material Icons Outlined";
     display: block;
     margin-bottom: 4px;
     font-size: 30px;
-    color: #333;
+    color: whitesmoke;
     transition: 0.5s ease;
   }
 
   .menu-item-label {
     display: block;
     font-size: 13px;
-    color: #333;
+    color: whitesmoke;
     transition: 0.5s ease;
   }
 
@@ -365,6 +364,7 @@
     font-size: 1rem;
     color: rgb(0, 0, 0);
     background-color: white;
+    margin-bottom: 1.5rem;
   }
   .submmit:focus {
     background-color: #87ceeb;
