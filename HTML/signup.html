@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인 페이지</title>
+    <!-- bootstrap CDN -->
+    <!-- CSS 불러오기 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- JS 불러오기 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&family=Moirai+One&family=Nanum+Gothic+Coding&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+        integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/837ff3adc1.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/signup.css">
+    <script src="/javascript/signup.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="navi">
+            <a class="navilist" href="index.html">HOME</a>
+            <a class="navilist" href="./HTML/list2_htm.html">QUEST</a>
+            <a class="navilist" href="./HTML/shoppingCart.html">SHOPPING</a>
+            <a class="navilist" href="./HTML/board.html">BOARD</a>
+            <a class="navicon" href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a class="navicon" href="./HTML/list2_htm.html"><i class="bi bi-card-checklist"></i></a>
+            <a class="navicon" href="HTML/shoppingCart.html"><i class="bi bi-cart"></i></a>
+            <a class="navicon" href="./HTML/board.html"><i class="bi bi-pencil"></i></a>
+        </div>
+        <div id="main">
+            <div id="loginModal" class="modal">
+                <div id="loginform">
+                    <div id="loginicon">
+                        <i class="bi bi-person"></i>
+                    </div>
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <form class="signupform">
+                        <div id="inputlist1">
+                            <div id="nametext">이름</div>
+                            <div class="inputitem" id="divInputName">
+                                <img src="/img/index-img/idicon.png" alt="" >
+                                <input type="text" maxlength="20" autocapitalize="off" placeholder="Username"
+                                    name="name" id="name">
+                            </div>
+                            <div id="teltext">전화번호</div>
+                            <div class="inputitem" id="divInputNum">
+                                <img src="/img/index-img/phone.png" alt="">
+                                <input type="tel" maxlength="20" autocapitalize="off" placeholder="Phone Number"
+                                    name="number" id="number">
+                            </div>
+                            <div id="emailtext">이메일</div>
+                            <div class="inputitem" id="divInputEmail">
+                                <img src="/img/index-img/email.png" alt="">
+                                <input type="email" maxlength="20" autocapitalize="off" placeholder="Email"
+                                name="email" required
+                                    id="email">
+                            </div>
+                            <div id="idtext">아이디</div>
+                            <div class="inputitem" id="divInputId">
+                                <img src="/img/index-img/id.png" alt="">
+                                <input type="text" maxlength="20" autocapitalize="off" placeholder="ID"
+                                    name="id" id="id">
+                            </div>
+                            <div id="pwtext">비밀번호</div>
+                            <div class="inputitem" id="divInputPw">
+                                <img src="/img/index-img/pw.png" alt="">
+                                <input type="password" maxlength="20" autocapitalize="off" placeholder="Password"
+                                    name="pw" id="pw">
+                            </div>
+                        </div>
+                        <div>
+                            <button id="signupbtn" onclick="signup()" type="button">Complete</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/javascript/signup.js"></script>
+
+</html>
