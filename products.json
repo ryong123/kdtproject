@@ -4,223 +4,223 @@
     "name": "Cleaning kits",
     "price": 1,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im1.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im1.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 2,
     "name": "cutlery",
     "price": 2,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im2.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im2.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 3,
     "name": "TOGO box",
     "price": 3,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im3.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im3.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 4,
     "name": "leaf plate",
     "price": 4,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im4.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im4.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 5,
     "name": "pouder puff",
     "price": 5,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im5.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im5.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 6,
     "name": "wood plate",
     "price": 6,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im6.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im6.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 7,
     "name": "paper bags",
     "price": 7,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im7.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im7.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 8,
     "name": "coconut bowls",
     "price": 8,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im8.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im8.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 9,
     "name": "poobao bomb",
     "price": 9,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisqum eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im9.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im9.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 10,
     "name": "papapya soap",
     "price": 10,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im10.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im10.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 11,
     "name": "bamboo straw",
     "price": 11,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im11.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im11.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 12,
     "name": "organic vegitable",
     "price": 12,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im12.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im12.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 13,
     "name": "reusable tumbler",
     "price": 13,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im13.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im13.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 14,
     "name": "shaving blade",
     "price": 14,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im14.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im14.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 15,
     "name": "kimchi",
     "price": 15,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im15.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im15.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 16,
     "name": "reusable sparay",
     "price": 16,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im16.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im16.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 17,
     "name": "tooth kits",
     "price": 17,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im17.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im17.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 18,
     "name": "cosmetic kits",
     "price": 18,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im18.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im18.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 19,
     "name": "wood comb",
     "price": 19,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im19.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im19.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 20,
     "name": "body bar1",
     "price": 20,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im20.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im20.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 21,
     "name": "wood tooth brush",
     "price": 21,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im21.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im21.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 22,
     "name": "picnic set",
     "price": 22,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im22.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im22.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 23,
     "name": "wood spatula",
     "price": 23,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im23.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im23.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 24,
     "name": "fruit medley",
     "price": 24,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im24.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im24.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 25,
     "name": "Jeju mandarin",
     "price": 25,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im25.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im25.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 26,
     "name": "meal kits",
     "price": 26,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im26.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im26.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 27,
     "name": "ktichen kits",
     "price": 27,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im27.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im27.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 28,
     "name": "fruit smoothies",
     "price": 28,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im28.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im28.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   }
 ]
