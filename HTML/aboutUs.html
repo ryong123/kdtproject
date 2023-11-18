@@ -78,6 +78,7 @@
         <a class="navicon" href="../HTML/board.html"
           ><i class="bi bi-pencil"></i
         ></a>
+      </div>
     </header>
     <div
       class="section-one p-225 s-1-fontcolor"
@@ -370,9 +371,7 @@
               style="background-image: center"
             />
           </div>
-          <div class="details">
-            <h2>Someone Famous<br /><span>Website Designer</span></h2>
-          </div>
+          <div class="details"></div>
         </div>
       </div>
       <div class="card">
@@ -385,9 +384,7 @@
               style="background-image: center"
             />
           </div>
-          <div class="details">
-            <h2>Someone Famous<br /><span>Website Designer</span></h2>
-          </div>
+          <div class="details"></div>
         </div>
       </div>
       <div class="card">
@@ -400,9 +397,7 @@
               style="background-image: center"
             />
           </div>
-          <div class="details">
-            <h2>Someone Famous<br /><span>Website Designer</span></h2>
-          </div>
+          <div class="details"></div>
         </div>
       </div>
       <div class="card">
@@ -415,9 +410,7 @@
               style="background-image: center"
             />
           </div>
-          <div class="details">
-            <h2>Someone Famous<br /><span>Website Designer</span></h2>
-          </div>
+          <div class="details"></div>
         </div>
       </div>
       <div class="card">
@@ -430,9 +423,7 @@
               style="background-image: center"
             />
           </div>
-          <div class="details">
-            <h2>Someone Famous<br /><span>Website Designer</span></h2>
-          </div>
+          <div class="details"></div>
         </div>
       </div>
     </div>
@@ -562,34 +553,6 @@
       document.querySelectorAll(".text-focus-in").forEach((element) => {
         observer.observe(element);
       });
-
-      // 하단 협력애니메이션
-
-      const slider = document.querySelector(".testimonials");
-      const cards = document.querySelectorAll(".card");
-      const cardWidth =
-        cards[0].offsetWidth +
-        parseInt(getComputedStyle(cards[0]).marginRight) * 2;
-      const slideCount = cards.length / 2; // 이미지가 반복된 횟수의 절반
-      let posX = 0;
-
-      // 슬라이더의 각 카드를 복제하여 끝에 추가합니다.
-
-      function moveSlide() {
-        posX -= 3; // 조절 가능한 슬라이드 속도
-
-        if (posX <= -3000) {
-          posX = 0;
-          slider.style.transition = "none"; // 위치를 변경할 때 애니메이션을 비활성화합니다.
-        } else {
-          slider.style.transition = "transform 0.5s linear"; // 부드러운 움직임을 위한 전환 효과를 활성화합니다.
-        }
-
-        slider.style.transform = `translateX(${posX}px)`;
-        requestAnimationFrame(moveSlide);
-      }
-
-      requestAnimationFrame(moveSlide);
     </script>
   </body>
 </html>
