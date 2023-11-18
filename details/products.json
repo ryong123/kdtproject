@@ -4,16 +4,16 @@
     "name": "Cleaning kits",
     "price": 1,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im1.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im1.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 2,
     "name": "cutlery",
     "price": 2,
     "description": "Lorem ipsum dvel sint commodi repudiandae consequuntur voluptatum laborum umquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesenti",
-    "image": "marketImages/im2.jpeg",
-    "detailPic": "marketImages/zero1.jpeg"
+    "image": "/marketImages/im2.jpeg",
+    "detailPic": "/marketImages/zero1.jpeg"
   },
   {
     "id": 3,

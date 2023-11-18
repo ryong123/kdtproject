@@ -1,124 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 font-src 'self' https://fonts.gstatic.com;"
+    />
+    <title>PRODUCT DETAIL PAGE</title>
+    <link rel="stylesheet" href="../CSS/productStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+      integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e"
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0 font-src 'self' https://fonts.gstatic.com;">
-  <title>PRODUCT DETAIL PAGE</title>
-  <link rel="stylesheet" href="productStyle.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
-</head>
-
-<body>
-  <div class="navbar">
-    <a href="/src/shoppingCart.html">
-      <h2>ZEROWASTE-Market</h2>
-    </a>
-    <a href="/src/aboutUs.html">about US</a>
-    <a href="/src/shoppingCart.html">Shopping</a>
-    <a href="#">Board</a>
-    <a href="/src/cart.html">
-      <div class="cart">
-        <i class="bi bi-cart2"></i>
-        <div id="cartAmount" class="cartAmount">0</div>
-      </div>
-    </a>
-  </div>
-  <div class="container">
-    <div class="title">PRODUCT DETAIL</div>
-    <div class="detail">
-      <div class="image">
-        <img src="">
-      </div>
-      <div class="content">
-        <h1 class="name"></h1>
-        <div class="price"></div>
-        <div class="buttons">
-          <button class="removeIt">Remove it
-            <span>
-              <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M1 5h16M7 8v8m4-8v8M7 1h4a1 1 0 0 1 1 1v3H6V2a1 1 0 0 1 1-1ZM3 5h12v13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5Z" />
-              </svg>
-            </span>
-          </button>
-          <button class="addIt">Add it
-            <span>
-              <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1" />
-              </svg>
-            </span>
-          </button>
+  <body>
+    <div class="navbar">
+      <a href="../HTML/shoppingCart.html">
+        <h2>ZEROWASTE-Market</h2>
+      </a>
+      <a href="/src/aboutUs.html">about US</a>
+      <a href="../javascript/shoppingCart.js">Shopping</a>
+      <a href="#">Board</a>
+      <a href="../HTML/cart.html">
+        <div class="cart">
+          <i class="bi bi-cart2"></i>
+          <div id="cartAmount" class="cartAmount">0</div>
         </div>
-        <div class="description"></div>
+      </a>
+    </div>
+    <div class="container">
+      <div class="title">PRODUCT DETAIL</div>
+      <div class="detail">
+        <div class="image">
+          <img src="" />
+        </div>
+        <div class="content">
+          <h1 class="name"></h1>
+          <div class="price"></div>
+          <div class="buttons">
+            <button class="removeIt">
+              Remove it
+              <span>
+                <svg
+                  class=""
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 18 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h16M7 8v8m4-8v8M7 1h4a1 1 0 0 1 1 1v3H6V2a1 1 0 0 1 1-1ZM3 5h12v13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5Z"
+                  />
+                </svg>
+              </span>
+            </button>
+            <button class="addIt">
+              Add it
+              <span>
+                <svg
+                  class=""
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 18 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+          <div class="description"></div>
+        </div>
       </div>
+      <!-- last things to do add detail pic -->
+      <div class="title">
+        <div class="detailPic"></div>
+      </div>
+
+      <div class="title">recommended products</div>
+      <div class="listProduct"></div>
     </div>
-    <!-- last things to do add detail pic -->
-    <div class="title">
-      <div class="detailPic"></div>
-    </div>
 
-    <div class="title">recommended products</div>
-    <div class="listProduct"></div>
-  </div>
+    <script src="../javascript/cart.js"></script>
 
-  <script src="/src/cart.js"></script>
+    <script>
+      let products = null;
+      // get datas from file json
+      fetch("products.json")
+        .then((response) => response.json())
+        .then((data) => {
+          products = data;
+          showDetail();
+        });
 
-  <script>
-    let products = null;
-    // get datas from file json
-    fetch('products.json')
-      .then(response => response.json())
-      .then(data => {
-        products = data;
-        showDetail();
-      })
+      function showDetail() {
+        // remove datas default from HTML
+        let detail = document.querySelector(".detail");
+        let listProduct = document.querySelector(".listProduct");
+        let detailPic = document.querySelector(".detailPic");
+        let productId = new URLSearchParams(window.location.search).get("id");
+        let thisProduct = products.filter((value) => {
+          return value.id == productId;
+        })[0];
+        //if there is no product with id = productId => return to home page
+        if (!thisProduct) {
+          window.location.replace((href = "/"));
+        }
 
-    function showDetail() {
-      // remove datas default from HTML
-      let detail = document.querySelector('.detail');
-      let listProduct = document.querySelector('.listProduct');
-      let detailPic = document.querySelector('.detailPic');
-      let productId = new URLSearchParams(window.location.search).get('id');
-      let thisProduct = products.filter(value => {
-        return value.id == productId
-      })[0];
-      //if there is no product with id = productId => return to home page
-      if (!thisProduct) {
-        window.location.replace(href = "/");
-      }
+        detail.querySelector(".image img").src = thisProduct.image;
+        detail.querySelector(".name").innerText = thisProduct.name;
+        detail.querySelector(".price").innerText = "$" + thisProduct.price;
+        detail.querySelector(".description").innerText =
+          thisProduct.description;
 
-      detail.querySelector('.image img').src = thisProduct.image;
-      detail.querySelector('.name').innerText = thisProduct.name;
-      detail.querySelector('.price').innerText = '$' + thisProduct.price;
-      detail.querySelector('.description').innerText = thisProduct.description;
-
-      (products.filter(value => value.id != productId)).forEach(product => {
-        let newProduct = document.createElement('a');
-        newProduct.href = './detail.html?id=' + product.id;
-        newProduct.classList.add('item');
-        newProduct.innerHTML =
-          `<img src="${product.image}" alt="${product.name}">
+        products
+          .filter((value) => value.id != productId)
+          .forEach((product) => {
+            let newProduct = document.createElement("a");
+            newProduct.href = "./detail.html?id=" + product.id;
+            newProduct.classList.add("item");
+            newProduct.innerHTML = `<img src="${product.image}" alt="${product.name}">
             <h2>${product.name}</h2>
             <div class="price">${product.price}</div>
             `;
-        listProduct.appendChild(newProduct);
-      });
-      (products.filter(value => value.id == productId)).forEach(product => {
-        let detailPics = document.createElement('a');
-        detailPics.href = './detail.html?id=' + product.id;
-        detailPics.classList.add('item');
-        detailPics.innerHTML =
-          `<img src="${product.detailPic}" style="width:1000px;height:1200px;">
+            listProduct.appendChild(newProduct);
+          });
+        products
+          .filter((value) => value.id == productId)
+          .forEach((product) => {
+            let detailPics = document.createElement("a");
+            detailPics.href = "./detail.html?id=" + product.id;
+            detailPics.classList.add("item");
+            detailPics.innerHTML = `<img src="${product.detailPic}" style="width:1000px;height:1200px;">
           <div class="detailDes"></div>`;
-        detailPic.appendChild(detailPics);
-      })
-    };
-  </script>
-  <script src="/src/shoppingCart.js"></script>
-</body>
-
+            detailPic.appendChild(detailPics);
+          });
+      }
+    </script>
+    <script src="../javascript/shoppingCart.js"></script>
+  </body>
 </html>
