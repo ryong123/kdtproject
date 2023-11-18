@@ -1,7 +1,8 @@
 /* 폰트 */
 @font-face {
-  font-family: 'Cafe24Moyamoya-Face-v1.0';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/Cafe24Moyamoya-Face-v1.0.woff2') format('woff2');
+  font-family: "Cafe24Moyamoya-Face-v1.0";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/Cafe24Moyamoya-Face-v1.0.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -16,20 +17,20 @@
 /* 전주공예고딕체 */
 /* font-family: "JeonjuCraftGoR"; */
 
-
 /* 한국기계연구원체 */
 @font-face {
   font-family: "KIMM_Bold";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2")
+    format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 
-
 /* 전주공예 고딕체 */
 @font-face {
   font-family: "JeonjuCraftGoR";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/JeonjuCraftGoR.woff2") format("woff2");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/JeonjuCraftGoR.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -70,7 +71,6 @@ body {
   font-size: 20px;
 }
 
-
 /* 헤더 메뉴 */
 #navi a {
   text-decoration: none;
@@ -96,7 +96,6 @@ body {
   width: 100vw;
   overflow: hidden;
 }
-
 
 /* 로그인-아웃 button */
 .topbtn {
@@ -127,7 +126,6 @@ body {
   text-shadow: midnightblue 1px 0 15px;
   color: midnightblue;
 }
-
 
 /* 텍스트 전체 div */
 #maincontent {
@@ -182,7 +180,7 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-#zerobasetext{
+#zerobasetext {
   position: absolute;
   width: 120px;
   margin-left: 25px;
@@ -190,10 +188,10 @@ body {
 }
 
 @keyframes iconrotate {
-  0%{
+  0% {
     transform: rotate(0deg);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -287,8 +285,6 @@ form {
   font-size: 50px;
 }
 
-
-
 #loginid,
 #loginpw {
   background-color: white;
@@ -374,9 +370,8 @@ form {
   border-radius: 5px;
 }
 
-
 /* 미디어 쿼리 태블릿 */
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   #main {
     display: flex;
     flex-direction: column;
@@ -401,7 +396,7 @@ form {
     text-align: center;
     font-family: "KIMM_Bold";
   }
-  
+
   /* 웹사이트명 아래 문구 */
   #comment {
     display: inline-block;
@@ -428,13 +423,12 @@ form {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
-  #zerobasetext{
+  #zerobasetext {
     position: absolute;
     width: 80px;
     margin-left: 25px;
     margin-top: 5px;
   }
-  
 
   #navi a {
     text-decoration: none;
@@ -450,7 +444,6 @@ form {
   .navicon {
     display: block;
   }
-
 
   /* 로그인 폼 */
   #loginicon {
@@ -563,10 +556,8 @@ form {
   }
 }
 
-
-
 /* 미디어쿼리 모바일 */
-@media screen and (max-width : 520px) {
+@media screen and (max-width: 520px) {
   #mainName {
     width: 100%;
     position: absolute;
@@ -592,7 +583,6 @@ form {
     display: none;
   }
 
-
   #zerobaseborder {
     width: 40vw;
     bottom: 10.5vh;
@@ -603,13 +593,12 @@ form {
     animation-timing-function: linear;
     animation-iteration-count: infinite;
   }
-  #zerobasetext{
+  #zerobasetext {
     position: absolute;
     width: 38vw;
     bottom: 11vh;
     right: 31vw;
   }
-  
 
   #loginicon {
     line-height: 14 vh;
@@ -665,8 +654,7 @@ form {
     align-items: center;
   }
 
-
-  .bottombtn {  
+  .bottombtn {
     color: rgb(138, 212, 241);
     display: block;
     background-color: white;
@@ -679,7 +667,6 @@ form {
     border-radius: 40px;
   }
 
-
   #bottomlogin,
   #bottomlogin::after {
     -webkit-transition: all 0.3s;
@@ -687,7 +674,7 @@ form {
     -o-transition: all 0.3s;
     transition: all 0.3s;
   }
-  
+
   #bottomlogin {
     background: none;
     border-radius: 5px;
@@ -698,16 +685,16 @@ form {
     text-transform: uppercase;
     text-shadow: none;
   }
-  
+
   #bottomlogin::before,
   #bottomlogin::after {
     background: #fff;
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1;
     border-radius: 30px;
   }
-  
+
   #bottomlogin:hover {
     color: skyblue;
   }
@@ -717,14 +704,14 @@ form {
     top: 50%;
     width: 0;
   }
-  
+
   #bottomlogin:hover:after {
     height: 100%;
     left: 0;
     top: 0;
     width: 100%;
   }
-  
+
   #bottomlogout,
   #bottomlogout::after {
     -webkit-transition: all 0.3s;
@@ -732,7 +719,7 @@ form {
     -o-transition: all 0.3s;
     transition: all 0.3s;
   }
-  
+
   #bottomlogout {
     background: none;
     border-radius: 5px;
@@ -743,16 +730,16 @@ form {
     text-transform: uppercase;
     text-shadow: none;
   }
-  
+
   #bottomlogout::before,
   #bottomlogout::after {
     background: #fff;
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1;
     border-radius: 30px;
   }
-  
+
   #bottomlogout:hover {
     color: skyblue;
   }
@@ -762,13 +749,11 @@ form {
     top: 50%;
     width: 0;
   }
-  
+
   #bottomlogout:hover:after {
     height: 100%;
     left: 0;
     top: 0;
     width: 100%;
   }
-  
-
 }
