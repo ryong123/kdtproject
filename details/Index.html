@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 font-src 'self' ">
+  <title>PRODUCT LIST</title>
+  <link rel="stylesheet" href="productStyle.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="/src/shoppingCart.html">
+      <h2>ZEROWASTE-Market</h2>
+    </a>
+    <a href="/src/aboutUs.html">about US</a>
+    <a href="#">Shopping</a>
+    <a href="#">Board</a>
+    <a href="/src/cart.html">
+      <div class="cart">
+        <i class="bi bi-cart2"></i>
+        <div id="cartAmount" class="cartAmount">0</div>
+      </div>
+    </a>
+  </div>
+  <div class="container">
+    <div class="title">PRODUCT LIST</div>
+    <div class="listProduct"></div>
+  </div>
+  <script>
+    let products = null;
+    // get datas from file json
+    fetch('products.json')
+      .then(response => response.json())
+      .then(data => {
+        products = data;
+        addDataToHTML();
+      })
+    let listProductHTML = document.querySelector('.listProduct');
+
+    function addDataToHTML() {
+      products.forEach(product => {
+        let newProduct = document.createElement('a');
+        newProduct.href = './detail.html?id=' + product.id;
+        newProduct.classList.add('item');
+        newProduct.innerHTML =
+          `<img src="${product.image}" alt="">
+                <h2>${product.name}</h2>
+                <div class="price">${product.price}</div>`;
+        listProductHTML.appendChild(newProduct);
+
+      });
+    }
+  </script>
+  <script src="cart.js"></script>
+  <script src="/src/shoppingCart.js"></script>
+</body>
+
+</html>
