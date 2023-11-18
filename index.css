@@ -140,7 +140,7 @@ body {
   width: 100%;
   position: relative;
   height: 80px;
-  line-height: 80px;
+  /* line-height: 80px; */
   top: 40vh;
   z-index: 90;
 }
@@ -159,13 +159,12 @@ body {
 /* 웹사이트명 아래 문구 */
 #comment {
   display: inline-block;
-  font-size: 20px;
-  line-height: 80px;
+  margin-left: 60px;
   position: absolute;
   text-align: center;
   font-size: 22px;
   width: 100%;
-  top: 95px;
+  top: 110px;
   opacity: 0.7;
   animation-name: comment;
   animation-duration: 5s;
@@ -174,10 +173,29 @@ body {
 }
 
 /* zero waste 아이콘 */
-#zerobase {
-  position: relative;
+#zerobaseborder {
+  position: absolute;
   width: 130px;
-  margin-left: 10px;
+  margin-left: 20px;
+  animation-name: iconrotate;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#zerobasetext{
+  position: absolute;
+  width: 120px;
+  margin-left: 25px;
+  margin-top: 5px;
+}
+
+@keyframes iconrotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes comment {
@@ -376,33 +394,47 @@ form {
   #head {
     display: inline-block;
     text-shadow: black 1px 0 10px;
+    font-size: 55px;
+    position: absolute;
+    right: 0;
     width: 100%;
     text-align: center;
-    font-size: 60px;
-    right: 0;
     font-family: "KIMM_Bold";
   }
-
+  
+  /* 웹사이트명 아래 문구 */
   #comment {
     display: inline-block;
-    font-size: 18px;
-    line-height: 30px;
+    margin-left: 60px;
     position: absolute;
     text-align: center;
+    font-size: 16px;
     width: 100%;
     right: 0;
-    top:  95px;
+    top: 80px;
     opacity: 0.7;
     animation-name: comment;
-    animation-duration: 2s;
+    animation-duration: 5s;
+    animation-delay: 0.5s;
     animation-iteration-count: 1;
   }
 
-  #zerobase {
-    position: relative;
-    width: 100px;
-    margin-left: 10px;
+  #zerobaseborder {
+    position: absolute;
+    width: 90px;
+    margin-left: 20px;
+    animation-name: iconrotate;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
+  #zerobasetext{
+    position: absolute;
+    width: 80px;
+    margin-left: 25px;
+    margin-top: 5px;
+  }
+  
 
   #navi a {
     text-decoration: none;
@@ -534,7 +566,7 @@ form {
 
 
 /* 미디어쿼리 모바일 */
-@media screen and (max-width : 470px) {
+@media screen and (max-width : 520px) {
   #mainName {
     width: 100%;
     position: absolute;
@@ -560,12 +592,24 @@ form {
     display: none;
   }
 
-  #zerobase {
-    position: absolute;
+
+  #zerobaseborder {
     width: 40vw;
-    bottom: 10vh;
+    bottom: 10.5vh;
     right: 30vw;
+    position: absolute;
+    animation-name: iconrotate;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
   }
+  #zerobasetext{
+    position: absolute;
+    width: 38vw;
+    bottom: 11vh;
+    right: 31vw;
+  }
+  
 
   #loginicon {
     line-height: 14 vh;
