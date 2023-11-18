@@ -284,6 +284,7 @@
   }
 
   body {
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     line-height: 1.5;
@@ -598,8 +599,8 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 20px;
     width: 5000px;
-    overflow-x: hidden; /* 넘치는 부분을 숨깁니다. */
     animation: slid 5s linear infinite;
+    overflow-x: hidden; /* 넘치는 부분을 숨깁니다. */
   }
 
   .testimonials .card {
