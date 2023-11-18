@@ -1,7 +1,12 @@
 @import url(./aboutUs_moblie.css);
+
 @media screen and (min-width: 768px) {
   .p-225 {
     width: 100%;
+  }
+
+  p {
+    text-align: center;
   }
 
   .p-125 {
@@ -668,5 +673,8 @@
 
   .testimonials .card:hover .content .details h2 span {
     color: #fff;
+  }
+  body {
+    text-align: center;
   }
 }
