@@ -103,11 +103,10 @@ body {
   color: white;
   background-color: transparent;
   border: none;
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 500;
-  padding: 10px 30px;
-  position: absolute;
-  right: 5vw;
+  padding: 0 4%;
+  position: relative;
 }
 
 #btnbottom {
@@ -391,8 +390,8 @@ form {
     text-shadow: black 1px 0 10px;
     font-size: 55px;
     position: absolute;
-    right: 0;
-    width: 100%;
+    left: 0;
+    width: 88%;
     text-align: center;
     font-family: "KIMM_Bold";
   }
@@ -400,12 +399,11 @@ form {
   /* 웹사이트명 아래 문구 */
   #comment {
     display: inline-block;
-    margin-left: 60px;
     position: absolute;
     text-align: center;
     font-size: 16px;
-    width: 100%;
-    right: 0;
+    width: 82%;
+    left: 0;
     top: 80px;
     opacity: 0.7;
     animation-name: comment;
@@ -532,11 +530,10 @@ form {
   #btnbottom {
     width: 100%;
     height: 40px;
-    position: absolute;
-    margin-top: 0px;
-    top: 65vh;
+    position: relative;
     text-align: center;
     display: flex;
+    top: 45vh;
     justify-content: center;
     align-items: center;
   }
@@ -546,7 +543,6 @@ form {
     display: block;
     background-color: white;
     border: none;
-    position: relative;
     font-size: 16px;
     padding: 6px 40px;
     margin-right: 0;
@@ -560,11 +556,11 @@ form {
 @media screen and (max-width: 520px) {
   #mainName {
     width: 100%;
-    position: absolute;
-    height: 100px;
+    position: relative;
+    height: 80px;
     line-height: 80px;
     text-align: center;
-    top: 40vh;
+    top: 50vh;
     z-index: 90;
   }
 
@@ -574,7 +570,7 @@ form {
     width: 100%;
     text-align: center;
     font-size: 10vw;
-    top: 13vh;
+    position: relative;
     right: 0;
     font-family: "KIMM_Bold";
   }
@@ -626,12 +622,14 @@ form {
     justify-content: center;
     align-items: center;
   }
-
+  #navi{
+    top: 10px;
+  }
   #navi a {
     text-decoration: none;
     padding: 0 8%;
     color: white;
-    font-size: 25px;
+    font-size: 4.5vw;
   }
 
   .navilist {
@@ -646,8 +644,7 @@ form {
     width: 100%;
     height: 40px;
     position: fixed;
-    margin-top: 0px;
-    top: 66vh;
+    top: 60vh;
     text-align: center;
     display: flex;
     justify-content: center;
