@@ -48,66 +48,46 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #f5f5f5;
+}
+
 @media screen and (max-width: 767px) {
-  .nav-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  #navi {
+    width: 100%;
+    height: 100px;
+    /* 메인 제외 페이지 가로선 */
     z-index: 100;
-    width: 100%;
-  }
-
-  .menu {
-    display: flex;
-    flex-grow: 1;
-    height: 72px;
-    width: 100%;
-    overflow: hidden;
-    background-color: #fff;
-    box-shadow: 0 0 1px 0 rgba(#87ceeb, 0.25), 0 15px 30px 0 rgba(#87ceeb, 0.1);
     position: fixed;
-  }
-
-  .menu-item {
-    border: none;
-    background: linear-gradient(to bottom, #2983c2, #b2e5e5);
+    top: 0px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    flex-grow: 1;
+    justify-content: center;
+    font-size: 20px;
+    background-color: #f5f5f5;
+  }
+
+  /* 헤더 메뉴 */
+  #navi a {
     text-decoration: none;
-    &:focus,
-    &:hover {
-      outline: none;
-      .material-icons {
-        font-family: "Material Icons";
-        color: rgb(9, 55, 73);
-      }
-
-      .menu-item-label {
-        color: rgb(9, 55, 73);
-      }
-    }
+    padding: 0 4%;
+    color: #333;
+    font-size: 17px;
   }
 
-  .material-icons {
-    display: block;
-    margin-bottom: 4px;
-    font-size: 30px;
-    color: whitesmoke;
-    transition: 0.5s ease;
+  /* 메뉴 호버 */
+  #navi a:hover {
+    text-shadow: midnightblue 1px 0 15px;
+    color: midnightblue;
   }
 
-  .menu-item-label {
-    display: block;
-    font-size: 13px;
-    color: whitesmoke;
-    transition: 0.5s ease;
+  .navicon {
   }
 
+  /* 모바일시 화면가리기 */
+  .navilist {
+    display: none;
+  }
   /* 각각 타이틀 제목 */
 
   h3 {
@@ -127,7 +107,7 @@
     opacity: 0.5;
   }
   .subbox1 {
-    margin-top: 75px;
+    margin-top: 125px;
     margin-bottom: 10px;
   }
   .subbox1 p {
