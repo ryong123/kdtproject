@@ -21,7 +21,7 @@ function closeModal() {
 }
 
 function gosignup() {
-    location.href = "http://127.0.0.1:5501/html/signup.html";
+    location.href = "/html/signup.html";
 }
 
 function logout() {
@@ -54,7 +54,7 @@ function login() {
         inputId.value = "";
         inputPw.value = "";
         alert('로그인을 성공했습니다.');
-        location.href = "http://127.0.0.1:5501/index.html";
+        location.href = "index.html";
     } else {
         alert('아이디와 비밀번호를 확인해주세요.')
         inputId.value = "";
