@@ -1,6 +1,6 @@
 
 function closeModal() {
-    location.href = "http://127.0.0.1:5501/index.html";
+    location.href = "/index.html";
 }
 
 
@@ -12,7 +12,7 @@ function signup() {
         console.log(id.value, pw.value);
         localStorage.setItem(id.value, pw.value)
         alert('계정이 생성되었습니다.')
-        location.href = "http://127.0.0.1:5501/index.html";
+        location.href = "/index.html";
     } else {
         alert('아이디와 비밀번호를 입력해주세요.')
         id.value = "";
