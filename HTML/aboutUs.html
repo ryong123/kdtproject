@@ -90,6 +90,7 @@
       }
 
       .section-one {
+        padding: 125px;
         background-attachment: fixed;
         -webkit-background-size: cover;
         background-size: cover;
@@ -141,13 +142,15 @@
         position: absolute;
         width: 300px; /* 원의 크기 */
         height: 300px; /* 원의 크기 */
-        background-image: url(../img/about-img/제로베이스_로고.png);
+        background-image: url(../img/about-img/제로베이스_로고_\(300px\).png);
+        background-repeat: no-repeat;
         border-radius: 50%; /* 원 모양 만들기 */
         z-index: 0; /* office-content 뒤에 위치하도록 */
         top: 50%; /* p태그의 중앙 */
         left: 50%; /* p태그의 중앙 */
         transform: translate(-50%, -50%); /* 중앙 정렬 */
         opacity: 0.3;
+        display: block;
       }
       /* .offic-parent {
 
@@ -281,6 +284,20 @@
         height: 100%;
         z-index: -1;
         overflow-x: hidden;
+      }
+
+      .section-tew {
+      }
+
+      .section-tew h1 {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin: 0;
+      }
+      .section-tew p {
+        font-size: 20px;
+        margin-bottom: 50px;
       }
 
       /* carousel videos section.1 */
@@ -668,6 +685,7 @@
             사용하고, 폐기물을 최소화하며, 지속 가능한 방식으로 운영함으로써
             환경 보호에 기여하고자 합니다. <br />
             <br />
+
             제로베이스는 혁신적인 생각과 지속 가능한 실천을 통해 세상에 긍정적인
             영향을 미치고자 하는 모든 이들과 함께하고자 합니다.
             <br /><br />
@@ -684,25 +702,26 @@
         ZeroBase Process
       </h1>
       <p class="text-focus-in s-2-fontcolor">
-        심각성을 인식하여 이벤트를 참여하여 포인트를 획득해보자
+        "고객의 깊은 이해에서부터 지속 가능한 제품 선택까지, <br />우리는 각
+        단계에서 의미있는 연결을 만들어냅니다."
       </p>
 
       <div id="processFlow">
         <div class="process" id="awareness">
           <h2>customer</h2>
-          <p>환경의 심각성 인식</p>
+          <p>"고객의 니즈 발견"</p>
         </div>
         <div class="arrow" id="arrow1"></div>
         <!-- 화살표 추가 -->
         <div class="process" id="participation">
           <h2>Cello Square</h2>
-          <p>다양한 이벤트 참여</p>
+          <p>"엄선된 이벤트 매칭"</p>
         </div>
         <div class="arrow" id="arrow2"></div>
         <!-- 또 다른 화살표 추가 -->
         <div class="process" id="shopping">
           <h2>Store</h2>
-          <p>포인트로 상품 구매</p>
+          <p>"친환경 아이템 체험"</p>
         </div>
       </div>
     </div>
@@ -710,11 +729,8 @@
     <!-- team section end -->
 
     <div class="section-tew p-225" style="background-image: url(bg2.jpeg)">
-      <h1>Event ing~~</h1>
-      <p>
-        We have forgotted how to be good guests, how to walk lightly on the
-        earth as its other creatures do.
-      </p>
+      <h1>지속 가능한 내일을 향한 동행</h1>
+      <p>"함께 만드는 지속 가능한 변화는 우리의 작은 노력으로 시작됩니다"</p>
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
           <button
@@ -741,21 +757,21 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img
-              src="../img/marketImages/bathbomb.webp"
+              src="../img/about-img/메인_회의.png"
               class="d-block w-100"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="../img/marketImages/bathbomb.webp"
+              src="../img/about-img/메인_에코포인트.png"
               class="d-block w-100"
               alt="..."
             />
           </div>
           <div class="carousel-item">
             <img
-              src="../img/marketImages/plate.avif"
+              src="../img/about-img/메인_판매상품.png"
               class="d-block w-100"
               alt="..."
             />
