@@ -1,11 +1,14 @@
 /**
 * !changing default styleof the browser
 **/
-
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Inter',
-    sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 i {
@@ -13,7 +16,7 @@ i {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: underline;
   color: white;
   font-size: 17px;
   padding: 0 4%;
@@ -54,15 +57,15 @@ h3 {
   background-color: #fff;
   color: #212529;
   padding: 5px;
-  font-size: 30px;
+  font-size: 20px;
   border-radius: 4px;
 }
 
 .cartAmount {
   position: absolute;
-  top: -15px;
+  top: -5px;
   right: -10px;
-  font-size: 16px;
+  font-size: 12px;
   background-color: red;
   color: white;
   padding: 3px;
@@ -75,12 +78,10 @@ h3 {
 .shop {
   display: grid;
   grid-template-columns: repeat(4, 223px);
-  gap: 30px;
-  justify-content: center;
+  gap: 20px;
+  justify-content: space-between;
   margin-bottom: 50px;
   /*columm 4개를 만들었다. 각각은 233px 사이즈를 가진다.*/
-
-  /** *!이거 4개에서 8개로 만들어 div도 8개로 늘릴 것.**/
 
 }
 
@@ -92,34 +93,33 @@ h3 {
 
 @media(max-width: 500px) {
   .shop {
-    grid-template-columns: repeat(1, 223px);
+    grid-template-columns: repeat(2, 223px);
   }
 }
 
+/**
+*! here u change the grid 
+out line*/
 .item {
-  border-radius: 4px;
-  border: 2px solid #cfd6ea;
-
-}
-
-.item:hover,
-.item img:hover {
-  border: 3px solid #cfd6fc;
+  background-color: white;
   border-radius: 4px;
   cursor: pointer;
+  margin: 0 1rem;
 }
 
+/* image box */
 .item img {
   width: 100%;
-  border-radius: 2px 2px 0 0;
   height: 200px;
+  border-radius: 2px 2px 0 0;
+
 }
 
 .details {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  gap: 10px;
+  gap: 15px;
 }
 
 .price-quantity {

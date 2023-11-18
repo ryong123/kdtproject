@@ -1,3 +1,5 @@
+// shopping cart js
+
 let label = document.getElementById("label");
 let shoppingCart = document.getElementById("shopping-cart");
 

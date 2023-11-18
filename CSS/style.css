@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
+/* food slider css */
 *,
 *::before,
 *::after {
@@ -63,7 +64,8 @@ body {
   background: var(--bg);
 }
 
-.container {
+/* 슬라이더 너비 조정 여기서 */
+.containerSlider {
   max-width: 124rem;
   padding: 0 1rem;
   margin: 0 auto;
@@ -80,34 +82,34 @@ body {
 }
 
 #tranding {
-  padding: 4rem 0;
+  padding: 2rem 0;
 }
 
-@media (max-width: 1440px) {
+@media (max-width:1440px) {
   #tranding {
     padding: 7rem 0;
   }
 }
 
 #tranding .tranding-slider {
-  height: 52rem;
-  padding: 2rem 0;
+  height: 38rem;
+  padding: 3rem 0;
   position: relative;
 }
 
-@media (max-width: 500px) {
+@media (max-width:500px) {
   #tranding .tranding-slider {
     height: 45rem;
   }
 }
 
 .tranding-slide {
-  width: 37rem;
-  height: 42rem;
+  width: 23rem;
+  height: 28rem;
   position: relative;
 }
 
-@media (max-width: 500px) {
+@media (max-width:500px) {
   .tranding-slide {
     width: 28rem !important;
     height: 36rem !important;
@@ -119,9 +121,10 @@ body {
   }
 }
 
+/* here to change img size and contents */
 .tranding-slide .tranding-slide-img img {
-  width: 37rem;
-  height: 42rem;
+  width: 23rem;
+  height: 28rem;
   border-radius: 2rem;
   object-fit: cover;
 }
@@ -176,153 +179,63 @@ body {
   transform: translateX(-58%) !important;
 }
 
-@media (max-width: 990px) {
+@media (max-width:990px) {
   .tranding-slider-control .swiper-button-next {
     left: 70% !important;
     transform: translateX(-70%) !important;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width:450px) {
   .tranding-slider-control .swiper-button-next {
     left: 80% !important;
     transform: translateX(-80%) !important;
   }
 }
 
-@media (max-width: 990px) {
+@media (max-width:990px) {
   .tranding-slider-control .swiper-button-prev {
     left: 30% !important;
     transform: translateX(-30%) !important;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width:450px) {
   .tranding-slider-control .swiper-button-prev {
     left: 20% !important;
     transform: translateX(-20%) !important;
   }
-
-  #login {
-    width: 100%;
-    height: 40px;
-    position: fixed;
-    margin-top: 0px;
-    top: 500px;
-    text-align: center;
-  }
-
-  #login > button {
-    color: rgb(138, 212, 241);
-    background-color: white;
-    border: none;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 0 60px;
-    margin-right: 0;
-    margin-top: 0;
-    border-radius: 40px;
-  }
 }
 
-/* 미디어쿼리 모바일 */
-@media screen and (max-width: 470px) {
-  #mainName {
-    width: 100%;
-    position: absolute;
-    height: 100px;
-    line-height: 80px;
-    text-align: center;
-    top: 40vh;
-    z-index: 90;
-  }
+.tranding-slider-control .slider-arrow {
+  background: var(--white);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  left: 42%;
+  transform: translateX(-42%);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
 
-  #head {
-    display: inline-block;
-    text-shadow: black 1px 0 10px;
-    width: 100%;
-    text-align: center;
-    font-size: 10vw;
-    top: 13vh;
-    right: 0;
-    font-family: "KIMM_Bold";
-  }
+.tranding-slider-control .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #222224;
+}
 
-  #comment {
-    display: none;
-  }
+.tranding-slider-control .slider-arrow::after {
+  content: '';
+}
 
-  #zerowaste {
-    position: absolute;
-    width: 40vw;
-    bottom: 10vh;
-    right: 30vw;
-  }
+.tranding-slider-control .swiper-pagination {
+  position: relative;
+  width: 15rem;
+  bottom: 1rem;
+}
 
-  #loginicon {
-    line-height: 14vh;
-  }
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
 
-  #loginicon i {
-    color: white;
-    font-size: 50px;
-  }
-
-  #navi a {
-    text-decoration: none;
-    font-size: 3.3vw;
-    padding: 0 3vw;
-    color: white;
-  }
-
-  #loginform {
-    width: 40vw;
-    height: 60vh;
-    min-width: 300px;
-    min-width: 280px;
-    background-color: rgba(240, 248, 255, 0.9);
-    color: black;
-    margin-top: 53px;
-    padding: 20px;
-    border-radius: 40px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #login {
-    width: 100%;
-    height: 40px;
-    position: fixed;
-    margin-top: 0px;
-    top: 500px;
-    text-align: center;
-  }
-
-  #login > button {
-    color: rgb(138, 212, 241);
-    background-color: white;
-    border: none;
-    font-size: 16px;
-    font-weight: 500;
-    padding: 0 60px;
-    margin-right: 0;
-    margin-top: 0;
-    border-radius: 40px;
-  }
-
-  #navi a {
-    text-decoration: none;
-    padding: 0 8%;
-    color: white;
-    font-size: 25px;
-  }
-  .navilist {
-    display: none;
-  }
-  .navicon {
-    display: block;
-  }
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
 }
