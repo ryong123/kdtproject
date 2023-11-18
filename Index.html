@@ -1,0 +1,52 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 font-src 'self' https://fonts.gstatic.com;">
+  <title>Document</title>
+  <link rel="stylesheet" href="productStyle.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">PRODUCT LIST</div>
+    <div class="listProduct"></div>
+  </div>
+
+
+
+  <script>
+    //Important note: If you have downloaded the code
+    // but still encounter errors when running the program,
+    //    please watch the video at this link because
+    // I have shown you how to run the project properly.
+    // https://www.youtube.com/watch?v=okyfcpZfPAU&t=142s
+    let products = null;
+    // get datas from file json
+    fetch('products.json')
+      .then(response => response.json())
+      .then(data => {
+        products = data;
+        addDataToHTML();
+      })
+    let listProductHTML = document.querySelector('.listProduct');
+
+    function addDataToHTML() {
+      products.forEach(product => {
+        let newProduct = document.createElement('a');
+          // newProduct.href = 'detail.html?id=' + product.id;
+          //작동원하면 위에 주석 제거
+        newProduct.classList.add('item');
+        newProduct.innerHTML =
+          `<img src="${product.image}" alt="">
+                <h2>${product.name}</h2>
+                <div class="price">${product.price}</div>`;
+        listProductHTML.appendChild(newProduct);
+
+      });
+    }
+  </script>
+</body>
+
+</html> -->
