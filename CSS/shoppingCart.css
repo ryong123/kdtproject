@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
 }
 
@@ -38,8 +38,6 @@
   color: midnightblue;
   /* text-shadow: 2px 2px 4px white; X축 오프셋, Y축 오프셋, 흐림 반경, 색상 */
 }
-
-
 
 .navicon {
   display: none;
@@ -75,9 +73,7 @@ a {
   color: white;
   font-size: 17px;
   padding: 0 4%;
-
 }
-
 
 /* <!-- cart icon---> */
 /**
@@ -90,28 +86,56 @@ a {
   justify-content: space-between;
   margin-bottom: 50px;
   /*columm 4개를 만들었다. 각각은 233px 사이즈를 가진다.*/
-
 }
 
-@media(max-width: 1000px) {
+@media (max-width: 1000px) {
   .shop {
     grid-template-columns: repeat(2, 223px);
   }
 }
 
-@media(max-width: 500px) {
+@media (max-width: 500px) {
   .shop {
     grid-template-columns: repeat(2, 223px);
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .navicon {
     display: block;
   }
 
   .navilist {
     display: none;
+  }
+  /* 고정 헤더 */
+  #navi {
+    width: 100%;
+    height: 100px;
+    /* 메인 제외 페이지 가로선 */
+    z-index: 100;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  /* 헤더 메뉴 */
+  #navi a {
+    text-decoration: none;
+    padding: 0 4%;
+    color: #333;
+    font-size: 17px;
+  }
+
+  /* 메뉴 호버 */
+  #navi a:hover {
+    text-shadow: midnightblue 1px 0 15px;
+    color: midnightblue;
+    /* text-shadow: 2px 2px 4px white; X축 오프셋, Y축 오프셋, 흐림 반경, 색상 */
   }
 }
 
@@ -130,7 +154,6 @@ out line*/
   width: 100%;
   height: 200px;
   border-radius: 2px 2px 0 0;
-
 }
 
 .details {
@@ -156,13 +179,11 @@ out line*/
 
 .bi-dash-lg {
   color: red;
-
 }
 
 .bi-plus-lg {
   color: green;
 }
-
 
 /**
 *!start rules for label and some buttons

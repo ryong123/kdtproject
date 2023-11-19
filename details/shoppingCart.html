@@ -29,6 +29,8 @@
   <title>ZEROWASTE-Market</title>
   <style>
     /* toTop Start */
+
+    
     #toTop {
       position: fixed;
       bottom: 20px;
@@ -166,6 +168,12 @@
         grid-template-columns: auto auto;
         grid-column-gap: 1em;
       }
+
+      #navi .navicon{
+        font-size: 25px;
+        
+      }
+
     }
 
 
@@ -176,20 +184,30 @@
 
 <body>
   <!-- navbox -->
-  <div class="navbar">
-    <a href="../HTML/shoppingCart.html">
-      <h2>ZEROWASTE-Market</h2>
-    </a>
-    <a href="/src/aboutUs.html">about US</a>
-    <a href="#">Shopping</a>
-    <a href="#">Board</a>
-    <a href="../HTML/cart.html">
-      <div class="cart">
-        <i class="bi bi-cart2"></i>
-        <div id="cartAmount" class="cartAmount">0</div>
+     <div id="navi">
+        <a class="navilist" href="../index.html">HOME</a>
+        <a class="navilist" href="../HTML/aboutUs.html">ABOUTUS</a>
+        <!-- <a class="navilist" href="#"></a> -->
+        <a class="navilist" href="../HTML/">QUEST</a>
+        <a class="navilist" href="../HTML/shoppingCart.html">SHOPPING</a>
+        <a class="navilist" href="../HTML/board.html">BOARD</a>
+        <a class="navicon" href="../index.html"
+          ><i class="bi-solid bi-house"></i
+        ></a>
+        <a class="navicon" href="../HTML/aboutUs.html"
+          ><i class="bi-solid bi-building"></i>
+        </a>
+        <a class="navicon" href="./HTML/list2_htm.html"
+          ><i class="bi bi-card-checklist"></i
+        ></a>
+        <a class="navicon" href="../HTML/shoppingCart.html"
+          ><i class="bi bi-cart"></i
+        ></a>
+        <a class="navicon" href="../HTML/board.html"
+          ><i class="bi bi-pencil"></i
+        ></a>
       </div>
-    </a>
-  </div>
+
   <!-- navbox -->
 
   <!-- food slider -->
