@@ -225,7 +225,13 @@ a {
     display: none;
   }
 
+  .detImg {
+    width: 500px;
+    height: 600px;
+  }
+
   .navicon {
+    font-size: 25px;
     display: block;
   }
 
