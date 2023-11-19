@@ -539,7 +539,7 @@ p {
         width: 100%;
         height: 30%;
         background-color: rgb(173, 196, 206);
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         font-weight: bold;
         line-height: 90px;
     }
@@ -556,7 +556,7 @@ p {
 
     .todo_list1>li {
         margin: 110px 0 55px 0;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         font-weight: bold;
         text-decoration: underline;
         text-underline-offset: 6px;
@@ -603,7 +603,7 @@ p {
                      background-color: whitesmoke;
                      border-radius: 30%;
                      z-index: 10;
-                     font-size: 1rem;
+                     font-size: 0.8rem;
                  }
         
                  #resetMileageButton {
@@ -615,7 +615,7 @@ p {
                      background-color: whitesmoke;
                      border-radius: 30%;
                      z-index: 10;
-                    font-size: 1rem;
+                    font-size: 0.8rem;
                  }
 
     /* -------------------------------------------------todolist 상세체크 (끝)---------------------------------------손호성 */
@@ -644,13 +644,13 @@ p {
 
     .straw_inner_h2 {
         margin: auto;
-        width: 90%;
+        width: 95%;
         text-shadow: 4px 4px 3px rgb(0, 0, 0, 0.2);
     }
 
     .straw_inner_h2>h2 {
         margin: 40px auto 30px;
-        /* font-size: 2.7rem; */
+        font-size: 2.2rem;
     }
 
     .straw_inner_h2>h2>span {
@@ -712,6 +712,10 @@ p {
         padding: 20px;
     }
 
+        .straw_text > h2{
+            font-size: 2.2rem;
+        }
+
     .p_box{
         background:whitesmoke url(../img/todolist-img/logo.png) no-repeat center/cover;
         background-size: 300px 300px;
@@ -720,7 +724,7 @@ p {
 
     .p_box>p {
         margin: 40px auto 25px;
-        font-size: 1.8rem;
+        font-size: 1.7rem;
         line-height: 1.8;
         text-align: left;
     }
@@ -732,6 +736,10 @@ p {
         display: block;
         margin: 40px auto 30px;
         position: relative;
+    }
+
+    .straw_slide > h2{
+        font-size: 2.3rem;
     }
 
     .straw_slide_inner {
@@ -879,6 +887,10 @@ p {
         /* 초기 높이를 0으로 설정 */
     }
 
+    .child-box > h3{
+        font-size: 1.7rem;
+    }
+
     .child-box:nth-child(2) {
         margin: 40px auto 25px;
     }
@@ -921,7 +933,7 @@ p {
 
     .event_inner {
         width: 90%;
-        height: 90%;
+        height: 100%;
         margin: 40px auto 25px;
         padding-top: 10px;
         background: whitesmoke;
@@ -953,7 +965,7 @@ p {
 
     .event_content {
         width: 90%;
-        height: 1860px;
+        height: 2060px;
         margin: auto;
     }
 
@@ -982,7 +994,7 @@ p {
     .event_qnA {
         display: block;
         width: 90%;
-        height: 250px;
+        height: 750px;
         margin: auto;
         position: relative;
     }
@@ -993,7 +1005,7 @@ p {
         top: 2.6%;
         left: 0;
         width: 20%;
-        height: 215px;
+        height: 250px;
     }
 
     .event_qnA>p {
@@ -1002,7 +1014,7 @@ p {
         top: 0;
         right: 0;
         width: 80%;
-        height: 215px;
+        height: 250px;
     }
 
     /* -------------------------------------------------QnA (끝)---------------------------------------손호성 */
