@@ -11,10 +11,14 @@ function signup() {
     if (id.value && pw.value) {
         console.log(id.value, pw.value);
         localStorage.setItem(id.value, pw.value)
-        alert('계정이 생성되었습니다.')
-        location.href = "/index.html";
+        swal(`${id.value}님`, "계정이 생성되었습니다!", "success")
+            .then((value) => {
+                if (value) {
+                    location.href = '/index.html'
+                }
+            });
     } else {
-        alert('아이디와 비밀번호를 입력해주세요.')
+        swal("입력 오류", "아이디와 비밀번호를 입력해주세요!", "warning");
         id.value = "";
         pw.value = "";
         return;

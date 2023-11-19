@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인 페이지</title>
+    <!-- sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- bootstrap CDN -->
     <!-- CSS 불러오기 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -40,21 +42,12 @@
             <a class="navilist" href="./HTML/list2_htm.html">QUEST</a>
             <a class="navilist" href="./HTML/shoppingCart.html">SHOPPING</a>
             <a class="navilist" href="./HTML/board.html">BOARD</a>
-            <a class="navicon" href="index.html"
-              ><i class="bi-solid bi-house"></i
-            ></a>
-            <a class="navicon" href="./HTML/aboutUs.html"
-              ><i class="bi-solid bi-building"></i>
+            <a class="navicon" href="index.html"><i class="bi-solid bi-house"></i></a>
+            <a class="navicon" href="./HTML/aboutUs.html"><i class="bi-solid bi-building"></i>
             </a>
-            <a class="navicon" href="./HTML/list2_htm.html"
-              ><i class="bi bi-card-checklist"></i
-            ></a>
-            <a class="navicon" href="HTML/shoppingCart.html"
-              ><i class="bi bi-cart"></i
-            ></a>
-            <a class="navicon" href="./HTML/board.html"
-              ><i class="bi bi-pencil"></i
-            ></a>
+            <a class="navicon" href="./HTML/list2_htm.html"><i class="bi bi-card-checklist"></i></a>
+            <a class="navicon" href="HTML/shoppingCart.html"><i class="bi bi-cart"></i></a>
+            <a class="navicon" href="./HTML/board.html"><i class="bi bi-pencil"></i></a>
         </div>
         <div id="main">
             <div id="loginModal" class="modal">
@@ -67,7 +60,7 @@
                         <div id="inputlist1">
                             <div id="nametext">이름</div>
                             <div class="inputitem" id="divInputName">
-                                <img src="/img/index-img/idicon.png" alt="" >
+                                <img src="/img/index-img/idicon.png" alt="">
                                 <input type="text" maxlength="20" autocapitalize="off" placeholder="Username"
                                     name="name" id="name">
                             </div>
@@ -80,15 +73,14 @@
                             <div id="emailtext">이메일</div>
                             <div class="inputitem" id="divInputEmail">
                                 <img src="/img/index-img/email.png" alt="">
-                                <input type="email" maxlength="20" autocapitalize="off" placeholder="Email"
-                                name="email" required
-                                    id="email">
+                                <input type="email" maxlength="20" autocapitalize="off" placeholder="Email" name="email"
+                                    required id="email">
                             </div>
                             <div id="idtext">아이디</div>
                             <div class="inputitem" id="divInputId">
                                 <img src="/img/index-img/id.png" alt="">
-                                <input type="text" maxlength="20" autocapitalize="off" placeholder="ID"
-                                    name="id" id="id">
+                                <input type="text" maxlength="20" autocapitalize="off" placeholder="ID" name="id"
+                                    id="id">
                             </div>
                             <div id="pwtext">비밀번호</div>
                             <div class="inputitem" id="divInputPw">
