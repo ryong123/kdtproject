@@ -88,7 +88,7 @@ Our reviews
 ----------------------------------------------------------------
 Jackie chen
 <여기에 알아서 코멘트를 답시다>
-<a href=https://twitter.com/metdors_jjal/status/1710307512325427539/photo/1/</a>
+<a href="[https://imgur.com/x77x0Fa](https://pbs.twimg.com/media/F7w7nV5X0AAZqaA?format=jpg&name=small)"><img src=["https://i.imgur.com/x77x0Fa.jpg](https://pbs.twimg.com/media/F7w7nV5X0AAZqaA?format=jpg&name=small)" title="source: imgur.com" /></a>
 
 
 ------------------------------------------------------------------------------
