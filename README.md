@@ -6,7 +6,7 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00F758&random=false&width=435&lines=Description+of+the+project+)](https://git.io/typing-svg)
 1.reason<br>
-The reason why we chose Zero Base is out team member YEJI 
+The reason why we chose Zero Base is one of our team member YEJI 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00F758&random=false&width=435&lines=Project+structure+and+key+files+)](https://git.io/typing-svg)
 - 프로젝트의 구조를 이해하기 쉽도록 주요 파일 및 폴더에 대한 간단한 설명을 추가하세요.
 이 프로젝트는 [프로젝트 목적]을 위해 개발되었습니다. [프로젝트의 주요 기능 또는 특징]을 제공하여 사용자에게 프로젝트의 핵심 아이디어를 전달합니다.<br>
