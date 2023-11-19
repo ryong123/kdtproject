@@ -90,14 +90,12 @@
 
   /* 맨 위 애니메이션 배경 */
   #animatedDiv {
-    overflow-x: hidden;
     width: 800px; /* 초기 너비 */
     height: 500px; /* 높이 설정 */
     overflow: hidden; /* 이미지가 div 밖으로 나가지 않도록 함 */
     position: relative; /* 중앙 정렬을 위한 상대 위치 */
     left: 50%; /* 부모 요소 기준 왼쪽에서 50% 위치 */
     transform: translateX(-50%); /* 자신의 너비의 절반만큼 왼쪽으로 이동 */
-    transition: all 0.8s ease; /* 애니메이션 효과 */
   }
 
   #animatedDiv.expanded {
@@ -294,7 +292,6 @@
   }
 
   body {
-    overflow-x: hidden;
     margin: 0;
     padding: 0;
     line-height: 1.5;
