@@ -1,6 +1,5 @@
 /* product detail page css */
 
-
 body {
   margin: 0;
 }
@@ -34,7 +33,6 @@ body {
   color: midnightblue;
   /* text-shadow: 2px 2px 4px white; X축 오프셋, Y축 오프셋, 흐림 반경, 색상 */
 }
-
 
 .navicon {
   display: none;
@@ -95,7 +93,7 @@ detImg {
 }
 
 .listProduct .item {
-  background-color: #EEEEE6;
+  background-color: #eeeee6;
   padding: 20px;
   border-radius: 20px;
 }
@@ -131,13 +129,12 @@ detImg {
   position: absolute;
   width: 300px;
   height: 300px;
-  content: '';
+  content: "";
   background-color: #94817733;
   z-index: -1;
   border-radius: 190px 100px 170px 180px;
   left: calc(50% - 150px);
   top: 50px;
-
 }
 
 .detail .name {
@@ -172,7 +169,7 @@ detImg {
 }
 
 .detail .buttons span {
-  background-color: #011C27;
+  background-color: #011c27;
   width: 30px;
   height: 30px;
   display: flex;
@@ -183,23 +180,22 @@ detImg {
 }
 
 .detail .buttons button:nth-child(1) {
-  background-color: #2F2F2F;
+  background-color: #2f2f2f;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #eee;
-  box-shadow: 0 10px 20px #05668D;
+  box-shadow: 0 10px 20px #05668d;
   cursor: pointer;
 }
 
-
 .detail .buttons button:nth-child(2) {
-  background-color: #2F2F2F;
+  background-color: #2f2f2f;
   display: flex;
   justify-content: center;
   align-items: center;
   color: #eee;
-  box-shadow: 0 10px 20px #05668D;
+  box-shadow: 0 10px 20px #05668d;
   cursor: pointer;
 }
 
@@ -218,19 +214,48 @@ detImg {
   }
 }
 
-
-
 /* mobile */
 @media only screen and (max-width: 768px) {
-  .listProduct {
-    grid-template-columns: repeat(2, 1fr);
+  #navi {
+    width: 100%;
+    height: 100px;
+    /* 메인 제외 페이지 가로선 */
+    z-index: 100;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+  }
+
+  /* 헤더 메뉴 */
+  #navi a {
+    text-decoration: none;
+    padding: 0 4%;
+    color: #333;
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  /* 메뉴 호버 */
+  #navi a:hover {
+    /* text-shadow: 2px 2px 4px white;  */
+    text-shadow: midnightblue 1px 0 15px;
+    color: midnightblue;
+  }
+
+  .navicon {
+    display: block;
   }
 
   .navilist {
     display: none;
   }
-
-
+  /* 메뉴바 */
+  .listProduct {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
   .detImg {
     width: 20%;
@@ -255,7 +280,6 @@ detImg {
   .detail .name {
     font-size: x-large;
     margin: 0;
-
   }
 
   .detail .buttons button {
