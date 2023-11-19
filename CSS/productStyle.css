@@ -35,6 +35,7 @@ body {
   /* text-shadow: 2px 2px 4px white; X축 오프셋, Y축 오프셋, 흐림 반경, 색상 */
 }
 
+
 .navicon {
   display: none;
 }
@@ -213,10 +214,19 @@ a {
 }
 
 
+
 /* mobile */
 @media only screen and (max-width: 768px) {
   .listProduct {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .navilist {
+    display: none;
+  }
+
+  .navicon {
+    display: block;
   }
 
   .detail {

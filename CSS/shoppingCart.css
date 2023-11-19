@@ -39,6 +39,7 @@
   /* text-shadow: 2px 2px 4px white; X축 오프셋, Y축 오프셋, 흐림 반경, 색상 */
 }
 
+
 .navicon {
   display: none;
 }
@@ -99,6 +100,16 @@ a {
 @media(max-width: 500px) {
   .shop {
     grid-template-columns: repeat(2, 223px);
+  }
+}
+
+@media screen and (max-width:768px) {
+  .navicon {
+    display: block;
+  }
+
+  .navilist {
+    display: none;
   }
 }
 
