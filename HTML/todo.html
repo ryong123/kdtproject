@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- reset css -->
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <!-- todo pc, mobile css  -->
+    <link rel="stylesheet" href="./CSS/todo_pc.css">
+    <link rel="stylesheet" href="./CSS/todo_m.css">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <!-- slick -->
+    <script type="text/javascript" src="./javascript/slick.min.js"></script>
+    <link rel="stylesheet" href="./CSS/slick-theme.css">
+    <link rel="stylesheet" href="./CSS/slick.css">
+    <!-- slick CDN -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- 차트 라이브러리 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <!-- 타이핑 라이브러리 제목-->
+    <script src="https://unpkg.com/hangul-js"></script>
+    <script src="https://unpkg.com/type-hangul@latest/dist/type-hangul.min.js"></script>
+    <!-- boot -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+    <title>Todo list</title>
+</head>
+
+<body>
+    <!-- wrap 시작-->
+    <div class="wrap">
+        <header>
+            <div class="header_inner">
+                <div id="navi">
+                    <a class="navilist" href="../index.html">HOME</a>
+                    <a class="navilist" href="../HTML/aboutUs.html">ABOUTUS</a>
+                    <!-- <a class="navilist" href="#"></a> -->
+                    <a class="navilist" href="../HTML/">QUEST</a>
+                    <a class="navilist" href="../HTML/shoppingCart.html">SHOPPING</a>
+                    <a class="navilist" href="../HTML/board.html">BOARD</a>
+                    <a class="navicon" href="../index.html"><i class="bi-solid bi-house"></i></a>
+                    <a class="navicon" href="../HTML/aboutUs.html"><i class="bi-solid bi-building"></i>
+                    </a>
+                    <a class="navicon" href="./HTML/list2_htm.html"><i class="bi bi-card-checklist"></i></a>
+                    <a class="navicon" href="../HTML/shoppingCart.html"><i class="bi bi-cart"></i></a>
+                    <a class="navicon" href="../HTML/board.html"><i class="bi bi-pencil"></i></a>
+                </div>
+            </div>
+            <!-- VISUAL -->
+            <div class="visual">
+                <div class="visual-text">
+                    <span id="text-target">"우리의 편리함, <span>지구는 위태롭다." </span>
+                    </span>
+                    <span class="text-target1">"제로웨이스트, 작은 선택에서 큰 힘을 느껴봐요."</span>
+                    <span class="text-target2">-Zero Waste-</span>
+                </div>
+            </div>
+        </header>
+
+        <section class="section_chartbox">
+            <div class="chartbox">
+                <canvas id="myChart"></canvas>
+            </div>
+        </section>
+
+        <!-- 지구 환경의 심각성(시작)        손호성-->
+        <section class="section_warring">
+            <div class="warring">
+                <h2>일회용품, <span>얼마나 사용해요?</span></h2>
+                <div class="warring_inner">
+                    <div class="warring_box">
+                        <p>
+                            저희가 첫 번째로 다룰 환경 문제는 일회용품의 심각성입니다.<br>
+                            여러분이 하루에 사용하는 일회용품 수를 점검해 보고, 심각성을 확인해 보세요.
+                        </p>
+                        <h3>
+                            여러분은 하루 평균 몇 개의<br> 일회용품을 사용하시나요?
+                        </h3>
+                        <div class="warring_check">
+                            <div class="warring_container hvr-grow">
+                                <input type="radio" class="warringinput" name="warring" id="warring_check1" value="good"
+                                    checked>
+                                <label for="warring_check1">사용하지 않음</label>
+                            </div>
+                            <div class="warring_container hvr-grow">
+                                <input type="radio" name="warring" class="warringinput" id="warring_check2"
+                                    value="not_bad" checked>
+
+                                <label for="warring_check2">1~3개</label>
+                            </div>
+
+                            <div class="warring_container hvr-grow">
+                                <input type="radio" name="warring" class="warringinput" id="warring_check3" value="war"
+                                    checked>
+                                <label for="warring_check3">4~6개 </label>
+                            </div>
+
+                            <div class="warring_container hvr-grow">
+                                <input type="radio" name="warring" class="warringinput" id="warring_check4" value="4"
+                                    checked>
+                                <label for="warring_check4">7개 이상</label>
+                            </div>
+                        </div>
+                        <button class="sure" onclick="warringCheck()">확인</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- 지구 환경의 심각성(끝)      손호성-->
+
+        <!-- 제로웨이스트 {시작} -->
+        <section class="section_straw">
+            <div class="straw">
+                <div class="straw_inner">
+                    <div class="straw_inner_h2">
+                        <h2>우리가 실천 가능한 <span>해결 방안 있을까?</span></h2>
+                        <h3>지구를 위해 실천 할 수 있는 여러가지 방안이 있지만 우리는 제로웨이스트를 실천해요!</h3>
+                    </div>
+
+                    <div class="straw_cartoon">
+                        <div class="straw_cartoon_container">
+                            <div class="straw_text straw-child-leftbox">
+                                <h2>제로웨이스트란?<br>
+                                    (ZERO WASTE)</h2>
+                                <div class="p_box">
+                                    <p>버려지는 것이 없는? 즉! 쓰레기가 없다는 의미입니다.
+                                        쓰레기를 아예 배출하지 않는다기 보다는, 일회용품 사용을 줄이고 재활용이 가능한 소재로 대체함으로써 쓰레기 배출량을
+                                        줄여나가는 것을 목표로 하고 있습니다.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="straw_slide">
+                        <h2>환경을 지키는 사례</h2>
+                        <div class="straw_slide_inner">
+                            <div class="slide active-slide">
+                                <img src="./img/slide/1.jpg" alt="">
+                                <div class="text_box">
+                                    <h2 class="tp-txt">미사용 플러그</h2>
+                                    <h2 class="mid-txt">뽑기</h2>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/slide/2.jpeg" alt="">
+                                <div class="text_box">
+                                    <h2 class="tp-txt">에어콘 온도는</h2>
+                                    <h2 class="mid-txt">적절하게</h2>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/slide/3.jpg" alt="">
+                                <div class="text_box">
+                                    <h2 class="tp-txt">전자 메일함</h2>
+                                    <h2 class="mid-txt">비우기</h2>
+                                </div>
+                            </div>
+                            <div class="slide">
+                                <img src="./img/slide/4.jpg" alt="">
+                                <div class="text_box">
+                                    <h2 class="tp-txt">쓰레기는</h2>
+                                    <h2 class="mid-txt">분리수거</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="straw_btn_prev">
+                            <img src="./img/btn_todo.png" alt="">
+                        </button>
+                        <button class="straw_btn_next">
+                            <img src="./img/btn_todo.png" alt="">
+                        </button>
+                        <ul class="straw_indi">
+                            <li class="indicator on"></li>
+                            <li class="indicator"></li>
+                            <li class="indicator"></li>
+                            <li class="indicator"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 제로웨이스트(straw) {끝}           손호성-->
+
+        <!-- 지구 환경 상세 체크(시작)       손호성-->
+        <section>
+            <div class="todolist">
+                <h2>지구를 위한 실천, 얼마나 하고 있나 <span>체크해봐요!</span>
+                </h2>
+                <div class="todolist_inner">
+                    <button class="todolist_prev">
+                        <img src="./img/btn_todo.png" alt="">
+                    </button>
+                    <div class="todo_box_slide">
+                        <div class="todo1 todo_slide1">
+                            <span class="big hvr-grow2">
+                                <ul class="todo_list1">
+                                    <li>
+                                        <div class="check_container">
+                                            <input type="checkbox" class="todoinput" id="checkbox1" name="" value="">
+                                            <div class="todolabel"></div>
+                                            <label for="checkbox1" class="todolabel_text">대중교통 이용하기</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check_container">
+                                            <input type="checkbox" class="todoinput" id="checkbox2" name="" value="">
+                                            <div class="todolabel"></div>
+                                            <label for="checkbox2" class="todolabel_text">메일함 비우기</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check_container">
+                                            <input type="checkbox" class="todoinput" id="checkbox3" name="" value="">
+                                            <div class="todolabel"></div>
+                                            <label for="checkbox3" class="todolabel_text">스트리밍 대신 다운로드 하기</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </span>
+                            <span class="small">탄소배출 줄이기</span>
+                        </div>
+
+                        <div class="todo1 todo_slide2">
+                            <span class="big hvr-grow2">
+                                <ul class="todo_list1">
+                                    <li>
+                                        <div class="check_container">
+                                            <input type="checkbox" class="todoinput" id="checkbox4" name="" value="">
+                                            <div class="todolabel"></div>
+                                            <label for="checkbox4" class="todolabel_text">적정 실내온도 유지하기</label>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <div class="check_container">
+                                            <input type="checkbox" class="todoinput" id="checkbox5" name="" value="">
+                                            <div class="todolabel"></div>
+                                            <label for="checkbox5" class="todolabel_text">미사용 전기제품 플러그 뽑기</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check_container">
+                                            <input type="checkbox" class="todoinput" id="checkbox6" name="" value="">
+                                            <div class="todolabel"></div>
+                                            <label for="checkbox6" class="todolabel_text">LED 조명으로 교체하기</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </span>
+                            <span class="small">에너지 효율 높이기</span>
+                        </div>
+                        <div class="todo1 todo_slide3">
+                            <span class="big hvr-grow2">
+                                <ul class="todo_list1">
+                                    <li>
+                                        <div class="check_container">
+                                            <input type="checkbox" class="todoinput" id="checkbox7" name="" value="">
+                                            <div class="todolabel"></div>
+                                            <label for="checkbox7" class="todolabel_text">올바른 분리 배출하기</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check_container">
+                                            <input type="checkbox" class="todoinput" id="checkbox8" name="" value="">
+                                            <div class="todolabel"></div>
+                                            <label for="checkbox8" class="todolabel_text">텀블러 이용하기</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="check_container">
+                                            <input type="checkbox" class="todoinput" id="checkbox9" name="" value="">
+                                            <div class="todolabel"></div>
+                                            <label for="checkbox9" class="todolabel_text">장바구니 사용하기</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </span>
+                            <span class="small">플라스틱 줄이기</span>
+                        </div>
+                    </div>
+                    <button class="todolist_next">
+                        <img src="./img/btn_todo.png" alt="">
+                    </button>
+                </div>
+                <button class="sure" id="accumulateButton">적립</button>
+                <button class="sure" id="checkMileageButton">적립 확인</button>
+                <button class="sure" id="resetMileageButton">초기화</button>
+            </div>
+        </section>
+        <!-- 지구 환경 상세 체크(끝) -->
+
+        <!-- 영상 (시작) -->
+        <section class="section_quiz">
+            <div class="quiz">
+                <!-- <img src="" alt=""> -->
+                <h2>제로웨이스트 실천 <span>방법과 혜택!</span></h2>
+                <div class="quiz_inner">
+                    <div class="quiz_content">
+                        <div class="child-box show" id="box1">
+                            <h3>제로웨이스트 2분 만에 파악하기!</h3>
+                            <p>제로웨이스트가 먼지 간단하게 정리했어요!</p>
+                            <iframe width="100%" height="600px" src="https://www.youtube.com/embed/W1OlftjUeOE?rel=0"
+                                frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="child-box" id="box2">
+                            <h3>제로웨이스트 실천 꿀팁!</h3>
+                            <p>"다양한 실천 사례들과 실천하면 받을 수 있는 혜택까지 정리했어요!</p>
+                            <iframe width="100%" height="600px"
+                                src="https://www.youtube.com/embed/Mh8atDu1pxY?si=39fPcVswwcrNGx90"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 영상  (끝) -->
+
+        <!-- QnA (시작)손호성-->
+        <section class="section_event">
+            <div class="event">
+                <div class="event_inner">
+                    <span>
+                        <h2>Q&A</h2>
+                    </span>
+                    <h2>제로웨이스트 관련된 궁금증 <span>해소해요</span></h2>
+                    <div class="event_content">
+                        <div class="event_end">
+                            <h3>제로 웨이스트 퀘스트는 무엇인가요?</h3>
+                            <div class="event_qnA">
+                                <strong>A.</strong>
+                                <p>제로 웨이스트 퀘스트는 일상생활에서 생성되는 쓰레기를 최소화하고 지속 가능한 소비 및 생활 습관을 채택하는 노력을 의미합니다. 목표는 가능한 한 많은
+                                    폐기물을 생성하지 않고 자원을 효율적으로 활용하는 것입니다. </p>
+                            </div>
+
+                        </div>
+                        <div class="event_end">
+                            <h3>어떻게 제로 웨이스트 라이프를 시작할 수 있나요?</h3>
+                            <div class="event_qnA">
+                                <strong>A.</strong>
+                                <p>제로 웨이스트 라이프를 시작하려면 먼저 일상생활에서 생성되는 쓰레기의 유형을 파악하고, 재사용 가능한 제품을 선택하며, 일회용품을 최소화하는 습관을
+                                    채택하는 것이 중요합니다. 재활용 및 재사용을 고려한 쇼핑과 식사
+                                    습관을 변경할 수 있습니다.</p>
+                            </div>
+                        </div>
+                        <div class="event_end">
+                            <h3>제로 웨이스트 라이프스타일을 유지하는 동안 어떤 어려움이 있을 수 있나요?</h3>
+                            <div class="event_qnA">
+                                <strong>A.</strong>
+                                <p>제로 웨이스트 라이프스타일은 도전적일 수 있습니다. 일상생활에서 피할 수 없는 상황이나 제로 웨이스트 제품을 얻기 어려운 경우가 있을 수 있습니다.
+                                    그러나 소비자가 선택하는 제품 및 습관을 조정하여 이러한 어려움을
+                                    극복할 수 있습니다. </p>
+                            </div>
+                        </div>
+                        <div class="event_end">
+                            <h3>어떻게 제로 웨이스트 라이프스타일을 채택할 수 있나요?</h3>
+                            <div class="event_qnA">
+                                <strong>A.</strong>
+                                <p>제로 웨이스트 라이프스타일을 채택하는 데는 몇 가지 방법이 있습니다. 재활용 가능한 제품을 선택하고, 일회용 플라스틱을 피하며, 음식물 쓰레기를 줄이는
+                                    등의 노력을 기울일 수 있습니다. 또한 지속 가능한 패션 및
+                                    에너지 소비에도 주의를 기울일 수 있습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- QnA (끝) 손호성-->
+    </div>
+
+    <script src="./javascript/todo.js"></script>
+</body>
+
+</html>

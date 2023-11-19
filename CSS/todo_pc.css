@@ -1,0 +1,1144 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "JeonjuCraftGoR";
+    line-height: 1;
+    font-size: 0.625em;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+h2 {
+    font-size: 2.7rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 2.5em;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    font-size: 2rem;
+}
+
+strong {
+    font-size: 2rem;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+img {
+    border: none;
+    width: 100%;
+    height: 100%;
+}
+
+span {
+    display: block;
+}
+
+p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+    .wrap {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* animation 모음 */
+    /* 그로우 */
+    .hvr-grow {
+        display: inline-block;
+        vertical-align: middle;
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        transition-duration: 0.3s;
+        transition-property: transform;
+    }
+
+    .hvr-grow:hover,
+    .hvr-grow:focus,
+    .hvr-grow:active {
+        transform: scale(1.1);
+    }
+
+    .hvr-grow2 {
+        display: inline-block;
+        vertical-align: middle;
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        transition-duration: 0.3s;
+        transition-property: transform;
+    }
+
+    .hvr-grow2:hover,
+    .hvr-grow2:focus,
+    .hvr-grow2:active {
+        transform: scale(1.05);
+    }
+
+
+
+    /* 밑에서 위로 슬라이드 */
+    @-webkit-keyframes slide-in-blurred-bottom {
+        0% {
+            -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+            -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+            -webkit-filter: blur(40px);
+            filter: blur(40px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            -webkit-filter: blur(0);
+            filter: blur(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slide-in-blurred-bottom {
+        0% {
+            -webkit-transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(1000px) scaleY(2.5) scaleX(0.2);
+            -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
+            -webkit-filter: blur(40px);
+            filter: blur(40px);
+            opacity: 0;
+        }
+
+        100% {
+            -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            -webkit-filter: blur(0);
+            filter: blur(0);
+            opacity: 1;
+        }
+    }
+
+    /* animation 모음 끝 */
+
+    /*----------------------------------------------- nav (시작)---------------------------------------손호성 */
+    .hover {
+        background: rgba(0, 0, 0, 0.8);
+        color: #ffffff;
+    }
+
+    /* 고정 헤더 */
+    #navi {
+        width: 100%;
+        height: 100px;
+        /* 메인 제외 페이지 가로선 */
+        z-index: 100;
+        position: fixed;
+        top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    /* 헤더 메뉴 */
+    #navi a {
+        text-decoration: none;
+        padding: 0 4%;
+        color: #333;
+        font-size: 17px;
+    }
+
+    /* 메뉴 호버 */
+    #navi a:hover {
+        text-shadow: midnightblue 1px 0 15px;
+        color: midnightblue;
+        /* text-shadow: 2px 2px 4px white; X축 오프셋, Y축 오프셋, 흐림 반경, 색상 */
+    }
+
+    .navicon {
+        display: none;
+    }
+
+    /* section{
+            background-color: white;
+        } */
+    /*-----------------------------------------------nav (끝)---------------------------------------손호성 */
+
+
+    /* visual(시작) */
+    .visual {
+        max-width: 100%;
+        height: 1160px;
+    }
+
+    body::before {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background: url(/img/bg/man.jpg) no-repeat;
+        background-size: cover;
+        -webkit-filter: blur(5px);
+        -moz-filter: blur(5px);
+        -o-filter: blur(5px);
+        -ms-filter: blur(5px);
+        filter: blur(5px);
+        transform: scale(1.1);
+        z-index: -1;
+        content: "";
+        animation: fade-in 2s linear;
+    }
+
+    @-webkit-keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .visual-text {
+        position: absolute;
+        width: 100%;
+        height: 35%;
+        color: white;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 2.7rem;
+        /* border: 1px solid red; */
+    }
+
+    .visual-text span {
+        padding: 4%;
+    }
+
+    #text-target {
+        text-shadow: 5px 5px 4px rgb(0, 0, 0, 0.9);
+    }
+
+    #text-target>span {
+        display: block;
+        width: 100%;
+        height: 500px;
+        border: 1px solid black;
+    }
+
+    .text-target1 {
+        display: inline-block;
+        width: 100%;
+        color: #333;
+        font-size: 1.7rem;
+        animation: backgroundColorChange 2s linear infinite;
+        text-shadow: 4px 4px 3px rgb(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+        /* 배경색 애니메이션 추가 */
+    }
+
+    @keyframes backgroundColorChange {
+        0% {
+            background-color: #fcfe82;
+        }
+
+        50% {
+            background-color: #ffe15b;
+        }
+
+        100% {
+            background-color: #fcfe82;
+        }
+    }
+
+    .text-target2 {
+        font-size: 1.7rem;
+        font-weight: bold;
+        text-shadow: 5px 5px 4px rgb(0, 0, 0, 0.5);
+    }
+
+    /* visual(끝) */
+
+    /* 차트박스(시작) */
+
+    .chartbox {
+        max-width: 100%;
+        height: 560px;
+        background: whitesmoke;
+        opacity: 0.8;
+    }
+
+    /* 차트박스(끝) */
+
+    /* --------------------------------------지구 환경의 심각성 (시작)---------------------------------------손호성  */
+    .warring {
+        max-width: 100%;
+        height: 1320px;
+        padding-top: 60px;
+        background: #ededed;
+    }
+
+    .warring>h2 {
+        color: black;
+        text-shadow: 4px 4px 3px rgb(0, 0, 0, 0.2);
+    }
+
+    .warring>h2>span {
+        display: inline-block;
+        text-shadow: 4px 4px 3px rgb(0, 0, 0, 0.2);
+        background-color: #fcfe82
+    }
+
+    .warring_inner {
+        width: 100%;
+        height: 1080px;
+        margin: auto;
+    }
+
+    .warring_box {
+        width: 90%;
+        height: 980px;
+        margin: 40px auto 25px;
+        background-image: url(/img/bg/note.jpg);
+        background-color: whitesmoke;
+        background-position: center center;
+        background-size: 250%;
+    }
+
+    .warring_box>p {
+        margin: auto;
+        width: 85%;
+        padding: 31px;
+    }
+
+    .warring_box>h3 {
+        width: 95%;
+        text-decoration: underline;
+        text-underline-offset: 6px;
+        margin: 50px auto 40px;
+    }
+
+
+    .warring_check {
+        width: 90%;
+        height: 350px;
+        padding: 20px;
+        margin: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-around;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background: #ededed;
+    }
+
+    .warring_container {
+        width: 40%;
+        height: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgb(0, 0, 0, 0.5);
+        background: whitesmoke;
+        font-size: 1.7rem;
+        margin: auto;
+    }
+
+    .warring_container>input {
+        display: block;
+        width: 10%;
+        height: 20px;
+        border: 1px solid black;
+    }
+
+
+    /* --------------------------------------지구 환경의 심각성 (끝)---------------------------------------손호성  */
+
+
+
+    /* -------------------------------------------------todolist 상세체크 (시작)---------------------------------------손호성 */
+    .todolist {
+        padding-top: 20px;
+        width: 100%;
+        height: 1080px;
+        background: #dee1e1;
+        position: relative;
+        /* background-color: white; */
+    }
+
+
+    .todolist>h2 {
+        margin: 40px auto 35px;
+        padding: 25px;
+        text-shadow: 4px 4px 3px rgb(0, 0, 0, 0.2);
+    }
+
+    .todolist>h2>span {
+        display: inline-block;
+        background-color: hsl(61, 98%, 75%, 0.8);
+        text-shadow: 4px 4px 3px rgb(0, 0, 0, 0.2);
+    }
+
+    .todolist_inner {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        /* border: 5px solid black; */
+    }
+
+    .todo_box_slide {
+        width: 90%;
+        height: 90%;
+        margin: auto;
+        /* border: 5px solid green; */
+        display: flex;
+    }
+
+    .todo1 {
+        width: 60%;
+        height: 90%;
+        margin: auto;
+        position: relative;
+    }
+
+    /* checkbox 시작 */
+    .todolabel {
+        height: 25px;
+        width: 25px;
+        background-color: transparent;
+        border: 3px solid #000;
+        border-radius: 5px;
+        box-sizing: border-box;
+        position: relative;
+        display: flex;
+        align-items: center;
+        transition: border-color ease 0.2s;
+        cursor: pointer;
+    }
+
+
+    .todolabel::before,
+    .todolabel::after {
+        position: absolute;
+        height: 0;
+        width: 5px;
+        background-color: rgb(195, 19, 19);
+        box-sizing: border-box;
+        display: inline-block;
+        transform-origin: left top;
+        border-radius: 5px;
+        content: ' ';
+        transition: opacity ease 0.5;
+    }
+
+    .todolabel::before {
+        top: 16px;
+        left: 8.2px;
+        box-shadow: 0 0 0 10px transparent;
+        transform: rotate(-135deg);
+
+    }
+
+    .todolabel::after {
+        top: 8px;
+        left: 0px;
+        transform: rotate(-45deg);
+
+    }
+
+    input[class="todoinput"]:checked+.todolabel::after {
+        height: 10px;
+        animation: bottomcheck 0.2s ease 0s forwards;
+    }
+
+    input[class="todoinput"]:checked+.todolabel::before {
+        height: 24px;
+        animation: topcheck 0.4s ease 0s forwards;
+    }
+
+    input {
+        display: none;
+    }
+
+    @keyframes bottomcheck {
+        0% {
+            height: 0px;
+        }
+
+        100% {
+            height: 10px;
+        }
+    }
+
+    @keyframes topcheck {
+        0% {
+            height: 0;
+        }
+
+        50% {
+            height: 0;
+        }
+
+        100% {
+            height: 45px;
+        }
+    }
+
+    /* checkbox 끝 */
+
+    .todo1 span:first-child {
+        border-radius: 5%;
+        width: 90%;
+        height: 100%;
+        background: whitesmoke;
+    }
+
+    .todo1 span:last-child {
+        position: absolute;
+        top: -10%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 5%;
+        width: 60%;
+        height: 20%;
+        background-color: rgb(173, 196, 206);
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 90px;
+    }
+
+    .check_container {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .todo_list1 {
+        margin: 60px 0 55px 50px;
+    }
+
+    .todo_list1>li {
+        margin: 110px 0 55px 0;
+        font-size: 1.3rem;
+        font-weight: bold;
+        text-decoration: underline;
+        text-underline-offset: 6px;
+    }
+
+    .todolabel_text {
+        margin-left: 20px;
+    }
+
+    .todolist_prev {
+        display: none;
+    }
+
+    .todolist_next {
+        display: none;
+
+    }
+
+    .sure {
+        width: 15%;
+        height: 80px;
+        background: linear-gradient(-45deg, transparent 15px, #F2F2F2 0);
+        margin-top: 70px;
+        text-shadow: 3px 3px 2px rgb(0, 0, 0, 0.2);
+        /* top: 20%; */
+    }
+
+    #checkMileageButton {
+        position: absolute;
+        top: 1%;
+        right: 1%;
+        width: 15%;
+        height: 80px;
+        background-color: whitesmoke;
+        border-radius: 50%;
+        z-index: 10;
+    }
+
+    #resetMileageButton {
+        position: absolute;
+        top: 1%;
+        left: 1%;
+        width: 15%;
+        height: 80px;
+        background-color: whitesmoke;
+        border-radius: 50%;
+        z-index: 10;
+    }
+
+    /* -------------------------------------------------todolist 상세체크 (끝)---------------------------------------손호성 */
+
+    /* -------------------------------------------------제로웨이스트(시작)---------------------------------------손호성 */
+    .straw {
+        width: 100%;
+        height: 1980px;
+        padding-top: 60px;
+        text-align: center;
+        background-color: white;
+    }
+
+    /* straw inner */
+    .straw_inner {
+        width: 90%;
+        height: 1680px;
+        margin: 0px auto 25px;
+        padding: 1px;
+        /* border: 5px solid black; */
+    }
+
+    .straw_inner_h2 {
+        margin: auto;
+        width: 90%;
+        text-shadow: 4px 4px 3px rgb(0, 0, 0, 0.2);
+    }
+
+    .straw_inner_h2>h2 {
+        margin: 40px auto 30px;
+        /* font-size: 2.7rem; */
+    }
+
+    .straw_inner_h2>h2>span {
+        display: inline-block;
+        background-color: hsl(61, 98%, 75%, 0.8);
+    }
+
+    .straw_inner_h2>h3 {
+        margin: 40px auto 30px;
+    }
+
+    .straw_cartoon {
+        width: 100%;
+        height: 650px;
+        margin: auto;
+        /* border: 5px solid black; */
+    }
+
+    .straw_cartoon_container {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .straw-child-leftbox {
+        position: absolute;
+        ;
+        width: 100%;
+        height: 100%;
+        background-color: #ededed;
+    }
+
+    .straw-child-leftbox,
+    .straw-child-rightbox {
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+
+
+    /* 왼쪽 박스 초기 위치 */
+    .straw-child-leftbox {
+        transform: translateX(-100px);
+    }
+
+    /* 오른쪽 박스 초기 위치 */
+    .straw-child-rightbox {
+        transform: translateX(100px);
+    }
+
+    /* 화면에 들어올 때 보이게 하는 클래스 */
+    .visible {
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    .straw_text {
+        padding: 20px;
+
+    }
+
+    .p_box {
+        width: 80%;
+        height: 70%;
+        background: whitesmoke url(/img/logo.png) no-repeat center/cover;
+        background-size: 300px 300px;
+        margin: auto;
+        position: relative;
+
+    }
+
+    .p_box>p {
+        /* margin: 40px auto 25px; */
+        width: 80%;
+        font-size: 1.8rem;
+        line-height: 1.8;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* 제로웨이스트 스트랩 */
+    .straw_slide {
+        width: 90%;
+        height: 780px;
+        display: block;
+        margin: 40px auto 30px;
+        position: relative;
+    }
+
+    .straw_slide>h2 {
+        margin: 80px auto 45px;
+    }
+
+    .straw_slide_inner {
+        width: 100%;
+        margin: auto;
+        height: 775px;
+        border: 2px solid rgb(0, 0, 0, 0.2);
+
+    }
+
+    .straw_slide_inner .slide {
+        margin: auto;
+        width: 100%;
+        height: 770px;
+    }
+
+    /* 슬라이드 텍스트 박스 */
+
+    .slide>.text_box {
+        width: 90%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .slide>.text_box>h2 {
+        opacity: 0;
+        color: rgb(0, 0, 0, 0.8);
+        transform: translateY(50px);
+        transition: 1s;
+    }
+
+    .slide>.text_box>.tp-txt {
+        transition-delay: 1.2s;
+    }
+
+    .slide>.text_box>.mid-txt {
+        transition-delay: 1s;
+    }
+
+    .slide.slick-active>.text_box>h2 {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+
+
+
+    /* 슬라이드 텍스트 박스 */
+
+    .straw_btn_next {
+        position: absolute;
+        top: 60%;
+        transform: translateY(-50%);
+        right: -5%;
+        width: 30px;
+        height: 30px;
+        transform: rotate(180deg);
+    }
+
+    .straw_btn_prev {
+        position: absolute;
+        top: 60%;
+        transform: translateY(-50%);
+        left: -5%;
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .slick-dots {
+        position: relative;
+        /* bottom: 10px; */
+        left: 3%;
+        width: 20%;
+        /* border: 3px solid black; */
+    }
+
+    /*마진패딩 초기화 */
+    .slick-dots li {
+        position: absolute;
+        top: 25px;
+        margin-right: 22px;
+    }
+
+    /* 가로배치, 점들 사이의 간격 */
+    .slick-dots li {
+        background: #808585;
+        width: 15%;
+        height: 15%;
+        border-radius: 50%;
+        border: none;
+        text-indent: -9999px;
+    }
+
+    /* 원 모양 */
+    .slick-dots li:hover button {
+        border-radius: 50%;
+        background: greenyellow;
+    }
+
+    /*마우스를 올렸을 때 */
+    .slick-dots li.slick-active button {
+        border-radius: 50%;
+        background: greenyellow;
+    }
+
+    /*현재슬라이드 위치 표시*/
+
+    /* -------------------------------------------------제로웨이스트(끝)--------------------------------------- */
+
+
+    /* ---------------------지구영상(시작)----------------------------- */
+    .quiz {
+        max-width: 100%;
+        height: 2080px;
+        padding-top: 40px;
+        background: whitesmoke;
+        text-align: center;
+    }
+
+    .quiz>h2 {
+        margin: 55px auto 45px;
+        text-shadow: 4px 4px 3px rgb(0, 0, 0, 0.2);
+    }
+
+    .quiz>h2>span {
+        display: inline-block;
+        background-color: hsl(61, 98%, 75%, 0.8);
+    }
+
+
+    .quiz_inner {
+        width: 100%;
+        height: 1580px;
+        margin: 10px 0;
+    }
+
+    .quiz_content {
+        width: 100%;
+        height: 1360px;
+    }
+
+    .child-box {
+        width: 100%;
+        height: 760px;
+        font-size: 0.9rem;
+        /* 초기 높이를 0으로 설정 */
+    }
+
+    .child-box:nth-child(2) {
+        margin: 40px auto 25px;
+    }
+
+    #box1>h3 {
+        padding-top: 60px;
+    }
+
+    #box2>h3 {
+        padding-top: 60px;
+    }
+
+    .child-box>p {
+        margin: 20px auto 20px;
+        padding: 5px;
+    }
+
+    .quiz_btn {
+        margin-top: 15px;
+        width: 35%;
+        height: 60px;
+        background: linear-gradient(-45deg, transparent 15px, #dee1e1 0);
+        text-shadow: 3px 3px 2px rgb(0, 0, 0, 0.2);
+    }
+
+    video {
+        border: 1px solid black;
+    }
+
+    /* -----------------지구영상 (끝)----------------------------- */
+
+
+    /* -------------------------------------------------QnA (시작)---------------------------------------손호성 */
+    .event {
+        width: 100%;
+        height: 1960px;
+        padding-top: 60px;
+        text-align: center;
+    }
+
+    .event_inner {
+        width: 90%;
+        height: 80%;
+        margin: 40px auto 25px;
+        padding-top: 10px;
+        background: whitesmoke;
+    }
+
+    .event_inner>span {
+        background: url(/img/label.png) no-repeat center/cover;
+        width: 50%;
+        height: 110px;
+        margin: 40px auto 25px;
+    }
+
+    .event_inner>span>h2 {
+        /* color: rgb(28, 127, 98); */
+        line-height: 110px;
+        margin: auto;
+    }
+
+    .event_inner>h2 {
+        text-shadow: 4px 4px 3px rgb(0, 0, 0, 0.2);
+        margin: 70px auto 35px;
+    }
+
+    .event_inner>h2>span {
+        display: inline-block;
+        color: rgb(68, 168, 138);
+        background-color: #fcfe82
+    }
+
+    .event_content {
+        width: 90%;
+        height: 1660px;
+        margin: auto;
+    }
+
+    .event_end {
+        margin: auto;
+        height: 15%;
+    }
+
+    .event_end>h3 {
+        display: block;
+        width: 95%;
+        background-color: rgb(221, 217, 217);
+        padding: 5px 2px 5px 2px;
+        margin: 5px auto 20px;
+        ;
+    }
+
+    .event_end>h3::before {
+        display: inline-block;
+        content: "Q.";
+        width: 15%;
+        height: 20px;
+    }
+
+
+    .event_qnA {
+        display: block;
+        width: 90%;
+        height: 200px;
+        margin: auto;
+        position: relative;
+    }
+
+    .event_qnA>strong {
+        display: block;
+        position: absolute;
+        top: 2.6%;
+        left: 0;
+        width: 20%;
+        height: 215px;
+    }
+
+    .event_qnA>p {
+        position: absolute;
+        text-align: left;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 215px;
+    }
+
+    /* -------------------------------------------------QnA (끝)---------------------------------------손호성 */
+
+    /* ani 모음 */
+    /* slide top  */
+    .slide_top {
+        animation: slide-top 0.5s linear;
+        -webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    @-webkit-keyframes slide-top {
+        0% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+
+        }
+
+        100% {
+            -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+        }
+    }
+
+    @keyframes slide-top {
+        0% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+
+        }
+
+        100% {
+            -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+        }
+    }
+
+    .text-pop-up-top {
+        -webkit-animation: text-pop-up-top 0.5s ease;
+        animation: text-pop-up-top 0.5s ease;
+    }
+
+
+    @-webkit-keyframes text-pop-up-top {
+        0% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            text-shadow: none;
+        }
+
+        100% {
+            -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    @keyframes text-pop-up-top {
+        0% {
+            -webkit-transform: translateY(0);
+            transform: translateY(0);
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            text-shadow: none;
+        }
+
+        100% {
+            -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+        }
+    }
+
+    .shadow-drop-2-center {
+        -webkit-animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        animation: shadow-drop-2-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+    @-webkit-keyframes shadow-drop-2-center {
+        0% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
+
+        100% {
+            -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+            -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        }
+    }
+
+    @keyframes shadow-drop-2-center {
+        0% {
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+            box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+        }
+
+        100% {
+            -webkit-transform: translateZ(50px);
+            transform: translateZ(50px);
+            -webkit-box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+        }
+    }
+
+
+
+}
+
+/* 미디어커리끝 */
