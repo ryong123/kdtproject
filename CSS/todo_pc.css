@@ -219,7 +219,7 @@ p {
         top: 0;
         left: 0;
         bottom: 0;
-        background: url(/img/bg/man.jpg) no-repeat;
+        background: url(../img/todolist-img/bg/man.jpg) no-repeat;
         background-size: cover;
         -webkit-filter: blur(5px);
         -moz-filter: blur(5px);
@@ -352,7 +352,7 @@ p {
         width: 90%;
         height: 980px;
         margin: 40px auto 25px;
-        background-image: url(/img/bg/note.jpg);
+        background-image: url(../img/todolist-img/bg/note.jpg);
         background-color: whitesmoke;
         background-position: center center;
         background-size: 250%;
@@ -716,7 +716,7 @@ p {
     .p_box {
         width: 80%;
         height: 70%;
-        background: whitesmoke url(/img/logo.png) no-repeat center/cover;
+        background: whitesmoke url(../img/todolist-img/logo.png) no-repeat center/cover;
         background-size: 300px 300px;
         margin: auto;
         position: relative;
@@ -945,8 +945,8 @@ p {
     }
 
     .event_inner>span {
-        background: url(/img/label.png) no-repeat center/cover;
-        width: 50%;
+        background: url(../img/todolist-img/logo\ 1.png) no-repeat center/cover;
+        width: 20%;
         height: 110px;
         margin: 40px auto 25px;
     }
