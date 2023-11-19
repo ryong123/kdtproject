@@ -36,7 +36,15 @@
 
   </div>
 
-
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <div class="container">
     <div class="title">PRODUCT DETAIL</div>
     <div class="detail">
@@ -81,7 +89,7 @@
   <script>
     let products = null;
     // get datas from file json
-    fetch('products.json')
+    fetch('../products.json')
       .then(response => response.json())
       .then(data => {
         products = data;
@@ -109,7 +117,7 @@
 
       (products.filter(value => value.id != productId)).forEach(product => {
         let newProduct = document.createElement('a');
-        newProduct.href = './detail.html?id=' + product.id;
+        newProduct.href = '../HTML/detail.html?id=' + product.id;
         newProduct.classList.add('item');
         newProduct.innerHTML =
           `<img src="${product.image}" alt="${product.name}">
@@ -120,7 +128,7 @@
       });
       (products.filter(value => value.id == productId)).forEach(product => {
         let detailPics = document.createElement('a');
-        detailPics.href = './detail.html?id=' + product.id;
+        detailPics.href = '../HTML/detail.html?id=' + product.id;
         detailPics.classList.add('item');
         detailPics.innerHTML =
           `<img src="${product.detailPic}" style="width:1000px;height:1200px;">
@@ -129,7 +137,6 @@
       })
     };
   </script>
-  <script src="../javascripts/shoppingCart.js"></script>
 
 </body>
 
