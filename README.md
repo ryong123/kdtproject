@@ -87,7 +87,10 @@ Our reviews
 “That's one small step for man, One giant leap for mankind"
 ----------------------------------------------------------------
 Jackie chen
-<여기에 알아서 코멘트를 답시다>
+하얗게 불태웠습니다. 
+
+![image](https://github.com/ryong123/kdtproject/assets/148741796/331449fe-8d10-4b2d-b1b6-c03595fa1e92)
+
 
 <a href="https://pbs.twimg.com/media/F7w7nV5X0AAZqaA?format=jpg&name=small"><img src="https://pbs.twimg.com/media/F7w7nV5X0AAZqaA?format=jpg&name=small" title="" /></a>
 
