@@ -78,7 +78,7 @@ calculation();
 // 클릭 이벤트 처리 함수
 function handleClick1() {
   // 특정 URL로 이동
-  window.location.href = "http://127.0.0.1:5500/src/details/detail.html?id=1";
+  window.location.href = "http://127.0.0.1:5501/HTML/detail.html?id=1";
 }
 
 // HTML 요소 가져오기

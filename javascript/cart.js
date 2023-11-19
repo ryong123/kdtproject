@@ -47,7 +47,7 @@ let generateCartItems = () => {
     shoppingCart.innerHTML = ``;
     label.innerHTML = `
     <h2>Cart is Empty</h2>
-    <a href="shoppingCart.html">
+    <a href="../HTML/shoppingCart.html">
     <button class="HomeBtn">Back to Home</button>
     </a>
     `;
@@ -123,6 +123,15 @@ let totalAmount = () => {
       .reduce((x, y) => x + y, 0);
     // console.log(amount);
     label.innerHTML = `
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <h2>Total Bill : $ ${amount}</h2>
     <button class="checkOut">checkOut</button>
     <button onclick="clearCart()" class="removeAll">removeAll</button>
