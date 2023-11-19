@@ -82,7 +82,7 @@ We are dedicated to inspiring individuals to contemplate zero waste and aiding t
   json
 
 
-Our testimonals 
+Our reviews 
 ----------------------------------------------------------------
 “That's one small step for man, One giant leap for mankind"
 ----------------------------------------------------------------
