@@ -73,6 +73,11 @@ a {
   padding-top: 10px;
 }
 
+detImg {
+  width: 1200px;
+  height: 1400px;
+}
+
 .title {
   font-size: xx-large;
   padding: 20px 0;
@@ -225,9 +230,11 @@ a {
     display: none;
   }
 
+
+
   .detImg {
-    width: 500px;
-    height: 600px;
+    width: 20%;
+    height: 30%;
   }
 
   .navicon {
