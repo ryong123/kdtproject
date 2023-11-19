@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?text=ZERO_BASE&animation=fadeIn)
+![image](https://github.com/ryong123/kdtproject/assets/148741796/86823a2a-ddaf-4085-893e-74fd17b5e8d5)![header](https://capsule-render.vercel.app/api?text=ZERO_BASE&animation=fadeIn)
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00F758&random=false&width=435&lines=The+name+of+project+)](https://git.io/typing-svg)
 <a href="https://imgur.com/HLkBHf5" style="background-color:white;"><img src="https://i.imgur.com/HLkBHf5.png" title="source: imgur.com" style="background-color:white;"/></a>
@@ -86,7 +86,7 @@ Our reviews
 ----------------------------------------------------------------
 “That's one small step for man, One giant leap for mankind"
 ----------------------------------------------------------------
-Jackie chen
+**Jackie chen**
 
 ![image](https://github.com/ryong123/kdtproject/assets/148741796/331449fe-8d10-4b2d-b1b6-c03595fa1e92)
 
