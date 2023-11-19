@@ -23,6 +23,12 @@ html {
   scroll-behavior: smooth;
 }
 
+h2,
+span,
+.food-price {
+  color: black;
+}
+
 @media (min-width: 1440px) {
   html {
     zoom: 1.5;
@@ -61,7 +67,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  background: var(--bg);
+  background: white;
 }
 
 /* 슬라이더 너비 조정 여기서 */
@@ -76,6 +82,7 @@ body {
 }
 
 .section-heading {
+  margin-top: 30px;
   font-size: 3rem;
   color: var(--primary);
   padding: 2rem 0;
@@ -141,7 +148,7 @@ body {
   position: absolute;
   top: 2rem;
   right: 2rem;
-  color: var(--white);
+  color: black;
 }
 
 .tranding-slide-content .tranding-slide-content-bottom {
