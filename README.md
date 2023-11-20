@@ -105,7 +105,7 @@ jun <br>
 ------------------------------------------------------------------------------
 **hosung**
 
-<img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fhanamon.kr%2F%25EC%258B%25A0%25EC%259E%2585-%25EA%25B0%259C%25EB%25B0%259C%25EC%259E%2590-%25EC%25B2%25AB-%25EC%25B6%259C%25EA%25B7%25BC-%25ED%259B%2584%25EA%25B8%25B0%2F&psig=AOvVaw3DYfw5c4VDcNkIkbLSLlVM&ust=1700526213747000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqGAoTCNCgppSo0YIDFQAAAAAdAAAAABCvAQ" title="" />
+<img src="https://i0.wp.com/hanamon.kr/wp-content/uploads/2022/02/%E1%84%8F%E1%85%A9%E1%84%83%E1%85%B5%E1%86%BC%E1%84%8D%E1%85%A1%E1%86%AF.jpeg?fit=253%2C199&ssl=1" title="" />
 
 "발표 4일 전, 예기치 못한 오류로 인해 만들어두었던 파일이 많은 어려움을 야기했습니다. 그러나 팀원 분들의 지원과 협력 덕분에 결국 모든 것을 엎고 다시 시작하게 되었고, 기간 안에 성공적으로 마무리할 수 있었습니다. 이런 어려움을 함께 극복하며 얻은 소중한 경험에 감사하며, 팀원들과의 협업으로 인해 더 강해진 팀의 결속력을 느낄 수 있었습니다. 감사합니다."
 
