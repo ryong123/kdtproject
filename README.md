@@ -64,7 +64,7 @@ We are dedicated to inspiring individuals to contemplate zero waste and aiding t
       "Feel Free to Ask!
          Curious about what zero-waste living entails? Wondering how to seamlessly integrate it into your lifestyle? Have questions about sustainable practices? At Zero-Base, we believe in the 
          power of questions. Feel free to ask us anything related to zero waste, sustainable living, or our initiatives. Our experts are here to guide you on your journey towards a greener and 
-         more eco-conscious lifestyle. Whether you're seeking tips, advice, or just want to learn more, your questions are welcomed. Let's embark on this enlightening journey together!
+         more eco-conscious lifestyle. Whether you're seeking tips, advice, or just want to learn more, your questions are welcomed. Let's embark on this enlightening journey together!<br>
   6. log-in<br>
           Join us in creating a world where sustainable living is not only fulfilling but also rewarding. Your journey matters, and together, we can make a difference—one eco-friendly action at 
           a time."
