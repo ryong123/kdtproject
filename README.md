@@ -15,7 +15,7 @@ group no.5
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00F758&random=false&width=435&lines=Description+of+the+project+)](https://git.io/typing-svg)
 reason<br>
-  It's simple. One of the members of our team, Yeji who is the youngest girl, suggested zero-waist as the theme. :) By the way, We are not environmentalists.
+  It's simple. One of the members of our team, Yeji who is the youngest girl, suggested zero-waste as the theme. :) By the way, We are not environmentalists.
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00F758&random=false&width=435&lines=Project+structure+and+key+files+)](https://git.io/typing-svg)
 We are dedicated to inspiring individuals to contemplate zero waste and aiding them in maintaining a zero-waste lifestyle. The website features five navigation options: Home, About Us, Quest, Explore, Eco Shop, and Community Hub.
