@@ -18,7 +18,7 @@ reason<br>
   It's simple. One of the members of our team, Yeji who is the youngest girl, suggested zero-waste as the theme. :) By the way, We are not environmentalists.
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00F758&random=false&width=435&lines=Project+structure+and+key+files+)](https://git.io/typing-svg)
-We are dedicated to inspiring individuals to contemplate zero waste and aiding them in maintaining a zero-waste lifestyle. The website features five navigation options: Home, About Us, Quest,  Eco Shop Shopping, Board, and Community Hub.
+We are dedicated to inspiring individuals to contemplate zero waste and aiding them in maintaining a zero-waste lifestyle. The website features six navigation options: Home, About Us, Quest,  Eco Shop Shopping, Board, and Community Hub.
   1. Home<br>
      "Welcome to Zero-Base – your gateway to a sustainable future! Our logo and name are designed to inform users about the essence of our platform. Here at Zero-Base, we're on a mission to 
             inspire and guide individuals on their journey towards a zero-waste lifestyle. Explore the possibilities, learn about our vision in the 'About Us' section, discover sustainable 
