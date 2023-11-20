@@ -30,6 +30,44 @@ span,
 }
 
 @media (min-width: 1440px) {
+  /* 헤더 메뉴 */
+  #navi {
+    width: 100%;
+    height: 100px;
+    /* 메인 제외 페이지 가로선 */
+    z-index: 100;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 17px;
+  }
+
+  /* 헤더 메뉴 */
+  #navi a {
+    text-decoration: none;
+    padding: 0 4%;
+    color: #333;
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  /* 메뉴 호버 */
+  #navi a:hover {
+    /* text-shadow: 2px 2px 4px white;  */
+    text-shadow: midnightblue 1px 0 15px;
+    color: midnightblue;
+  }
+
+  .navicon {
+    display: none;
+  }
+
+  .navilist {
+    display: block;
+  }
+  /* 메뉴바 */
   html {
     zoom: 1.5;
   }
