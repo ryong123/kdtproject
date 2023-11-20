@@ -18,7 +18,7 @@ reason<br>
   It's simple. One of the members of our team, Yeji who is the youngest girl, suggested zero-waste as the theme. :) By the way, We are not environmentalists.
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&color=00F758&random=false&width=435&lines=Project+structure+and+key+files+)](https://git.io/typing-svg)
-We are dedicated to inspiring individuals to contemplate zero waste and aiding them in maintaining a zero-waste lifestyle. The website features five navigation options: Home, About Us, Quest,  Eco Shop Shopping, Board, and Community Hub.
+We are dedicated to inspiring individuals to contemplate zero waste and aiding them in maintaining a zero-waste lifestyle. The website features six navigation options: Home, About Us, Quest,  Eco Shop Shopping, Board, and Community Hub.
   1. Home<br>
      "Welcome to Zero-Base – your gateway to a sustainable future! Our logo and name are designed to inform users about the essence of our platform. Here at Zero-Base, we're on a mission to 
             inspire and guide individuals on their journey towards a zero-waste lifestyle. Explore the possibilities, learn about our vision in the 'About Us' section, discover sustainable 
@@ -64,7 +64,7 @@ We are dedicated to inspiring individuals to contemplate zero waste and aiding t
       "Feel Free to Ask!
          Curious about what zero-waste living entails? Wondering how to seamlessly integrate it into your lifestyle? Have questions about sustainable practices? At Zero-Base, we believe in the 
          power of questions. Feel free to ask us anything related to zero waste, sustainable living, or our initiatives. Our experts are here to guide you on your journey towards a greener and 
-         more eco-conscious lifestyle. Whether you're seeking tips, advice, or just want to learn more, your questions are welcomed. Let's embark on this enlightening journey together!
+         more eco-conscious lifestyle. Whether you're seeking tips, advice, or just want to learn more, your questions are welcomed. Let's embark on this enlightening journey together!<br>
   6. log-in<br>
           Join us in creating a world where sustainable living is not only fulfilling but also rewarding. Your journey matters, and together, we can make a difference—one eco-friendly action at 
           a time."
